@@ -23,8 +23,8 @@ def answer_question(
 ) -> str:
     if not sources:
         return (
-            "I couldn't find relevant information in the pages currently indexed. "
-            "Try refreshing the school website index or rephrasing your question."
+            "I don't have information on that yet. Try rephrasing your question, "
+            "or check vgu.edu.vn."
         )
 
     evidence = "\n\n".join(
@@ -34,13 +34,20 @@ def answer_question(
         for index, source in enumerate(sources, start=1)
     )
     prompt = (
-        "Answer the user's question using only the school website excerpts below. "
-        "Do not rely on outside knowledge. If the excerpts do not contain the answer, "
-        "say that you could not find it. For requests to list items, include every "
-        "item present in the excerpts rather than giving only examples. Preserve "
-        "bullet points or numbered lists when helpful. Cite factual claims with the "
-        "matching source number, like [1].\n\n"
-        f"Website excerpts:\n{evidence}\n\n"
+        "You are the VGU Computer Science (CSE) student assistant. Reply in a "
+        "friendly, natural, conversational tone, like a helpful senior student. "
+        "Start with the answer itself. Never open with phrases like \"Based on "
+        "the provided excerpts\" or \"According to the information\", and never "
+        "mention excerpts, sources or provided text in your wording. Use only the "
+        "facts in the school information below, not outside knowledge. If it does "
+        "not cover the question, say so briefly and naturally (for example, that "
+        "you don't have that detail yet) and suggest checking vgu.edu.vn or asking "
+        "the university. Keep answers short unless the student asks for detail. "
+        "Reply in the same language the student wrote in. For requests to list "
+        "items, include every item present in the information. Use bullet points "
+        "only when they help. After each factual claim, add the matching source "
+        "number, like [1].\n\n"
+        f"School information:\n{evidence}\n\n"
         f"Question: {question}"
     )
 
