@@ -1,0 +1,5053 @@
+{
+  "meta": {
+    "name": "VGU chatbot knowledge base",
+    "schema_version": "1.0",
+    "generated": "2026-10-09",
+    "languages": [
+      "vi",
+      "en",
+      "de"
+    ],
+    "counts": {
+      "entries": 148,
+      "by_scope": {
+        "cse": 111,
+        "university": 37
+      },
+      "by_category": {
+        "admission": 10,
+        "career": 6,
+        "course_details": 3,
+        "curriculum": 20,
+        "degree": 4,
+        "digital_services": 5,
+        "english_requirement": 5,
+        "examinations": 3,
+        "exchange": 6,
+        "facilities": 6,
+        "faq": 6,
+        "foundation_year": 8,
+        "internship": 7,
+        "learning_resources": 7,
+        "library_services": 10,
+        "program_overview": 6,
+        "scholarship": 6,
+        "specializations": 6,
+        "student_life": 5,
+        "student_support": 1,
+        "tuition": 10,
+        "university_overview": 8
+      }
+    },
+    "review": {
+      "de": "AI-drafted German; a native speaker should review before release.",
+      "note": "Entries list the languages that were AI-drafted in 'ai_drafted'. Original vi/en wording comes from the team's spreadsheet."
+    },
+    "fields": {
+      "id": "Stable ID, kept from the spreadsheet (without the _vi/_en suffix). New university-wide entries use the vgu_ prefix.",
+      "category": "Topic group.",
+      "scope": "'cse' = specific to the Computer Science program; 'university' = applies to all of VGU.",
+      "applies_to": "null, or {year, basis}. basis 'intake' = valid for that intake year; 'document' = taken from a document of that year.",
+      "sources": "List of source URLs.",
+      "verification": "How the entry was checked: method (search_index, search_index_partial, official_page, null) and date.",
+      "flags": "Keys into 'flags' below. Show the matching message next to the answer.",
+      "caveat": "null or a key into 'caveats' below. Show the matching message next to the answer.",
+      "ai_drafted": "Languages written or translated by AI that have not been reviewed by a person.",
+      "translations": "question and answer per language."
+    },
+    "flags": {
+      "needs_confirmation": {
+        "vi": "Thông tin này cần được xác nhận lại với VGU trước khi sử dụng.",
+        "en": "Please confirm this information with VGU before relying on it.",
+        "de": "Bitte bestätige diese Information bei der VGU, bevor du dich darauf verlässt."
+      },
+      "reference_only": {
+        "vi": "Tài liệu tham khảo; chưa xác nhận là giáo trình bắt buộc hoặc đang có sẵn.",
+        "en": "A listed reference, not a confirmed required textbook or available copy.",
+        "de": "Genannte Literatur, nicht bestätigt als Pflichtlektüre oder als verfügbares Exemplar."
+      },
+      "estimate": {
+        "vi": "Số tiền ước tính, không phải thông báo thu học phí.",
+        "en": "An estimate, not a tuition invoice.",
+        "de": "Eine Schätzung, keine Gebührenrechnung."
+      },
+      "past_round": {
+        "vi": "Thông tin của đợt tuyển sinh đã qua.",
+        "en": "Information from a past admission round.",
+        "de": "Angabe aus einer vergangenen Zulassungsrunde."
+      },
+      "check_for_updates": {
+        "vi": "Kiểm tra thông báo mới trên trang chính thức trước khi sử dụng.",
+        "en": "Check the official page for updated notices before use.",
+        "de": "Prüfe vor der Nutzung die offizielle Seite auf aktuelle Hinweise."
+      }
+    },
+    "caveats": {
+      "handbook_2022": {
+        "vi": "Tham khảo handbook bản 2022, không phải xác nhận cho khóa 2026. Học kỳ tính từ phần chuyên ngành; hỏi CSE về bản áp dụng cho khóa mình.",
+        "en": "Reference: 2022 handbook, not confirmation for intake 2026. Semesters refer to the specialist program; ask CSE which edition applies to your cohort.",
+        "de": "Quelle ist das Modulhandbuch 2022, keine Bestätigung für den Jahrgang 2026. Die Semester zählen ab dem Fachstudium; frag CSE, welche Ausgabe für deinen Jahrgang gilt."
+      },
+      "cse_regs_2021": {
+        "vi": "Quy chế riêng, Điều 6–7; tài liệu ghi áp dụng từ khóa 2021. Chưa xác nhận các sửa đổi áp dụng cho từng khóa; hỏi CSE trước khi đăng ký.",
+        "en": "Specific regulations, Articles 6–7; the document states intake 2021 onwards. Later cohort-specific amendments have not been confirmed; check with CSE before registering.",
+        "de": "Spezialordnung, Artikel 6–7; das Dokument gilt laut Angabe ab dem Jahrgang 2021. Spätere jahrgangsspezifische Änderungen sind nicht bestätigt; frag vor der Anmeldung bei CSE nach."
+      },
+      "general_regs_2022": {
+        "vi": "Quy chế chung theo Quyết định 20/QĐ-ĐHVĐ ngày 21/01/2022, dành cho chương trình sau chuyển giao. Cần xác nhận quy chế áp dụng cho khóa của bạn; không áp dụng câu này cho khóa luận.",
+        "en": "General regulations under Decision 20/QĐ-ĐHVĐ, 21 January 2022, for programs after transition. Confirm which regulations govern your cohort; this answer does not cover thesis attempts.",
+        "de": "Allgemeine Prüfungsordnung nach Beschluss 20/QĐ-ĐHVĐ vom 21.01.2022 für Programme nach der Übergangsphase. Bestätige, welche Ordnung für deinen Jahrgang gilt; diese Antwort betrifft nicht die Versuche bei der Abschlussarbeit."
+      }
+    }
+  },
+  "entries": [
+    {
+      "id": "cse_001_name",
+      "category": "program_overview",
+      "scope": "cse",
+      "applies_to": null,
+      "sources": [
+        "https://tuyensinh.vgu.edu.vn/en/chuong-trinh-dai-hoc/khoa-hoc-may-tinh"
+      ],
+      "verification": {
+        "method": null,
+        "date": null
+      },
+      "flags": [],
+      "caveat": null,
+      "ai_drafted": [
+        "de"
+      ],
+      "translations": {
+        "vi": {
+          "question": "CSE ở VGU là ngành gì?",
+          "answer": "CSE là ngành Khoa học máy tính tại VGU. Tên tiếng Anh của ngành là Computer Science."
+        },
+        "en": {
+          "question": "What is CSE at VGU?",
+          "answer": "CSE is VGU's Computer Science program."
+        },
+        "de": {
+          "question": "Was ist CSE an der VGU?",
+          "answer": "CSE ist der Studiengang Informatik (Computer Science) an der VGU."
+        }
+      }
+    },
+    {
+      "id": "cse_002_duration",
+      "category": "program_overview",
+      "scope": "cse",
+      "applies_to": null,
+      "sources": [
+        "https://tuyensinh.vgu.edu.vn/en/chuong-trinh-dai-hoc/khoa-hoc-may-tinh"
+      ],
+      "verification": {
+        "method": null,
+        "date": null
+      },
+      "flags": [],
+      "caveat": null,
+      "ai_drafted": [
+        "de"
+      ],
+      "translations": {
+        "vi": {
+          "question": "Học CSE ở VGU mất mấy năm?",
+          "answer": "Theo lộ trình chuẩn, bạn sẽ học CSE trong 4 năm."
+        },
+        "en": {
+          "question": "How many years does CSE at VGU take?",
+          "answer": "The standard CSE program takes four years to complete."
+        },
+        "de": {
+          "question": "Wie viele Jahre dauert CSE an der VGU?",
+          "answer": "Der reguläre CSE-Studienverlauf dauert vier Jahre."
+        }
+      }
+    },
+    {
+      "id": "cse_003_credits",
+      "category": "program_overview",
+      "scope": "cse",
+      "applies_to": null,
+      "sources": [
+        "https://tuyensinh.vgu.edu.vn/en/chuong-trinh-dai-hoc/khoa-hoc-may-tinh"
+      ],
+      "verification": {
+        "method": null,
+        "date": null
+      },
+      "flags": [],
+      "caveat": null,
+      "ai_drafted": [
+        "de"
+      ],
+      "translations": {
+        "vi": {
+          "question": "CSE có bao nhiêu tín chỉ chuyên ngành?",
+          "answer": "Phần chuyên ngành gồm 180 tín chỉ, học trong 6 học kỳ."
+        },
+        "en": {
+          "question": "How many degree credits are there in CSE?",
+          "answer": "The degree portion has 180 credits spread over six semesters."
+        },
+        "de": {
+          "question": "Wie viele Credits hat der CSE-Studiengang?",
+          "answer": "Der Fachstudienteil umfasst 180 Credits, verteilt auf sechs Semester."
+        }
+      }
+    },
+    {
+      "id": "cse_004_foundation_credits",
+      "category": "program_overview",
+      "scope": "cse",
+      "applies_to": null,
+      "sources": [
+        "https://tuyensinh.vgu.edu.vn/en/chuong-trinh-dai-hoc/khoa-hoc-may-tinh"
+      ],
+      "verification": {
+        "method": null,
+        "date": null
+      },
+      "flags": [],
+      "caveat": null,
+      "ai_drafted": [
+        "de"
+      ],
+      "translations": {
+        "vi": {
+          "question": "Tín chỉ FY có nằm trong 180 tín chỉ không?",
+          "answer": "Không. Tín chỉ của năm Foundation Year được tính riêng, không nằm trong 180 tín chỉ chuyên ngành."
+        },
+        "en": {
+          "question": "Are FY credits part of the 180 credits?",
+          "answer": "No. Foundation Year credits are separate from the 180 degree credits."
+        },
+        "de": {
+          "question": "Zählen die FY-Credits zu den 180 Credits?",
+          "answer": "Nein. Die Credits des Foundation Year werden separat gezählt und gehören nicht zu den 180 Credits des Fachstudiums."
+        }
+      }
+    },
+    {
+      "id": "cse_005_format",
+      "category": "program_overview",
+      "scope": "cse",
+      "applies_to": null,
+      "sources": [
+        "https://tuyensinh.vgu.edu.vn/en/chuong-trinh-dai-hoc/khoa-hoc-may-tinh"
+      ],
+      "verification": {
+        "method": null,
+        "date": null
+      },
+      "flags": [],
+      "caveat": null,
+      "ai_drafted": [
+        "de"
+      ],
+      "translations": {
+        "vi": {
+          "question": "CSE ở VGU học toàn thời gian phải không?",
+          "answer": "Có. CSE tại VGU là chương trình học toàn thời gian."
+        },
+        "en": {
+          "question": "Is CSE at VGU full-time?",
+          "answer": "Yes. CSE at VGU is a full-time program."
+        },
+        "de": {
+          "question": "Ist CSE an der VGU ein Vollzeitstudium?",
+          "answer": "Ja. CSE an der VGU ist ein Vollzeitstudiengang."
+        }
+      }
+    },
+    {
+      "id": "cse_006_program_code",
+      "category": "program_overview",
+      "scope": "cse",
+      "applies_to": {
+        "year": 2026,
+        "basis": "intake"
+      },
+      "sources": [
+        "https://tuyensinh.vgu.edu.vn/nhaphoc-1"
+      ],
+      "verification": {
+        "method": null,
+        "date": null
+      },
+      "flags": [],
+      "caveat": null,
+      "ai_drafted": [
+        "de"
+      ],
+      "translations": {
+        "vi": {
+          "question": "Mã ngành CSE là gì?",
+          "answer": "Mã ngành Khoa học máy tính của VGU là 7480101."
+        },
+        "en": {
+          "question": "What is the CSE admission code?",
+          "answer": "VGU's admission code for Computer Science is 7480101."
+        },
+        "de": {
+          "question": "Wie lautet der Studiengangscode für CSE?",
+          "answer": "Der Studiengangscode der VGU für Informatik (Computer Science) lautet 7480101."
+        }
+      }
+    },
+    {
+      "id": "cse_007_programming_languages",
+      "category": "curriculum",
+      "scope": "cse",
+      "applies_to": null,
+      "sources": [
+        "https://vgu.edu.vn/eu/study-programs/bachelor/cs/program-structure"
+      ],
+      "verification": {
+        "method": "search_index",
+        "date": null
+      },
+      "flags": [],
+      "caveat": null,
+      "ai_drafted": [
+        "de"
+      ],
+      "translations": {
+        "vi": {
+          "question": "Học CSE thì bắt đầu với ngôn ngữ lập trình nào?",
+          "answer": "Các ngôn ngữ lập trình cơ bản được giới thiệu trong chương trình là C và C++."
+        },
+        "en": {
+          "question": "Which programming languages does CSE introduce first?",
+          "answer": "The program introduces students to C and C++."
+        },
+        "de": {
+          "question": "Mit welchen Programmiersprachen beginnt man im CSE-Studium?",
+          "answer": "Im Studiengang werden zunächst C und C++ als grundlegende Programmiersprachen eingeführt."
+        }
+      }
+    },
+    {
+      "id": "cse_008_math",
+      "category": "curriculum",
+      "scope": "cse",
+      "applies_to": null,
+      "sources": [
+        "https://vgu.edu.vn/eu/study-programs/bachelor/cs/program-structure"
+      ],
+      "verification": {
+        "method": "search_index",
+        "date": null
+      },
+      "flags": [],
+      "caveat": null,
+      "ai_drafted": [
+        "de"
+      ],
+      "translations": {
+        "vi": {
+          "question": "Học CSE cần học những môn toán nào?",
+          "answer": "Bạn sẽ học các mảng toán như giải tích, đại số và toán rời rạc."
+        },
+        "en": {
+          "question": "What mathematics subjects are included in CSE?",
+          "answer": "The mathematics subjects include calculus, algebra and discrete mathematics."
+        },
+        "de": {
+          "question": "Welche Mathematik-Fächer gehören zu CSE?",
+          "answer": "Du belegst unter anderem Analysis, Algebra und Diskrete Mathematik."
+        }
+      }
+    },
+    {
+      "id": "cse_009_theory",
+      "category": "curriculum",
+      "scope": "cse",
+      "applies_to": null,
+      "sources": [
+        "https://vgu.edu.vn/eu/study-programs/bachelor/cs/program-structure"
+      ],
+      "verification": {
+        "method": "search_index",
+        "date": null
+      },
+      "flags": [],
+      "caveat": null,
+      "ai_drafted": [
+        "de"
+      ],
+      "translations": {
+        "vi": {
+          "question": "Mô hình tính toán được học trong môn nào?",
+          "answer": "Nội dung này nằm trong môn Theoretical Computer Science, tức Khoa học máy tính lý thuyết."
+        },
+        "en": {
+          "question": "Which subject covers models of computation?",
+          "answer": "This is covered in Theoretical Computer Science."
+        },
+        "de": {
+          "question": "In welchem Fach werden Berechnungsmodelle behandelt?",
+          "answer": "Das gehört zum Fach Theoretical Computer Science (Theoretische Informatik)."
+        }
+      }
+    },
+    {
+      "id": "cse_010_algorithms",
+      "category": "curriculum",
+      "scope": "cse",
+      "applies_to": null,
+      "sources": [
+        "https://vgu.edu.vn/eu/study-programs/bachelor/cs/program-structure"
+      ],
+      "verification": {
+        "method": "search_index",
+        "date": null
+      },
+      "flags": [],
+      "caveat": null,
+      "ai_drafted": [
+        "de"
+      ],
+      "translations": {
+        "vi": {
+          "question": "CSE có học cấu trúc dữ liệu và giải thuật không?",
+          "answer": "Có. Chương trình có môn Data Structures and Algorithms, tức Cấu trúc dữ liệu và giải thuật."
+        },
+        "en": {
+          "question": "Are data structures and algorithms included?",
+          "answer": "Yes. Data Structures and Algorithms is part of the program."
+        },
+        "de": {
+          "question": "Gibt es in CSE Datenstrukturen und Algorithmen?",
+          "answer": "Ja. Das Programm enthält das Fach Data Structures and Algorithms (Datenstrukturen und Algorithmen)."
+        }
+      }
+    },
+    {
+      "id": "cse_011_architecture",
+      "category": "curriculum",
+      "scope": "cse",
+      "applies_to": null,
+      "sources": [
+        "https://vgu.edu.vn/eu/study-programs/bachelor/cs/program-structure"
+      ],
+      "verification": {
+        "method": "search_index",
+        "date": null
+      },
+      "flags": [],
+      "caveat": null,
+      "ai_drafted": [
+        "de"
+      ],
+      "translations": {
+        "vi": {
+          "question": "CSE có học kiến trúc máy tính không?",
+          "answer": "Có. Bạn sẽ học nội dung này trong môn Computer Architecture."
+        },
+        "en": {
+          "question": "Is computer architecture included?",
+          "answer": "Yes. The program includes Computer Architecture."
+        },
+        "de": {
+          "question": "Wird in CSE Rechnerarchitektur unterrichtet?",
+          "answer": "Ja. Das behandelst du im Fach Computer Architecture."
+        }
+      }
+    },
+    {
+      "id": "cse_012_database",
+      "category": "curriculum",
+      "scope": "cse",
+      "applies_to": null,
+      "sources": [
+        "https://vgu.edu.vn/eu/study-programs/bachelor/cs/program-structure"
+      ],
+      "verification": {
+        "method": "search_index",
+        "date": null
+      },
+      "flags": [],
+      "caveat": null,
+      "ai_drafted": [
+        "de"
+      ],
+      "translations": {
+        "vi": {
+          "question": "CSE có môn cơ sở dữ liệu không?",
+          "answer": "Có. Databases là môn cơ sở dữ liệu được liệt kê trong chương trình."
+        },
+        "en": {
+          "question": "Are databases included?",
+          "answer": "Yes. Databases is one of the subjects listed in the program."
+        },
+        "de": {
+          "question": "Gibt es in CSE ein Datenbank-Fach?",
+          "answer": "Ja. Databases (Datenbanken) steht im Studienplan."
+        }
+      }
+    },
+    {
+      "id": "cse_013_software",
+      "category": "curriculum",
+      "scope": "cse",
+      "applies_to": null,
+      "sources": [
+        "https://vgu.edu.vn/eu/study-programs/bachelor/cs/program-structure"
+      ],
+      "verification": {
+        "method": "search_index",
+        "date": null
+      },
+      "flags": [],
+      "caveat": null,
+      "ai_drafted": [
+        "de"
+      ],
+      "translations": {
+        "vi": {
+          "question": "CSE có học kỹ thuật phần mềm không?",
+          "answer": "Có. Chương trình có môn Software Engineering, tức Kỹ thuật phần mềm."
+        },
+        "en": {
+          "question": "Is software engineering included?",
+          "answer": "Yes. Software Engineering is included in the program."
+        },
+        "de": {
+          "question": "Lernt man in CSE Softwaretechnik?",
+          "answer": "Ja. Das Programm enthält das Fach Software Engineering (Softwaretechnik)."
+        }
+      }
+    },
+    {
+      "id": "cse_014_network",
+      "category": "curriculum",
+      "scope": "cse",
+      "applies_to": null,
+      "sources": [
+        "https://vgu.edu.vn/eu/study-programs/bachelor/cs/program-structure"
+      ],
+      "verification": {
+        "method": "search_index",
+        "date": null
+      },
+      "flags": [],
+      "caveat": null,
+      "ai_drafted": [
+        "de"
+      ],
+      "translations": {
+        "vi": {
+          "question": "CSE có học mạng máy tính không?",
+          "answer": "Có. Mạng máy tính được học trong môn Computer Networks."
+        },
+        "en": {
+          "question": "Are computer networks included?",
+          "answer": "Yes. Computer Networks is included in the program."
+        },
+        "de": {
+          "question": "Gibt es in CSE Rechnernetze?",
+          "answer": "Ja. Rechnernetze werden im Fach Computer Networks behandelt."
+        }
+      }
+    },
+    {
+      "id": "cse_015_security",
+      "category": "curriculum",
+      "scope": "cse",
+      "applies_to": null,
+      "sources": [
+        "https://vgu.edu.vn/eu/study-programs/bachelor/cs/program-structure"
+      ],
+      "verification": {
+        "method": "search_index",
+        "date": null
+      },
+      "flags": [],
+      "caveat": null,
+      "ai_drafted": [
+        "de"
+      ],
+      "translations": {
+        "vi": {
+          "question": "CSE có học bảo mật không?",
+          "answer": "Có. Chương trình có môn IT Security về bảo mật công nghệ thông tin."
+        },
+        "en": {
+          "question": "Is security included?",
+          "answer": "Yes. The program includes IT Security."
+        },
+        "de": {
+          "question": "Gibt es in CSE IT-Sicherheit?",
+          "answer": "Ja. Das Programm enthält das Fach IT Security (IT-Sicherheit)."
+        }
+      }
+    },
+    {
+      "id": "cse_016_os",
+      "category": "curriculum",
+      "scope": "cse",
+      "applies_to": null,
+      "sources": [
+        "https://vgu.edu.vn/eu/study-programs/bachelor/cs/program-structure"
+      ],
+      "verification": {
+        "method": "search_index",
+        "date": null
+      },
+      "flags": [],
+      "caveat": null,
+      "ai_drafted": [
+        "de"
+      ],
+      "translations": {
+        "vi": {
+          "question": "CSE có học hệ điều hành không?",
+          "answer": "Có. Operating Systems là môn về hệ điều hành trong chương trình CSE."
+        },
+        "en": {
+          "question": "Are operating systems included?",
+          "answer": "Yes. Operating Systems is part of the CSE program."
+        },
+        "de": {
+          "question": "Gibt es in CSE Betriebssysteme?",
+          "answer": "Ja. Operating Systems (Betriebssysteme) gehört zum CSE-Programm."
+        }
+      }
+    },
+    {
+      "id": "cse_017_realtime",
+      "category": "curriculum",
+      "scope": "cse",
+      "applies_to": null,
+      "sources": [
+        "https://vgu.edu.vn/eu/study-programs/bachelor/cs/program-structure"
+      ],
+      "verification": {
+        "method": "search_index",
+        "date": null
+      },
+      "flags": [],
+      "caveat": null,
+      "ai_drafted": [
+        "de"
+      ],
+      "translations": {
+        "vi": {
+          "question": "CSE có học hệ thống thời gian thực không?",
+          "answer": "Có. Chương trình liệt kê môn Realtime Systems, tức Hệ thống thời gian thực."
+        },
+        "en": {
+          "question": "Are real-time systems included?",
+          "answer": "Yes. Realtime Systems is listed in the program."
+        },
+        "de": {
+          "question": "Gibt es in CSE Echtzeitsysteme?",
+          "answer": "Ja. Das Programm führt das Fach Realtime Systems (Echtzeitsysteme) auf."
+        }
+      }
+    },
+    {
+      "id": "cse_018_java",
+      "category": "curriculum",
+      "scope": "cse",
+      "applies_to": null,
+      "sources": [
+        "https://vgu.edu.vn/eu/study-programs/bachelor/cs/program-structure"
+      ],
+      "verification": {
+        "method": "search_index",
+        "date": null
+      },
+      "flags": [],
+      "caveat": null,
+      "ai_drafted": [
+        "de"
+      ],
+      "translations": {
+        "vi": {
+          "question": "CSE có học Java không?",
+          "answer": "Có. Java được đề cập trong phần lập trình nâng cao của chương trình."
+        },
+        "en": {
+          "question": "Is Java included?",
+          "answer": "Yes. Java is covered in the advanced programming part of the program."
+        },
+        "de": {
+          "question": "Lernt man in CSE Java?",
+          "answer": "Ja. Java wird im fortgeschrittenen Programmierteil des Programms behandelt."
+        }
+      }
+    },
+    {
+      "id": "cse_019_new_modules",
+      "category": "curriculum",
+      "scope": "cse",
+      "applies_to": null,
+      "sources": [
+        "https://vgu.edu.vn/eu/study-programs/bachelor/cs/program-structure"
+      ],
+      "verification": {
+        "method": "search_index",
+        "date": null
+      },
+      "flags": [],
+      "caveat": null,
+      "ai_drafted": [
+        "de"
+      ],
+      "translations": {
+        "vi": {
+          "question": "Chương trình CSE có bổ sung những môn mới nào?",
+          "answer": "Trang chương trình liệt kê ba học phần mới: IoT and Smart Devices, Introduction to Data Science and AI, và Compulsory Elective 2."
+        },
+        "en": {
+          "question": "Which new modules are listed for CSE?",
+          "answer": "The program page lists three new modules: IoT and Smart Devices, Introduction to Data Science and AI, and Compulsory Elective 2."
+        },
+        "de": {
+          "question": "Welche neuen Module werden für CSE aufgeführt?",
+          "answer": "Die Programmseite nennt drei neue Module: IoT and Smart Devices, Introduction to Data Science and AI und Compulsory Elective 2."
+        }
+      }
+    },
+    {
+      "id": "cse_020_current_topics",
+      "category": "curriculum",
+      "scope": "cse",
+      "applies_to": null,
+      "sources": [
+        "https://vgu.edu.vn/eu/study-programs/bachelor/cs/program-structure"
+      ],
+      "verification": {
+        "method": "search_index",
+        "date": null
+      },
+      "flags": [],
+      "caveat": null,
+      "ai_drafted": [
+        "de"
+      ],
+      "translations": {
+        "vi": {
+          "question": "Môn Current Topics có học giống nhau mỗi năm không?",
+          "answer": "Không cố định hoàn toàn. Nội dung Current Topics có thể thay đổi theo từng năm và giảng viên phụ trách."
+        },
+        "en": {
+          "question": "Does Current Topics cover the same material every year?",
+          "answer": "Not entirely. Current Topics can change from year to year depending on the lecturers involved."
+        },
+        "de": {
+          "question": "Ist der Inhalt von „Current Topics“ jedes Jahr gleich?",
+          "answer": "Nicht ganz. Die Inhalte von Current Topics können sich je nach Jahr und verantwortlicher Lehrperson ändern."
+        }
+      }
+    },
+    {
+      "id": "cse_021_elective_list",
+      "category": "curriculum",
+      "scope": "cse",
+      "applies_to": null,
+      "sources": [
+        "https://vgu.edu.vn/eu/study-programs/bachelor/cs/program-structure"
+      ],
+      "verification": {
+        "method": "search_index",
+        "date": null
+      },
+      "flags": [],
+      "caveat": null,
+      "ai_drafted": [
+        "de"
+      ],
+      "translations": {
+        "vi": {
+          "question": "Các môn tự chọn chuyên sâu gồm gì?",
+          "answer": "Các môn được liệt kê gồm Data Mining, IoT/Mobile Applications, Advanced IT Security, Machine Learning/Advanced AI và Medical Image Processing."
+        },
+        "en": {
+          "question": "Which advanced electives are listed?",
+          "answer": "The listed electives include Data Mining, IoT/Mobile Applications, Advanced IT Security, Machine Learning/Advanced AI and Medical Image Processing."
+        },
+        "de": {
+          "question": "Welche vertiefenden Wahlfächer gibt es?",
+          "answer": "Aufgeführt sind Data Mining, IoT/Mobile Applications, Advanced IT Security, Machine Learning/Advanced AI und Medical Image Processing."
+        }
+      }
+    },
+    {
+      "id": "cse_022_ic_date",
+      "category": "curriculum",
+      "scope": "cse",
+      "applies_to": null,
+      "sources": [
+        "https://vgu.edu.vn/eu/study-programs/bachelor/cs/program-structure"
+      ],
+      "verification": {
+        "method": "search_index",
+        "date": null
+      },
+      "flags": [],
+      "caveat": null,
+      "ai_drafted": [
+        "de"
+      ],
+      "translations": {
+        "vi": {
+          "question": "VGU bổ sung các môn IC Design từ khi nào?",
+          "answer": "Theo trang chương trình, nhóm môn tự chọn IC Design được bổ sung từ tháng 9/2024."
+        },
+        "en": {
+          "question": "When did VGU introduce the IC Design electives?",
+          "answer": "According to the program page, the IC Design electives were introduced in September 2024."
+        },
+        "de": {
+          "question": "Seit wann bietet die VGU IC-Design-Module an?",
+          "answer": "Laut Programmseite wurde die Wahlfachgruppe IC Design ab September 2024 ergänzt."
+        }
+      }
+    },
+    {
+      "id": "cse_023_ic_modules",
+      "category": "curriculum",
+      "scope": "cse",
+      "applies_to": null,
+      "sources": [
+        "https://vgu.edu.vn/eu/study-programs/bachelor/cs/program-structure"
+      ],
+      "verification": {
+        "method": "search_index",
+        "date": null
+      },
+      "flags": [],
+      "caveat": null,
+      "ai_drafted": [
+        "de"
+      ],
+      "translations": {
+        "vi": {
+          "question": "Hướng IC Design có những môn nào?",
+          "answer": "Các môn được nêu gồm HDL & Verification, Digital System Design, Digital VLSI Design và Project in IC Design."
+        },
+        "en": {
+          "question": "Which subjects are listed for the IC Design branch?",
+          "answer": "The page lists HDL & Verification, Digital System Design, Digital VLSI Design and Project in IC Design."
+        },
+        "de": {
+          "question": "Welche Module gehören zur Richtung IC Design?",
+          "answer": "Genannt werden HDL & Verification, Digital System Design, Digital VLSI Design und Project in IC Design."
+        }
+      }
+    },
+    {
+      "id": "cse_024_handbook",
+      "category": "curriculum",
+      "scope": "cse",
+      "applies_to": null,
+      "sources": [
+        "https://vgu.edu.vn/eu/study-programs/bachelor/cs/program-structure"
+      ],
+      "verification": {
+        "method": "search_index",
+        "date": null
+      },
+      "flags": [],
+      "caveat": null,
+      "ai_drafted": [
+        "de"
+      ],
+      "translations": {
+        "vi": {
+          "question": "Muốn xem chi tiết từng môn CSE thì tìm ở đâu?",
+          "answer": "Bạn có thể vào trang Program Structure của CSE và tìm đường dẫn module handbook để xem mô tả các môn."
+        },
+        "en": {
+          "question": "Where can I find details about each CSE module?",
+          "answer": "Go to the CSE Program Structure page and look for the module handbook link."
+        },
+        "de": {
+          "question": "Wo finde ich Details zu den einzelnen CSE-Modulen?",
+          "answer": "Auf der Seite Program Structure von CSE findest du den Link zum Modulhandbuch (module handbook) mit den Modulbeschreibungen."
+        }
+      }
+    },
+    {
+      "id": "cse_025_exact_schedule",
+      "category": "curriculum",
+      "scope": "cse",
+      "applies_to": null,
+      "sources": [
+        "https://vgu.edu.vn/eu/study-programs/bachelor/cs/program-structure"
+      ],
+      "verification": {
+        "method": "search_index",
+        "date": null
+      },
+      "flags": [
+        "needs_confirmation"
+      ],
+      "caveat": null,
+      "ai_drafted": [
+        "de"
+      ],
+      "translations": {
+        "vi": {
+          "question": "Có lịch học từng học kỳ của CSE khóa 2026 không?",
+          "answer": "Hiện chưa có bảng học kỳ khóa 2026 được xác nhận. Bạn nên gửi email đến cse@vgu.edu.vn để xin chương trình học đúng khóa."
+        },
+        "en": {
+          "question": "Is the semester-by-semester plan for CSE intake 2026 available?",
+          "answer": "The semester plan for intake 2026 has not been confirmed here. Email cse@vgu.edu.vn for your cohort's curriculum."
+        },
+        "de": {
+          "question": "Gibt es den Semesterplan für CSE im Jahrgang 2026?",
+          "answer": "Ein bestätigter Semesterplan für den Jahrgang 2026 liegt hier nicht vor. Schreib eine E-Mail an cse@vgu.edu.vn, um den Studienplan deines Jahrgangs zu erhalten."
+        }
+      }
+    },
+    {
+      "id": "cse_026_module_credits",
+      "category": "curriculum",
+      "scope": "cse",
+      "applies_to": null,
+      "sources": [
+        "https://vgu.edu.vn/eu/study-programs/bachelor/cs/program-structure"
+      ],
+      "verification": {
+        "method": "search_index",
+        "date": null
+      },
+      "flags": [
+        "needs_confirmation"
+      ],
+      "caveat": null,
+      "ai_drafted": [
+        "de"
+      ],
+      "translations": {
+        "vi": {
+          "question": "Mỗi học phần có bao nhiêu ECTS?",
+          "answer": "Số ECTS của từng môn cần xem trong module handbook đúng khóa. Hiện chưa có bảng tín chỉ từng môn đã được xác nhận."
+        },
+        "en": {
+          "question": "How many ECTS does each module carry?",
+          "answer": "Check your cohort's module handbook for each subject's ECTS. A confirmed module-by-module credit list is not yet available."
+        },
+        "de": {
+          "question": "Wie viele ECTS hat jedes Modul?",
+          "answer": "Die ECTS pro Fach findest du im Modulhandbuch deines Jahrgangs. Eine bestätigte Credit-Liste pro Modul liegt noch nicht vor."
+        }
+      }
+    },
+    {
+      "id": "cse_027_fields",
+      "category": "specializations",
+      "scope": "cse",
+      "applies_to": null,
+      "sources": [
+        "https://tuyensinh.vgu.edu.vn/en/chuong-trinh-dai-hoc/khoa-hoc-may-tinh"
+      ],
+      "verification": {
+        "method": null,
+        "date": null
+      },
+      "flags": [],
+      "caveat": null,
+      "ai_drafted": [
+        "de"
+      ],
+      "translations": {
+        "vi": {
+          "question": "CSE ở VGU có những hướng chuyên sâu nào?",
+          "answer": "Các hướng được giới thiệu gồm kỹ thuật phần mềm, IoT/ứng dụng di động, khoa học dữ liệu, AI/học máy và bảo mật CNTT."
+        },
+        "en": {
+          "question": "What focus areas does CSE at VGU offer?",
+          "answer": "The listed focus areas are software engineering, IoT/mobile applications, data science, AI/machine learning and IT security."
+        },
+        "de": {
+          "question": "Welche Vertiefungsrichtungen gibt es in CSE an der VGU?",
+          "answer": "Genannt werden Softwaretechnik, IoT/mobile Anwendungen, Data Science, KI/maschinelles Lernen und IT-Sicherheit."
+        }
+      }
+    },
+    {
+      "id": "cse_028_ai_track",
+      "category": "specializations",
+      "scope": "cse",
+      "applies_to": null,
+      "sources": [
+        "https://tuyensinh.vgu.edu.vn/en/chuong-trinh-dai-hoc/khoa-hoc-may-tinh"
+      ],
+      "verification": {
+        "method": null,
+        "date": null
+      },
+      "flags": [],
+      "caveat": null,
+      "ai_drafted": [
+        "de"
+      ],
+      "translations": {
+        "vi": {
+          "question": "CSE có học về AI và Machine Learning không?",
+          "answer": "Có. AI và Machine Learning là một trong các hướng được chương trình giới thiệu."
+        },
+        "en": {
+          "question": "Does CSE include AI and machine learning?",
+          "answer": "Yes. AI and machine learning are listed among the program's focus areas."
+        },
+        "de": {
+          "question": "Gibt es in CSE KI und maschinelles Lernen?",
+          "answer": "Ja. KI und Machine Learning gehören zu den im Programm vorgestellten Richtungen."
+        }
+      }
+    },
+    {
+      "id": "cse_029_data_track",
+      "category": "specializations",
+      "scope": "cse",
+      "applies_to": null,
+      "sources": [
+        "https://tuyensinh.vgu.edu.vn/en/chuong-trinh-dai-hoc/khoa-hoc-may-tinh"
+      ],
+      "verification": {
+        "method": null,
+        "date": null
+      },
+      "flags": [],
+      "caveat": null,
+      "ai_drafted": [
+        "de"
+      ],
+      "translations": {
+        "vi": {
+          "question": "Học CSE có thể theo hướng Data Science không?",
+          "answer": "Có. Data Science, tức Khoa học dữ liệu, là một hướng được giới thiệu trong CSE."
+        },
+        "en": {
+          "question": "Is Data Science a focus area in CSE?",
+          "answer": "Yes. Data Science is one of the listed CSE focus areas."
+        },
+        "de": {
+          "question": "Kann man bei CSE Data Science als Richtung wählen?",
+          "answer": "Ja. Data Science ist eine der im CSE-Programm vorgestellten Richtungen."
+        }
+      }
+    },
+    {
+      "id": "cse_030_cyber_track",
+      "category": "specializations",
+      "scope": "cse",
+      "applies_to": null,
+      "sources": [
+        "https://tuyensinh.vgu.edu.vn/en/chuong-trinh-dai-hoc/khoa-hoc-may-tinh"
+      ],
+      "verification": {
+        "method": null,
+        "date": null
+      },
+      "flags": [],
+      "caveat": null,
+      "ai_drafted": [
+        "de"
+      ],
+      "translations": {
+        "vi": {
+          "question": "Muốn theo cybersecurity thì CSE có hướng phù hợp không?",
+          "answer": "Có. CSE có hướng IT Security, liên quan đến bảo mật công nghệ thông tin."
+        },
+        "en": {
+          "question": "Does CSE have a cybersecurity-related focus?",
+          "answer": "Yes. CSE lists IT Security as a focus area related to cybersecurity."
+        },
+        "de": {
+          "question": "Gibt es bei CSE eine Richtung für Cybersecurity?",
+          "answer": "Ja. CSE bietet die Richtung IT Security (IT-Sicherheit)."
+        }
+      }
+    },
+    {
+      "id": "cse_031_track_selection",
+      "category": "specializations",
+      "scope": "cse",
+      "applies_to": null,
+      "sources": [
+        "https://vgu.edu.vn/eu/study-programs/bachelor/cs/program-structure"
+      ],
+      "verification": {
+        "method": "search_index",
+        "date": null
+      },
+      "flags": [
+        "needs_confirmation"
+      ],
+      "caveat": null,
+      "ai_drafted": [
+        "de"
+      ],
+      "translations": {
+        "vi": {
+          "question": "Sinh viên chọn hướng chuyên sâu vào học kỳ nào?",
+          "answer": "Thời điểm chọn hướng có thể phụ thuộc vào khóa học. Bạn nên hỏi điều phối viên CSE trước khi đăng ký môn vì mốc này chưa được xác nhận."
+        },
+        "en": {
+          "question": "When do students select a focus area?",
+          "answer": "The timing may depend on your cohort. Ask the CSE coordinator before choosing modules, as the selection date has not been confirmed here."
+        },
+        "de": {
+          "question": "In welchem Semester wählt man die Vertiefungsrichtung?",
+          "answer": "Der Zeitpunkt kann vom Jahrgang abhängen. Frag vor der Modulwahl die CSE-Koordination, da der Termin noch nicht bestätigt ist."
+        }
+      }
+    },
+    {
+      "id": "cse_032_separate_degree",
+      "category": "specializations",
+      "scope": "cse",
+      "applies_to": null,
+      "sources": [
+        "https://vgu.edu.vn/eu/study-programs/bachelor/cs/program-structure"
+      ],
+      "verification": {
+        "method": "search_index",
+        "date": null
+      },
+      "flags": [
+        "needs_confirmation"
+      ],
+      "caveat": null,
+      "ai_drafted": [
+        "de"
+      ],
+      "translations": {
+        "vi": {
+          "question": "Học IC Design có được bằng riêng về vi mạch không?",
+          "answer": "Chưa thể kết luận là có bằng riêng. Trang chương trình mới nêu các môn tự chọn về IC Design; bạn cần xem thêm quy định cấp bằng áp dụng cho khóa của mình."
+        },
+        "en": {
+          "question": "Does the IC Design branch award a separate degree?",
+          "answer": "A separate degree has not been confirmed. The page lists IC Design electives, so check your cohort's award regulations for the actual degree arrangement."
+        },
+        "de": {
+          "question": "Bekommt man für IC Design einen eigenen Abschluss in Mikroelektronik?",
+          "answer": "Das lässt sich nicht bestätigen. Die Programmseite nennt bisher nur IC-Design-Wahlmodule; die Regelungen zur Abschlussvergabe für deinen Jahrgang musst du zusätzlich prüfen."
+        }
+      }
+    },
+    {
+      "id": "cse_033_purpose",
+      "category": "foundation_year",
+      "scope": "cse",
+      "applies_to": null,
+      "sources": [
+        "https://vgu.edu.vn/eu/study-programs/bachelor/fy"
+      ],
+      "verification": {
+        "method": "search_index",
+        "date": null
+      },
+      "flags": [],
+      "caveat": null,
+      "ai_drafted": [
+        "de"
+      ],
+      "translations": {
+        "vi": {
+          "question": "Năm FY giúp chuẩn bị gì trước khi vào chuyên ngành?",
+          "answer": "FY giúp bạn chuẩn bị tiếng Anh học thuật, ôn toán và khoa học, đồng thời làm quen với kỹ năng học tập và phần mềm."
+        },
+        "en": {
+          "question": "What does FY prepare me for before degree studies?",
+          "answer": "FY helps you build academic English, review mathematics and science, and get used to study skills and relevant software."
+        },
+        "de": {
+          "question": "Worauf bereitet das FY vor dem Fachstudium vor?",
+          "answer": "Das FY bereitet dich in akademischem Englisch, Mathematik und Naturwissenschaften vor und führt in Lerntechniken und Software ein."
+        }
+      }
+    },
+    {
+      "id": "cse_034_german",
+      "category": "foundation_year",
+      "scope": "cse",
+      "applies_to": null,
+      "sources": [
+        "https://vgu.edu.vn/eu/study-programs/bachelor/fy"
+      ],
+      "verification": {
+        "method": "search_index",
+        "date": null
+      },
+      "flags": [],
+      "caveat": null,
+      "ai_drafted": [
+        "de"
+      ],
+      "translations": {
+        "vi": {
+          "question": "Năm FY có học tiếng Đức không?",
+          "answer": "Có. FY có mục tiêu xây dựng nền tảng tiếng Đức, nhưng lịch học cụ thể sẽ tùy nhóm của bạn."
+        },
+        "en": {
+          "question": "Does FY include German?",
+          "answer": "Yes. FY includes German-language preparation, although the schedule depends on your group."
+        },
+        "de": {
+          "question": "Wird im FY Deutsch unterrichtet?",
+          "answer": "Ja. Das FY soll eine Grundlage in Deutsch schaffen; der konkrete Stundenplan hängt von deiner Gruppe ab."
+        }
+      }
+    },
+    {
+      "id": "cse_035_presentation",
+      "category": "foundation_year",
+      "scope": "cse",
+      "applies_to": null,
+      "sources": [
+        "https://vgu.edu.vn/eu/study-programs/bachelor/fy"
+      ],
+      "verification": {
+        "method": "search_index",
+        "date": null
+      },
+      "flags": [],
+      "caveat": null,
+      "ai_drafted": [
+        "de"
+      ],
+      "translations": {
+        "vi": {
+          "question": "FY có luyện thuyết trình không?",
+          "answer": "Có. Bạn sẽ được rèn kỹ năng thuyết trình bằng tiếng Anh trong FY."
+        },
+        "en": {
+          "question": "Does FY develop presentation skills?",
+          "answer": "Yes. FY includes practice in giving presentations in English."
+        },
+        "de": {
+          "question": "Übt man im FY das Präsentieren?",
+          "answer": "Ja. Im FY trainierst du Präsentationen auf Englisch."
+        }
+      }
+    },
+    {
+      "id": "cse_036_writing",
+      "category": "foundation_year",
+      "scope": "cse",
+      "applies_to": null,
+      "sources": [
+        "https://vgu.edu.vn/eu/study-programs/bachelor/fy"
+      ],
+      "verification": {
+        "method": "search_index",
+        "date": null
+      },
+      "flags": [],
+      "caveat": null,
+      "ai_drafted": [
+        "de"
+      ],
+      "translations": {
+        "vi": {
+          "question": "FY có học viết học thuật không?",
+          "answer": "Có. Viết học thuật là một trong những kỹ năng được rèn trong FY."
+        },
+        "en": {
+          "question": "Does FY include academic writing?",
+          "answer": "Yes. Academic writing is one of the skills developed during FY."
+        },
+        "de": {
+          "question": "Lernt man im FY wissenschaftliches Schreiben?",
+          "answer": "Ja. Akademisches Schreiben gehört zu den im FY trainierten Fähigkeiten."
+        }
+      }
+    },
+    {
+      "id": "cse_037_phases",
+      "category": "foundation_year",
+      "scope": "cse",
+      "applies_to": null,
+      "sources": [
+        "https://vgu.edu.vn/study-programs/bachelor/fy/program-structure"
+      ],
+      "verification": {
+        "method": "search_index",
+        "date": null
+      },
+      "flags": [],
+      "caveat": null,
+      "ai_drafted": [
+        "de"
+      ],
+      "translations": {
+        "vi": {
+          "question": "FY được chia thành mấy giai đoạn?",
+          "answer": "Theo cấu trúc chung, FY gồm 4 phase trong 2 học kỳ. Mỗi phase kéo dài 8 tuần."
+        },
+        "en": {
+          "question": "How many phases are there in FY?",
+          "answer": "The general FY structure has four phases across two semesters, with eight weeks per phase."
+        },
+        "de": {
+          "question": "In wie viele Phasen gliedert sich das FY?",
+          "answer": "Nach der allgemeinen Struktur besteht das FY aus 4 Phasen in 2 Semestern. Jede Phase dauert 8 Wochen."
+        }
+      }
+    },
+    {
+      "id": "cse_038_placement",
+      "category": "foundation_year",
+      "scope": "cse",
+      "applies_to": null,
+      "sources": [
+        "https://vgu.edu.vn/study-programs/bachelor/fy/program-structure"
+      ],
+      "verification": {
+        "method": "search_index",
+        "date": null
+      },
+      "flags": [],
+      "caveat": null,
+      "ai_drafted": [
+        "de"
+      ],
+      "translations": {
+        "vi": {
+          "question": "EPT dùng để làm gì?",
+          "answer": "EPT dùng để xếp bạn vào nhóm tiếng Anh phù hợp. Một số chứng chỉ hợp lệ có thể giúp bạn được miễn bài kiểm tra này."
+        },
+        "en": {
+          "question": "What is the EPT for?",
+          "answer": "The EPT places you in an appropriate English group. Some valid certificates can exempt you from the test."
+        },
+        "de": {
+          "question": "Wofür ist der EPT da?",
+          "answer": "Der EPT dient dazu, dich in die passende Englischgruppe einzustufen. Mit bestimmten gültigen Zertifikaten kannst du von diesem Test befreit werden."
+        }
+      }
+    },
+    {
+      "id": "cse_039_completion_credits",
+      "category": "foundation_year",
+      "scope": "cse",
+      "applies_to": null,
+      "sources": [
+        "https://vgu.edu.vn/study-programs/bachelor/fy/program-structure"
+      ],
+      "verification": {
+        "method": "search_index",
+        "date": null
+      },
+      "flags": [],
+      "caveat": null,
+      "ai_drafted": [
+        "de"
+      ],
+      "translations": {
+        "vi": {
+          "question": "FY yêu cầu hoàn thành bao nhiêu tín chỉ?",
+          "answer": "Theo hướng dẫn chung, bạn cần hoàn thành ít nhất 80% tổng tín chỉ FY của ngành."
+        },
+        "en": {
+          "question": "What is the FY credit-completion threshold?",
+          "answer": "The general guidance requires you to complete at least 80% of your program's FY credits."
+        },
+        "de": {
+          "question": "Wie viele Credits muss man im FY abschließen?",
+          "answer": "Nach den allgemeinen Vorgaben musst du mindestens 80 % der gesamten FY-Credits deines Studiengangs bestehen."
+        }
+      }
+    },
+    {
+      "id": "cse_040_deadline",
+      "category": "foundation_year",
+      "scope": "cse",
+      "applies_to": {
+        "year": 2024,
+        "basis": "document"
+      },
+      "sources": [
+        "https://vgu.edu.vn/documents/10192/8332876/LCFY%2BRegulation_EN.pdf/4156e77c-ca99-477f-8dcc-d11e139d1dfc"
+      ],
+      "verification": {
+        "method": null,
+        "date": null
+      },
+      "flags": [
+        "needs_confirmation"
+      ],
+      "caveat": null,
+      "ai_drafted": [
+        "de"
+      ],
+      "translations": {
+        "vi": {
+          "question": "Khóa CSE của mình phải nộp IELTS trước ngày nào?",
+          "answer": "Bạn nên hỏi LCFY về hạn nộp của đúng khóa mình. Tài liệu công khai có các mốc khác nhau trong tháng 8 và cho phép điều chỉnh, nên chưa thể chốt một ngày chung."
+        },
+        "en": {
+          "question": "When does my CSE cohort need to submit IELTS results?",
+          "answer": "Ask LCFY for your cohort's deadline. The public document gives different August dates and allows adjustments, so a single deadline cannot be confirmed here."
+        },
+        "de": {
+          "question": "Bis wann muss mein CSE-Jahrgang das IELTS-Zertifikat einreichen?",
+          "answer": "Frag beim LCFY nach der Frist für deinen Jahrgang. Die öffentlichen Unterlagen nennen unterschiedliche Termine im August und erlauben Anpassungen, daher lässt sich kein einheitliches Datum nennen."
+        }
+      }
+    },
+    {
+      "id": "cse_041_methods",
+      "category": "admission",
+      "scope": "university",
+      "applies_to": {
+        "year": 2026,
+        "basis": "intake"
+      },
+      "sources": [
+        "https://tuyensinh.vgu.edu.vn/nhaphoc-1"
+      ],
+      "verification": {
+        "method": null,
+        "date": null
+      },
+      "flags": [],
+      "caveat": null,
+      "ai_drafted": [
+        "de"
+      ],
+      "translations": {
+        "vi": {
+          "question": "VGU có các phương thức tuyển sinh nào?",
+          "answer": "VGU có 5 phương thức: TestAS, xét học bạ, tuyển thẳng, xét chứng chỉ quốc tế và xét điểm thi tốt nghiệp THPT."
+        },
+        "en": {
+          "question": "Which admission routes are available?",
+          "answer": "VGU has five admission routes: TestAS, school records, direct admission, international qualifications and high-school graduation-exam results."
+        },
+        "de": {
+          "question": "Welche Zulassungsverfahren gibt es an der VGU?",
+          "answer": "Die VGU hat 5 Verfahren: TestAS, Bewerbung mit Schulzeugnissen, Direktzulassung, Anerkennung internationaler Zertifikate und Bewerbung mit den Ergebnissen der nationalen Abschlussprüfung (THPT)."
+        }
+      }
+    },
+    {
+      "id": "cse_042_multiple",
+      "category": "admission",
+      "scope": "cse",
+      "applies_to": {
+        "year": 2026,
+        "basis": "intake"
+      },
+      "sources": [
+        "https://tuyensinh.vgu.edu.vn/nhaphoc-1"
+      ],
+      "verification": {
+        "method": null,
+        "date": null
+      },
+      "flags": [],
+      "caveat": null,
+      "ai_drafted": [
+        "de"
+      ],
+      "translations": {
+        "vi": {
+          "question": "Mình có thể đăng ký nhiều phương thức xét tuyển không?",
+          "answer": "Có. Bạn có thể đăng ký nhiều phương thức; kết quả của từng phương thức được xét riêng."
+        },
+        "en": {
+          "question": "Can I apply through more than one admission route?",
+          "answer": "Yes. You can apply through more than one route, and each route is assessed separately."
+        },
+        "de": {
+          "question": "Kann ich mich über mehrere Verfahren bewerben?",
+          "answer": "Ja. Du kannst mehrere Verfahren nutzen; die Ergebnisse jedes Verfahrens werden getrennt bewertet."
+        }
+      }
+    },
+    {
+      "id": "cse_043_portal",
+      "category": "admission",
+      "scope": "university",
+      "applies_to": {
+        "year": 2026,
+        "basis": "intake"
+      },
+      "sources": [
+        "https://tuyensinh.vgu.edu.vn/nhaphoc-1"
+      ],
+      "verification": {
+        "method": null,
+        "date": null
+      },
+      "flags": [],
+      "caveat": null,
+      "ai_drafted": [
+        "de"
+      ],
+      "translations": {
+        "vi": {
+          "question": "Nộp hồ sơ VGU ở đâu?",
+          "answer": "Bạn nộp hồ sơ trực tuyến tại https://apply.vgu.edu.vn."
+        },
+        "en": {
+          "question": "Where do I submit an application?",
+          "answer": "You can submit your application online at https://apply.vgu.edu.vn."
+        },
+        "de": {
+          "question": "Wo reiche ich die Bewerbung bei der VGU ein?",
+          "answer": "Du bewirbst dich online unter https://apply.vgu.edu.vn."
+        }
+      }
+    },
+    {
+      "id": "cse_044_testas_module",
+      "category": "admission",
+      "scope": "cse",
+      "applies_to": {
+        "year": 2026,
+        "basis": "intake"
+      },
+      "sources": [
+        "https://tuyensinh.vgu.edu.vn/nhaphoc-1"
+      ],
+      "verification": {
+        "method": null,
+        "date": null
+      },
+      "flags": [],
+      "caveat": null,
+      "ai_drafted": [
+        "de"
+      ],
+      "translations": {
+        "vi": {
+          "question": "Muốn vào CSE thì chọn module nào của TestAS?",
+          "answer": "Nếu đăng ký CSE, Subject Module cần dùng là Mathematics, Computer Science and Natural Sciences."
+        },
+        "en": {
+          "question": "Which TestAS subject module should I choose for CSE?",
+          "answer": "For CSE, the required subject module is Mathematics, Computer Science and Natural Sciences."
+        },
+        "de": {
+          "question": "Welches TestAS-Modul brauche ich für CSE?",
+          "answer": "Für CSE ist das Subject Module Mathematics, Computer Science and Natural Sciences erforderlich."
+        }
+      }
+    },
+    {
+      "id": "cse_045_testas_weight",
+      "category": "admission",
+      "scope": "cse",
+      "applies_to": {
+        "year": 2026,
+        "basis": "intake"
+      },
+      "sources": [
+        "https://tuyensinh.vgu.edu.vn/nhaphoc-1"
+      ],
+      "verification": {
+        "method": null,
+        "date": null
+      },
+      "flags": [],
+      "caveat": null,
+      "ai_drafted": [
+        "de"
+      ],
+      "translations": {
+        "vi": {
+          "question": "Điểm Digital TestAS được tính thế nào?",
+          "answer": "Điểm tổng hợp Digital TestAS được tính bằng 40% điểm Core cộng với 60% điểm Subject Module."
+        },
+        "en": {
+          "question": "How is Digital TestAS weighted?",
+          "answer": "The combined Digital TestAS score is 40% of your Core score plus 60% of your Subject Module score."
+        },
+        "de": {
+          "question": "Wie wird das Ergebnis des Digital TestAS berechnet?",
+          "answer": "Das Gesamtergebnis des Digital TestAS setzt sich zu 40 % aus dem Core-Test und zu 60 % aus dem Subject Module zusammen."
+        }
+      }
+    },
+    {
+      "id": "cse_046_testas_floor",
+      "category": "admission",
+      "scope": "cse",
+      "applies_to": {
+        "year": 2026,
+        "basis": "intake"
+      },
+      "sources": [
+        "https://tuyensinh.vgu.edu.vn/nhaphoc-1"
+      ],
+      "verification": {
+        "method": null,
+        "date": null
+      },
+      "flags": [],
+      "caveat": null,
+      "ai_drafted": [
+        "de"
+      ],
+      "translations": {
+        "vi": {
+          "question": "Digital TestAS được 50 điểm mỗi phần là đủ đậu chưa?",
+          "answer": "Chưa. Mức 50 điểm mỗi phần chỉ là yêu cầu tối thiểu cho từng phần. Bạn vẫn phải đạt điểm chuẩn và các điều kiện xét tuyển khác."
+        },
+        "en": {
+          "question": "Is 50 in each Digital TestAS part enough to get admitted?",
+          "answer": "No. A score of 50 in each part only meets the component minimum. You still need to meet the admission cutoff and other requirements."
+        },
+        "de": {
+          "question": "Reichen beim Digital TestAS 50 Punkte pro Teil zum Bestehen?",
+          "answer": "Nein. 50 Punkte pro Teil sind nur die Mindestanforderung für jeden einzelnen Teil. Du musst außerdem die Aufnahmeschwelle und die übrigen Zulassungsbedingungen erfüllen."
+        }
+      }
+    },
+    {
+      "id": "cse_047_paper_testas",
+      "category": "admission",
+      "scope": "cse",
+      "applies_to": {
+        "year": 2026,
+        "basis": "intake"
+      },
+      "sources": [
+        "https://tuyensinh.vgu.edu.vn/nhaphoc-1"
+      ],
+      "verification": {
+        "method": null,
+        "date": null
+      },
+      "flags": [],
+      "caveat": null,
+      "ai_drafted": [
+        "de"
+      ],
+      "translations": {
+        "vi": {
+          "question": "TestAS giấy yêu cầu tối thiểu mỗi phần bao nhiêu?",
+          "answer": "Mỗi phần của TestAS giấy cần đạt ít nhất 90 điểm. Ngoài ra, bạn vẫn phải đáp ứng các điều kiện xét tuyển còn lại."
+        },
+        "en": {
+          "question": "What is the paper TestAS component minimum?",
+          "answer": "Each paper-based TestAS component must be at least 90. The remaining admission requirements still apply."
+        },
+        "de": {
+          "question": "Welche Mindestpunktzahl gilt beim TestAS auf Papier pro Teil?",
+          "answer": "Jeder Teil des Papier-TestAS erfordert mindestens 90 Punkte. Außerdem musst du die übrigen Zulassungsbedingungen erfüllen."
+        }
+      }
+    },
+    {
+      "id": "cse_048_transcript_year",
+      "category": "admission",
+      "scope": "cse",
+      "applies_to": {
+        "year": 2026,
+        "basis": "intake"
+      },
+      "sources": [
+        "https://tuyensinh.vgu.edu.vn/nhaphoc-1"
+      ],
+      "verification": {
+        "method": null,
+        "date": null
+      },
+      "flags": [],
+      "caveat": null,
+      "ai_drafted": [
+        "de"
+      ],
+      "translations": {
+        "vi": {
+          "question": "Mình tốt nghiệp THPT trước năm 2026 thì có xét học bạ năm 2026 được không?",
+          "answer": "Không theo phương thức 2 của năm 2026. Phương thức này chỉ dành cho thí sinh tốt nghiệp THPT tại Việt Nam trong năm 2026."
+        },
+        "en": {
+          "question": "Can I use the 2026 school-record route if I graduated before 2026?",
+          "answer": "Not through Method 2 for 2026. That route is limited to students graduating from Vietnamese high schools in 2026."
+        },
+        "de": {
+          "question": "Ich habe vor 2026 die Schule abgeschlossen. Kann ich mich 2026 mit Schulzeugnissen bewerben?",
+          "answer": "Nicht über Verfahren 2 im Jahr 2026. Dieses Verfahren gilt nur für Personen, die 2026 in Vietnam die Schule (THPT) abschließen."
+        }
+      }
+    },
+    {
+      "id": "cse_049_supplement_cutoffs",
+      "category": "admission",
+      "scope": "cse",
+      "applies_to": {
+        "year": 2026,
+        "basis": "intake"
+      },
+      "sources": [
+        "https://tuyensinh.vgu.edu.vn/post/th%C3%B4ng-b%C3%A1o-tuy%E1%BB%83n-sinh-b%E1%BB%95-sung-n%C4%83m-2026"
+      ],
+      "verification": {
+        "method": null,
+        "date": null
+      },
+      "flags": [
+        "past_round"
+      ],
+      "caveat": null,
+      "ai_drafted": [
+        "de"
+      ],
+      "translations": {
+        "vi": {
+          "question": "Đợt tuyển sinh bổ sung CSE năm 2026 nhận hồ sơ từ mức điểm nào?",
+          "answer": "Trong đợt bổ sung năm 2026, mức nhận hồ sơ CSE là 20 điểm với phương thức 5 và 8,04 với phương thức 2. Đây là mức của đợt bổ sung đó."
+        },
+        "en": {
+          "question": "What were the CSE application thresholds for the 2026 supplementary round?",
+          "answer": "For the 2026 supplementary round, the CSE application thresholds were 20 for Method 5 and 8.04 for Method 2. These figures apply to that round only."
+        },
+        "de": {
+          "question": "Ab welcher Punktzahl nimmt CSE in der Zusatzrunde 2026 Bewerbungen an?",
+          "answer": "In der Zusatzrunde 2026 liegt die Annahmeschwelle für CSE bei 20 Punkten (Verfahren 5) bzw. 8,04 (Verfahren 2). Das gilt nur für diese Zusatzrunde."
+        }
+      }
+    },
+    {
+      "id": "cse_050_application_open",
+      "category": "admission",
+      "scope": "cse",
+      "applies_to": {
+        "year": 2026,
+        "basis": "intake"
+      },
+      "sources": [
+        "https://tuyensinh.vgu.edu.vn/post/th%C3%B4ng-b%C3%A1o-tuy%E1%BB%83n-sinh-b%E1%BB%95-sung-n%C4%83m-2026"
+      ],
+      "verification": {
+        "method": null,
+        "date": null
+      },
+      "flags": [
+        "needs_confirmation"
+      ],
+      "caveat": null,
+      "ai_drafted": [
+        "de"
+      ],
+      "translations": {
+        "vi": {
+          "question": "Bây giờ còn đăng ký CSE cho năm 2026 được không?",
+          "answer": "Đợt bổ sung đã công bố kết thúc chậm nhất ngày 30/09/2026, hoặc sớm hơn nếu đủ hồ sơ. Bạn cần hỏi phòng tuyển sinh xem có đợt tiếp theo không."
+        },
+        "en": {
+          "question": "Can I still apply for CSE for the 2026 intake?",
+          "answer": "The announced supplementary round ended by 30 September 2026, or earlier if enough applications were received. Ask admissions whether another round is available."
+        },
+        "de": {
+          "question": "Kann ich mich jetzt noch für CSE 2026 bewerben?",
+          "answer": "Die Zusatzrunde endet laut Ankündigung spätestens am 30.09.2026, oder früher, wenn genug Bewerbungen vorliegen. Frag bei der Zulassungsstelle nach, ob es eine weitere Runde gibt."
+        }
+      }
+    },
+    {
+      "id": "cse_051_ielts_entry",
+      "category": "english_requirement",
+      "scope": "cse",
+      "applies_to": {
+        "year": 2026,
+        "basis": "intake"
+      },
+      "sources": [
+        "https://tuyensinh.vgu.edu.vn/post/th%C3%B4ng-b%C3%A1o-tuy%E1%BB%83n-sinh-b%E1%BB%95-sung-n%C4%83m-2026"
+      ],
+      "verification": {
+        "method": null,
+        "date": null
+      },
+      "flags": [],
+      "caveat": null,
+      "ai_drafted": [
+        "de"
+      ],
+      "translations": {
+        "vi": {
+          "question": "IELTS đầu vào tối thiểu là bao nhiêu?",
+          "answer": "Một cách đáp ứng yêu cầu đầu vào là có IELTS Academic từ 5.0, còn hiệu lực khi nộp hồ sơ, hoặc chứng chỉ tương đương được VGU chấp nhận."
+        },
+        "en": {
+          "question": "What is the entrance IELTS minimum?",
+          "answer": "One way to meet the entrance English requirement is a valid IELTS Academic score of at least 5.0, or an equivalent accepted by VGU."
+        },
+        "de": {
+          "question": "Wie hoch muss das IELTS bei der Bewerbung mindestens sein?",
+          "answer": "Eine Möglichkeit, die Eingangsvoraussetzung zu erfüllen, ist IELTS Academic mit mindestens 5.0, das bei der Bewerbung noch gültig ist, oder ein von der VGU anerkanntes gleichwertiges Zertifikat."
+        }
+      }
+    },
+    {
+      "id": "cse_052_etest_score",
+      "category": "english_requirement",
+      "scope": "cse",
+      "applies_to": {
+        "year": 2026,
+        "basis": "intake"
+      },
+      "sources": [
+        "https://tuyensinh.vgu.edu.vn/post/th%C3%B4ng-b%C3%A1o-tuy%E1%BB%83n-sinh-b%E1%BB%95-sung-n%C4%83m-2026"
+      ],
+      "verification": {
+        "method": null,
+        "date": null
+      },
+      "flags": [],
+      "caveat": null,
+      "ai_drafted": [
+        "de"
+      ],
+      "translations": {
+        "vi": {
+          "question": "ETEST cần đạt bao nhiêu?",
+          "answer": "Bạn cần đạt ít nhất 75/100 điểm ETEST và thi trong năm tuyển sinh."
+        },
+        "en": {
+          "question": "What ETEST score is required?",
+          "answer": "You need at least 75 out of 100 on ETEST, taken in the admission year."
+        },
+        "de": {
+          "question": "Wie viele Punkte braucht man beim ETEST?",
+          "answer": "Du brauchst mindestens 75 von 100 Punkten im ETEST und musst ihn im Bewerbungsjahr ablegen."
+        }
+      }
+    },
+    {
+      "id": "cse_053_etest_skills",
+      "category": "english_requirement",
+      "scope": "cse",
+      "applies_to": {
+        "year": 2026,
+        "basis": "intake"
+      },
+      "sources": [
+        "https://tuyensinh.vgu.edu.vn/post/th%C3%B4ng-b%C3%A1o-tuy%E1%BB%83n-sinh-b%E1%BB%95-sung-n%C4%83m-2026"
+      ],
+      "verification": {
+        "method": null,
+        "date": null
+      },
+      "flags": [],
+      "caveat": null,
+      "ai_drafted": [
+        "de"
+      ],
+      "translations": {
+        "vi": {
+          "question": "ETEST kiểm tra những kỹ năng nào?",
+          "answer": "ETEST kiểm tra đủ 4 kỹ năng: nghe, nói, đọc và viết."
+        },
+        "en": {
+          "question": "Which skills does ETEST assess?",
+          "answer": "ETEST tests all four skills: listening, speaking, reading and writing."
+        },
+        "de": {
+          "question": "Welche Fertigkeiten prüft der ETEST?",
+          "answer": "Der ETEST prüft alle vier Fertigkeiten: Hören, Sprechen, Lesen und Schreiben."
+        }
+      }
+    },
+    {
+      "id": "cse_054_school_english",
+      "category": "english_requirement",
+      "scope": "cse",
+      "applies_to": {
+        "year": 2026,
+        "basis": "intake"
+      },
+      "sources": [
+        "https://tuyensinh.vgu.edu.vn/post/th%C3%B4ng-b%C3%A1o-tuy%E1%BB%83n-sinh-b%E1%BB%95-sung-n%C4%83m-2026"
+      ],
+      "verification": {
+        "method": null,
+        "date": null
+      },
+      "flags": [],
+      "caveat": null,
+      "ai_drafted": [
+        "de"
+      ],
+      "translations": {
+        "vi": {
+          "question": "Dùng điểm tiếng Anh học bạ để vào CSE năm 2026 thì cần bao nhiêu?",
+          "answer": "Với CSE năm 2026, điểm tiếng Anh trung bình ba năm THPT cần từ 8,0/10. Cách này chỉ áp dụng cho phương thức 2 và 5."
+        },
+        "en": {
+          "question": "What school-English average do I need for CSE admission in 2026?",
+          "answer": "For CSE admission in 2026, your three-year high-school English average must be at least 8.0 out of 10. This option applies only to Methods 2 and 5."
+        },
+        "de": {
+          "question": "Welche Englischnote brauche ich mit Schulzeugnis für CSE 2026?",
+          "answer": "Für CSE 2026 muss der Durchschnitt der Englischnoten der drei THPT-Jahre mindestens 8,0 von 10 betragen. Das gilt nur für die Verfahren 2 und 5."
+        }
+      }
+    },
+    {
+      "id": "cse_055_progression",
+      "category": "english_requirement",
+      "scope": "cse",
+      "applies_to": null,
+      "sources": [
+        "https://vgu.edu.vn/study-programs/bachelor/fy/program-structure"
+      ],
+      "verification": {
+        "method": "search_index",
+        "date": null
+      },
+      "flags": [],
+      "caveat": null,
+      "ai_drafted": [
+        "de"
+      ],
+      "translations": {
+        "vi": {
+          "question": "Có IELTS 5.0 đầu vào rồi thì đã đủ điều kiện tiếng Anh để kết thúc FY chưa?",
+          "answer": "Chưa đủ theo hướng dẫn FY. IELTS 5.0 là mức đầu vào, còn trang FY yêu cầu chứng chỉ IELTS từ 6.0 để hoàn thành giai đoạn này."
+        },
+        "en": {
+          "question": "Does entrance IELTS 5.0 also meet the English requirement for finishing FY?",
+          "answer": "Not under the FY guidance. IELTS 5.0 is an entrance requirement, while the FY page requires an IELTS certificate of at least 6.0 for completion."
+        },
+        "de": {
+          "question": "Reicht ein IELTS von 5.0 bei der Aufnahme schon, um das FY abzuschließen?",
+          "answer": "Nein, laut FY-Vorgaben nicht. IELTS 5.0 ist die Eingangsstufe; die FY-Seite verlangt ein IELTS-Zertifikat mit mindestens 6.0, um diese Phase abzuschließen."
+        }
+      }
+    },
+    {
+      "id": "cse_057_domestic",
+      "category": "tuition",
+      "scope": "cse",
+      "applies_to": {
+        "year": 2026,
+        "basis": "intake"
+      },
+      "sources": [
+        "https://vgu.edu.vn/en/tuition-fees/for-bachelor-programs"
+      ],
+      "verification": {
+        "method": "search_index",
+        "date": null
+      },
+      "flags": [],
+      "caveat": null,
+      "ai_drafted": [
+        "de"
+      ],
+      "translations": {
+        "vi": {
+          "question": "Sinh viên Việt Nam khóa CSE 2026 đóng học phí bao nhiêu?",
+          "answer": "Với sinh viên Việt Nam nhập học CSE khóa 2026, học phí là 43.700.000 đồng mỗi học kỳ."
+        },
+        "en": {
+          "question": "How much do Vietnamese students in CSE intake 2026 pay per semester?",
+          "answer": "For Vietnamese students entering CSE in 2026, tuition is VND 43,700,000 per semester."
+        },
+        "de": {
+          "question": "Wie hoch sind die Studiengebühren für vietnamesische Studierende im CSE-Jahrgang 2026?",
+          "answer": "Für vietnamesische Studierende, die 2026 in CSE beginnen, betragen die Studiengebühren 43.700.000 VND pro Semester."
+        }
+      }
+    },
+    {
+      "id": "cse_058_international",
+      "category": "tuition",
+      "scope": "cse",
+      "applies_to": {
+        "year": 2026,
+        "basis": "intake"
+      },
+      "sources": [
+        "https://vgu.edu.vn/en/tuition-fees/for-bachelor-programs"
+      ],
+      "verification": {
+        "method": "search_index",
+        "date": null
+      },
+      "flags": [],
+      "caveat": null,
+      "ai_drafted": [
+        "de"
+      ],
+      "translations": {
+        "vi": {
+          "question": "Học phí CSE 2026 cho sinh viên quốc tế là bao nhiêu?",
+          "answer": "Mức niêm yết cho sinh viên quốc tế khóa 2026 là 65.550.000 đồng mỗi học kỳ. Một số đối tượng được áp dụng ngoại lệ."
+        },
+        "en": {
+          "question": "What is the international CSE intake-2026 rate?",
+          "answer": "The listed international rate for intake 2026 is VND 65,550,000 per semester. Exceptions apply to certain student groups."
+        },
+        "de": {
+          "question": "Wie hoch sind die CSE-Studiengebühren 2026 für internationale Studierende?",
+          "answer": "Der ausgewiesene Satz für internationale Studierende des Jahrgangs 2026 beträgt 65.550.000 VND pro Semester. Für bestimmte Gruppen gelten Ausnahmen."
+        }
+      }
+    },
+    {
+      "id": "cse_059_fixed",
+      "category": "tuition",
+      "scope": "cse",
+      "applies_to": {
+        "year": 2026,
+        "basis": "intake"
+      },
+      "sources": [
+        "https://vgu.edu.vn/en/tuition-fees/for-bachelor-programs"
+      ],
+      "verification": {
+        "method": "search_index",
+        "date": null
+      },
+      "flags": [],
+      "caveat": null,
+      "ai_drafted": [
+        "de"
+      ],
+      "translations": {
+        "vi": {
+          "question": "Học phí có giữ nguyên theo khóa không?",
+          "answer": "Theo thông báo học phí, mức thu mỗi học kỳ được giữ nguyên trong thời gian đào tạo chuẩn của khóa."
+        },
+        "en": {
+          "question": "Is the semester tuition fixed for an intake?",
+          "answer": "The fee notice states that the semester rate stays the same throughout the intake's standard study period."
+        },
+        "de": {
+          "question": "Bleiben die Studiengebühren über den Jahrgang hinweg gleich?",
+          "answer": "Laut Gebührenmitteilung bleibt der Betrag pro Semester während der Regelstudienzeit des Jahrgangs unverändert."
+        }
+      }
+    },
+    {
+      "id": "cse_060_annual",
+      "category": "tuition",
+      "scope": "cse",
+      "applies_to": {
+        "year": 2026,
+        "basis": "intake"
+      },
+      "sources": [
+        "https://vgu.edu.vn/en/tuition-fees/for-bachelor-programs"
+      ],
+      "verification": {
+        "method": "search_index",
+        "date": null
+      },
+      "flags": [
+        "estimate"
+      ],
+      "caveat": null,
+      "ai_drafted": [
+        "de"
+      ],
+      "translations": {
+        "vi": {
+          "question": "Tính 2 học kỳ thì học phí CSE khóa 2026 khoảng bao nhiêu?",
+          "answer": "Nếu tính 2 học kỳ theo mức dành cho sinh viên Việt Nam khóa 2026, học phí là khoảng 87.400.000 đồng (2 × 43.700.000). Số này chưa gồm các khoản khác."
+        },
+        "en": {
+          "question": "How much would two semesters of CSE tuition cost for intake 2026?",
+          "answer": "For a Vietnamese student in intake 2026, two semesters come to VND 87,400,000 (2 × 43,700,000), excluding other costs."
+        },
+        "de": {
+          "question": "Wie hoch sind die Gebühren für 2 Semester CSE im Jahrgang 2026?",
+          "answer": "Für 2 Semester zum Satz für vietnamesische Studierende des Jahrgangs 2026 sind es etwa 87.400.000 VND (2 × 43.700.000), ohne sonstige Kosten."
+        }
+      }
+    },
+    {
+      "id": "cse_061_full_program",
+      "category": "tuition",
+      "scope": "cse",
+      "applies_to": {
+        "year": 2026,
+        "basis": "intake"
+      },
+      "sources": [
+        "https://vgu.edu.vn/en/tuition-fees/for-bachelor-programs",
+        "https://tuyensinh.vgu.edu.vn/en/chuong-trinh-dai-hoc/khoa-hoc-may-tinh"
+      ],
+      "verification": {
+        "method": "search_index",
+        "date": null
+      },
+      "flags": [
+        "estimate"
+      ],
+      "caveat": null,
+      "ai_drafted": [
+        "de"
+      ],
+      "translations": {
+        "vi": {
+          "question": "Học phí chuẩn 4 năm CSE khóa 2026 khoảng bao nhiêu?",
+          "answer": "Với sinh viên Việt Nam khóa 2026, tính theo 8 học kỳ, học phí ước tính là 349.600.000 đồng (8 × 43.700.000), trước khi trừ học bổng. Đây chưa phải tổng chi phí đi học vì chưa tính sinh hoạt, trao đổi và các khoản khác."
+        },
+        "en": {
+          "question": "What is the estimated four-year CSE tuition for intake 2026?",
+          "answer": "For a Vietnamese student in intake 2026, over eight semesters, estimated tuition is VND 349,600,000 (8 × 43,700,000) before scholarships. This excludes living expenses, exchange costs and other charges."
+        },
+        "de": {
+          "question": "Wie hoch sind die Studiengebühren für das reguläre vierjährige CSE-Studium im Jahrgang 2026?",
+          "answer": "Für vietnamesische Studierende des Jahrgangs 2026 ergeben sich bei 8 Semestern geschätzt 349.600.000 VND (8 × 43.700.000), vor Abzug von Stipendien. Das sind nicht die Gesamtkosten des Studiums, da Lebenshaltung, Austausch und andere Kosten nicht enthalten sind."
+        }
+      }
+    },
+    {
+      "id": "cse_062_partner_fee",
+      "category": "tuition",
+      "scope": "cse",
+      "applies_to": {
+        "year": 2026,
+        "basis": "intake"
+      },
+      "sources": [
+        "https://vgu.edu.vn/en/tuition-fees/for-bachelor-programs"
+      ],
+      "verification": {
+        "method": "search_index",
+        "date": null
+      },
+      "flags": [
+        "needs_confirmation"
+      ],
+      "caveat": null,
+      "ai_drafted": [
+        "de"
+      ],
+      "translations": {
+        "vi": {
+          "question": "CSE có phải đóng phí giảng dạy cho trường đối tác không?",
+          "answer": "Mục phí đối tác dành cho CSE trong bảng công khai chưa đọc được rõ. Bạn nên hỏi trường hoặc xem quy định học phí đầy đủ để biết mình có phải đóng và đóng bao nhiêu."
+        },
+        "en": {
+          "question": "Is there a partner-university teaching fee for CSE?",
+          "answer": "The CSE partner-fee entry in the public table is unclear. Check the full fee regulation or ask VGU whether a fee applies to you and how much it is."
+        },
+        "de": {
+          "question": "Muss man für CSE eine Lehrgebühr an die Partneruniversität zahlen?",
+          "answer": "Der Posten für Partnergebühren zu CSE ist in der öffentlichen Tabelle nicht klar lesbar. Frag bei der Universität nach oder lies die vollständige Gebührenordnung, um zu erfahren, ob und wie viel du zahlen musst."
+        }
+      }
+    },
+    {
+      "id": "cse_063_directory",
+      "category": "scholarship",
+      "scope": "cse",
+      "applies_to": null,
+      "sources": [
+        "https://vgu.edu.vn/scholarships-for-bachelor-programs"
+      ],
+      "verification": {
+        "method": "search_index",
+        "date": null
+      },
+      "flags": [],
+      "caveat": null,
+      "ai_drafted": [
+        "de"
+      ],
+      "translations": {
+        "vi": {
+          "question": "Tra cứu học bổng cử nhân VGU ở đâu?",
+          "answer": "Bạn có thể xem các học bổng bậc cử nhân trên trang Scholarships for Bachelor Programs của VGU."
+        },
+        "en": {
+          "question": "Where can I find undergraduate scholarships?",
+          "answer": "You can find undergraduate scholarship information on VGU's Scholarships for Bachelor Programs page."
+        },
+        "de": {
+          "question": "Wo finde ich Bachelor-Stipendien der VGU?",
+          "answer": "Die Bachelor-Stipendien findest du auf der VGU-Seite Scholarships for Bachelor Programs."
+        }
+      }
+    },
+    {
+      "id": "cse_064_full_coverage",
+      "category": "scholarship",
+      "scope": "cse",
+      "applies_to": {
+        "year": 2026,
+        "basis": "intake"
+      },
+      "sources": [
+        "https://vgu.edu.vn/eu/vgu-full-merit-scholarship-for-intake-2026"
+      ],
+      "verification": {
+        "method": "search_index",
+        "date": null
+      },
+      "flags": [],
+      "caveat": null,
+      "ai_drafted": [
+        "de"
+      ],
+      "translations": {
+        "vi": {
+          "question": "Full Merit 2026 hỗ trợ gì?",
+          "answer": "Full Merit 2026 hỗ trợ 100% học phí trong lộ trình 4 năm, với điều kiện bạn tiếp tục đáp ứng yêu cầu duy trì học bổng."
+        },
+        "en": {
+          "question": "What does the 2026 Full Merit award cover?",
+          "answer": "Full Merit 2026 covers 100% of tuition over the four-year program, provided you continue to meet the renewal requirements."
+        },
+        "de": {
+          "question": "Was deckt das Full Merit 2026 ab?",
+          "answer": "Das Full-Merit-Stipendium 2026 übernimmt 100 % der Studiengebühren im vierjährigen Studienverlauf, sofern du die Bedingungen zur Beibehaltung weiter erfüllst."
+        }
+      }
+    },
+    {
+      "id": "cse_065_english",
+      "category": "scholarship",
+      "scope": "cse",
+      "applies_to": {
+        "year": 2026,
+        "basis": "intake"
+      },
+      "sources": [
+        "https://vgu.edu.vn/eu/vgu-full-merit-scholarship-for-intake-2026"
+      ],
+      "verification": {
+        "method": "search_index",
+        "date": null
+      },
+      "flags": [],
+      "caveat": null,
+      "ai_drafted": [
+        "de"
+      ],
+      "translations": {
+        "vi": {
+          "question": "Xin Full Merit 2026 thì cần IELTS bao nhiêu?",
+          "answer": "Bạn cần chứng chỉ tiếng Anh quốc tế hợp lệ tương đương IELTS Academic từ 7.0. Ngoài tiếng Anh, học bổng còn có yêu cầu về thành tích học tập."
+        },
+        "en": {
+          "question": "What IELTS level is needed to apply for Full Merit 2026?",
+          "answer": "You need a valid international English certificate equivalent to IELTS Academic 7.0 or above. Academic achievement requirements also apply."
+        },
+        "de": {
+          "question": "Welches IELTS brauche ich für das Full Merit 2026?",
+          "answer": "Du brauchst ein gültiges internationales Englischzertifikat, das IELTS Academic 7.0 entspricht. Zusätzlich gibt es Anforderungen an die Leistungen."
+        }
+      }
+    },
+    {
+      "id": "cse_066_academic",
+      "category": "scholarship",
+      "scope": "cse",
+      "applies_to": {
+        "year": 2026,
+        "basis": "intake"
+      },
+      "sources": [
+        "https://vgu.edu.vn/eu/vgu-full-merit-scholarship-for-intake-2026"
+      ],
+      "verification": {
+        "method": "search_index",
+        "date": null
+      },
+      "flags": [],
+      "caveat": null,
+      "ai_drafted": [
+        "de"
+      ],
+      "translations": {
+        "vi": {
+          "question": "Ngoài tiếng Anh, muốn xin Full Merit cần thành tích gì?",
+          "answer": "Bạn cần thuộc một trong các diện được quy định: đạt mức học bổng 100% qua TestAS, có giải thưởng trong các kỳ thi được chấp nhận, hoặc có điểm chứng chỉ học thuật quốc tế đủ mức học bổng 100%."
+        },
+        "en": {
+          "question": "What academic achievements are needed for Full Merit besides English?",
+          "answer": "You need to meet one of the listed academic routes: a 100% merit award through TestAS, a qualifying competition prize, or international academic test results qualifying for a 100% merit award."
+        },
+        "de": {
+          "question": "Welche Leistungen braucht man außer Englisch für das Full Merit?",
+          "answer": "Du musst zu einer der festgelegten Gruppen gehören: 100-%-Stipendienstufe über TestAS, Preise bei anerkannten Wettbewerben oder internationale Zertifikatsergebnisse, die für ein 100-%-Stipendium ausreichen."
+        }
+      }
+    },
+    {
+      "id": "cse_067_renewal",
+      "category": "scholarship",
+      "scope": "cse",
+      "applies_to": {
+        "year": 2026,
+        "basis": "intake"
+      },
+      "sources": [
+        "https://vgu.edu.vn/eu/vgu-full-merit-scholarship-for-intake-2026"
+      ],
+      "verification": {
+        "method": "search_index",
+        "date": null
+      },
+      "flags": [],
+      "caveat": null,
+      "ai_drafted": [
+        "de"
+      ],
+      "translations": {
+        "vi": {
+          "question": "Muốn giữ Full Merit từ năm 2 thì sinh viên CSE cần GPA bao nhiêu?",
+          "answer": "Từ năm 2, sinh viên CSE cần GPA tích lũy của năm trước từ 8,70 theo thang Việt Nam, hoặc tốt hơn 1,70 theo thang Đức để duy trì Full Merit."
+        },
+        "en": {
+          "question": "What GPA does a CSE student need to keep Full Merit from year two?",
+          "answer": "From year two, CSE students need a previous-year cumulative GPA of at least 8.70 on the Vietnamese scale, or better than 1.70 on the German scale, to keep Full Merit."
+        },
+        "de": {
+          "question": "Welchen GPA braucht man in CSE ab dem 2. Jahr, um das Full Merit zu behalten?",
+          "answer": "Ab dem 2. Jahr brauchen CSE-Studierende einen kumulierten GPA des Vorjahres von mindestens 8,70 (vietnamesische Skala) bzw. besser als 1,70 (deutsche Skala), um das Full Merit zu behalten."
+        }
+      }
+    },
+    {
+      "id": "cse_068_contact",
+      "category": "scholarship",
+      "scope": "cse",
+      "applies_to": {
+        "year": 2026,
+        "basis": "intake"
+      },
+      "sources": [
+        "https://vgu.edu.vn/eu/vgu-full-merit-scholarship-for-intake-2026"
+      ],
+      "verification": {
+        "method": "search_index",
+        "date": null
+      },
+      "flags": [],
+      "caveat": null,
+      "ai_drafted": [
+        "de"
+      ],
+      "translations": {
+        "vi": {
+          "question": "Muốn hỏi về học bổng và hạn nộp thì liên hệ ai?",
+          "answer": "Bạn có thể hỏi qua studentaffairs@vgu.edu.vn. Hiện chưa xác nhận được đợt nhận hồ sơ học bổng có còn mở hay không."
+        },
+        "en": {
+          "question": "Who should I contact about scholarships and application deadlines?",
+          "answer": "Email studentaffairs@vgu.edu.vn to ask. It is not confirmed whether scholarship applications are currently open."
+        },
+        "de": {
+          "question": "Wen kann ich zu Stipendien und Fristen fragen?",
+          "answer": "Schreib an studentaffairs@vgu.edu.vn. Ob die Stipendienbewerbung aktuell noch offen ist, ist nicht bestätigt."
+        }
+      }
+    },
+    {
+      "id": "cse_069_opportunity",
+      "category": "exchange",
+      "scope": "cse",
+      "applies_to": null,
+      "sources": [
+        "https://tuyensinh.vgu.edu.vn/en/chuong-trinh-dai-hoc/khoa-hoc-may-tinh"
+      ],
+      "verification": {
+        "method": null,
+        "date": null
+      },
+      "flags": [],
+      "caveat": null,
+      "ai_drafted": [
+        "de"
+      ],
+      "translations": {
+        "vi": {
+          "question": "CSE có cơ hội học tại Đức không?",
+          "answer": "Có. Trang giới thiệu CSE nêu cơ hội học tại Đức cho sinh viên năm cuối."
+        },
+        "en": {
+          "question": "Is there a study opportunity in Germany?",
+          "answer": "Yes. The CSE page describes an opportunity for final-year students to study in Germany."
+        },
+        "de": {
+          "question": "Gibt es bei CSE die Möglichkeit, in Deutschland zu studieren?",
+          "answer": "Ja. Die CSE-Seite nennt Möglichkeiten für Studierende im letzten Studienjahr, in Deutschland zu studieren."
+        }
+      }
+    },
+    {
+      "id": "cse_070_funding",
+      "category": "exchange",
+      "scope": "cse",
+      "applies_to": null,
+      "sources": [
+        "https://tuyensinh.vgu.edu.vn/en/chuong-trinh-dai-hoc/khoa-hoc-may-tinh"
+      ],
+      "verification": {
+        "method": null,
+        "date": null
+      },
+      "flags": [],
+      "caveat": null,
+      "ai_drafted": [
+        "de"
+      ],
+      "translations": {
+        "vi": {
+          "question": "Đi trao đổi CSE ở Đức thì ai trả chi phí?",
+          "answer": "Trang ngành nêu hai hình thức: đi bằng học bổng DAAD hoặc tự chi trả chi phí."
+        },
+        "en": {
+          "question": "How can a CSE study period in Germany be funded?",
+          "answer": "The program page mentions two options: a DAAD scholarship or self-funding."
+        },
+        "de": {
+          "question": "Wer zahlt einen Austausch in Deutschland bei CSE?",
+          "answer": "Die Studiengangsseite nennt zwei Wege: mit einem DAAD-Stipendium oder auf eigene Kosten."
+        }
+      }
+    },
+    {
+      "id": "cse_071_thesis_abroad",
+      "category": "exchange",
+      "scope": "cse",
+      "applies_to": null,
+      "sources": [
+        "https://tuyensinh.vgu.edu.vn/en/chuong-trinh-dai-hoc/khoa-hoc-may-tinh"
+      ],
+      "verification": {
+        "method": null,
+        "date": null
+      },
+      "flags": [],
+      "caveat": null,
+      "ai_drafted": [
+        "de"
+      ],
+      "translations": {
+        "vi": {
+          "question": "Có thể làm khóa luận tại Đức không?",
+          "answer": "Có cơ hội này. Trang CSE có đề cập việc sinh viên thực hiện khóa luận tại Đức."
+        },
+        "en": {
+          "question": "Can students do their thesis in Germany?",
+          "answer": "Yes, this is a possibility. The CSE page mentions opportunities to complete a thesis in Germany."
+        },
+        "de": {
+          "question": "Kann man die Abschlussarbeit in Deutschland schreiben?",
+          "answer": "Ja, diese Möglichkeit gibt es. Die CSE-Seite erwähnt, dass Studierende ihre Abschlussarbeit in Deutschland anfertigen."
+        }
+      }
+    },
+    {
+      "id": "cse_072_guarantee",
+      "category": "exchange",
+      "scope": "cse",
+      "applies_to": null,
+      "sources": [
+        "https://tuyensinh.vgu.edu.vn/en/chuong-trinh-dai-hoc/khoa-hoc-may-tinh"
+      ],
+      "verification": {
+        "method": null,
+        "date": null
+      },
+      "flags": [
+        "needs_confirmation"
+      ],
+      "caveat": null,
+      "ai_drafted": [
+        "de"
+      ],
+      "translations": {
+        "vi": {
+          "question": "Sinh viên CSE nào cũng được đi Đức phải không?",
+          "answer": "Không thể xem đây là suất đi Đức chắc chắn cho mọi sinh viên. Bạn cần xem thông báo tuyển chọn áp dụng cho khóa của mình."
+        },
+        "en": {
+          "question": "Does every CSE student get to study in Germany?",
+          "answer": "A place in Germany is not guaranteed for every student. Check the selection notice that applies to your cohort."
+        },
+        "de": {
+          "question": "Dürfen alle CSE-Studierenden nach Deutschland?",
+          "answer": "Das lässt sich nicht als garantierter Platz für alle Studierenden verstehen. Prüfe die Ausschreibung für deinen Jahrgang."
+        }
+      }
+    },
+    {
+      "id": "cse_073_gpa",
+      "category": "exchange",
+      "scope": "cse",
+      "applies_to": null,
+      "sources": [
+        "https://vgu.edu.vn/eu/study-programs/bachelor/cs"
+      ],
+      "verification": {
+        "method": "search_index",
+        "date": null
+      },
+      "flags": [
+        "needs_confirmation"
+      ],
+      "caveat": null,
+      "ai_drafted": [
+        "de"
+      ],
+      "translations": {
+        "vi": {
+          "question": "Muốn đi trao đổi thì cần GPA và ngoại ngữ mức nào?",
+          "answer": "Mức GPA và ngoại ngữ theo từng đợt chưa được xác nhận ở đây. Bạn nên xin thông báo tuyển chọn qua cse@vgu.edu.vn."
+        },
+        "en": {
+          "question": "What GPA and language scores do I need for exchange?",
+          "answer": "The GPA and language thresholds for each round have not been confirmed here. Request the selection notice from cse@vgu.edu.vn."
+        },
+        "de": {
+          "question": "Welchen GPA und welche Sprachkenntnisse braucht man für den Austausch?",
+          "answer": "GPA und Sprachniveau je Auswahlrunde sind hier nicht bestätigt. Fordere die Ausschreibung unter cse@vgu.edu.vn an."
+        }
+      }
+    },
+    {
+      "id": "cse_074_budget",
+      "category": "exchange",
+      "scope": "cse",
+      "applies_to": null,
+      "sources": [
+        "https://vgu.edu.vn/eu/study-programs/bachelor/cs"
+      ],
+      "verification": {
+        "method": "search_index",
+        "date": null
+      },
+      "flags": [
+        "needs_confirmation"
+      ],
+      "caveat": null,
+      "ai_drafted": [
+        "de"
+      ],
+      "translations": {
+        "vi": {
+          "question": "Tự túc đi Đức cần tổng bao nhiêu tiền?",
+          "answer": "Chưa có một tổng chi phí được xác nhận. Để tính sát hơn, cần biết học kỳ, thành phố, phí trường đối tác, tiền nhà, bảo hiểm và đi lại."
+        },
+        "en": {
+          "question": "What is the total self-funded Germany budget?",
+          "answer": "There is no confirmed total budget here. An estimate needs your semester, destination city, partner fees, housing, insurance and travel costs."
+        },
+        "de": {
+          "question": "Wie viel kostet ein selbst finanzierter Aufenthalt in Deutschland insgesamt?",
+          "answer": "Eine bestätigte Gesamtsumme gibt es nicht. Für eine genauere Schätzung braucht man Semester, Stadt, Gebühren der Partneruniversität, Miete, Versicherung und Reisekosten."
+        }
+      }
+    },
+    {
+      "id": "cse_075_award_title",
+      "category": "degree",
+      "scope": "cse",
+      "applies_to": null,
+      "sources": [
+        "https://vgu.edu.vn/eu/study-programs/bachelor/cs/program-structure"
+      ],
+      "verification": {
+        "method": "search_index",
+        "date": null
+      },
+      "flags": [],
+      "caveat": null,
+      "ai_drafted": [
+        "de"
+      ],
+      "translations": {
+        "vi": {
+          "question": "Tên bằng tốt nghiệp CSE là gì?",
+          "answer": "Tên bằng được trang chương trình nêu là Bachelor of Science in Computer Science."
+        },
+        "en": {
+          "question": "What degree title is listed for CSE?",
+          "answer": "The degree title listed on the program page is Bachelor of Science in Computer Science."
+        },
+        "de": {
+          "question": "Wie heißt der CSE-Abschluss?",
+          "answer": "Laut Programmseite lautet der Titel Bachelor of Science in Computer Science."
+        }
+      }
+    },
+    {
+      "id": "cse_076_automatic_double",
+      "category": "degree",
+      "scope": "cse",
+      "applies_to": null,
+      "sources": [
+        "https://vgu.edu.vn/eu/study-programs/bachelor/cs"
+      ],
+      "verification": {
+        "method": "search_index",
+        "date": null
+      },
+      "flags": [
+        "needs_confirmation"
+      ],
+      "caveat": null,
+      "ai_drafted": [
+        "de"
+      ],
+      "translations": {
+        "vi": {
+          "question": "Học CSE là chắc chắn được nhận song bằng phải không?",
+          "answer": "Chưa thể khẳng định mọi sinh viên đều tự động nhận song bằng. Bạn cần xem quy định đúng khóa, trong đó ghi rõ trường cấp bằng và điều kiện hoàn thành."
+        },
+        "en": {
+          "question": "Does studying CSE guarantee a double degree?",
+          "answer": "A double degree should not be assumed to be automatic. Check your cohort's regulations for the awarding institutions and completion requirements."
+        },
+        "de": {
+          "question": "Bekommt man mit CSE sicher einen Doppelabschluss?",
+          "answer": "Dass alle Studierenden automatisch einen Doppelabschluss erhalten, lässt sich nicht bestätigen. Prüfe die Regelungen deines Jahrgangs, in denen die verleihende Hochschule und die Voraussetzungen stehen."
+        }
+      }
+    },
+    {
+      "id": "cse_077_exchange_degree",
+      "category": "degree",
+      "scope": "cse",
+      "applies_to": null,
+      "sources": [
+        "https://vgu.edu.vn/eu/study-programs/bachelor/cs"
+      ],
+      "verification": {
+        "method": "search_index",
+        "date": null
+      },
+      "flags": [
+        "needs_confirmation"
+      ],
+      "caveat": null,
+      "ai_drafted": [
+        "de"
+      ],
+      "translations": {
+        "vi": {
+          "question": "Chỉ cần đi trao đổi là được nhận bằng Đức phải không?",
+          "answer": "Chưa thể kết luận chỉ từ việc đi trao đổi. Bạn cần kiểm tra thỏa thuận song bằng cùng yêu cầu về học phần và khóa luận của khóa mình."
+        },
+        "en": {
+          "question": "Does going on exchange automatically give me a German degree?",
+          "answer": "Exchange alone does not establish eligibility for a German degree. Check your cohort's double-degree agreement and its coursework and thesis requirements."
+        },
+        "de": {
+          "question": "Bekomme ich allein durch den Austausch einen deutschen Abschluss?",
+          "answer": "Allein aus dem Austausch lässt sich das nicht schließen. Prüfe die Doppelabschluss-Vereinbarung sowie die Anforderungen an Module und Abschlussarbeit deines Jahrgangs."
+        }
+      }
+    },
+    {
+      "id": "cse_078_master_acceptance",
+      "category": "degree",
+      "scope": "cse",
+      "applies_to": null,
+      "sources": [
+        "https://vgu.edu.vn/eu/study-programs/bachelor/cs"
+      ],
+      "verification": {
+        "method": "search_index",
+        "date": null
+      },
+      "flags": [
+        "needs_confirmation"
+      ],
+      "caveat": null,
+      "ai_drafted": [
+        "de"
+      ],
+      "translations": {
+        "vi": {
+          "question": "Bằng CSE có đảm bảo được nhận học master ở Đức không?",
+          "answer": "Không có bảo đảm được nhận. Bạn cần đối chiếu bằng, bảng điểm và ngoại ngữ của mình với yêu cầu của từng chương trình master muốn nộp."
+        },
+        "en": {
+          "question": "Does CSE guarantee admission to a German master's program?",
+          "answer": "Admission is not guaranteed. Compare your degree, transcript and language qualifications with the requirements of each master's program you want to apply to."
+        },
+        "de": {
+          "question": "Garantiert der CSE-Abschluss einen Masterplatz in Deutschland?",
+          "answer": "Nein, eine Aufnahme ist nicht garantiert. Gleiche deinen Abschluss, dein Transcript und deine Sprachkenntnisse mit den Anforderungen des jeweiligen Masterprogramms ab."
+        }
+      }
+    },
+    {
+      "id": "cse_079_software_jobs",
+      "category": "career",
+      "scope": "cse",
+      "applies_to": null,
+      "sources": [
+        "https://tuyensinh.vgu.edu.vn/en/chuong-trinh-dai-hoc/khoa-hoc-may-tinh"
+      ],
+      "verification": {
+        "method": null,
+        "date": null
+      },
+      "flags": [],
+      "caveat": null,
+      "ai_drafted": [
+        "de"
+      ],
+      "translations": {
+        "vi": {
+          "question": "Học CSE xong có thể theo nghề phát triển phần mềm không?",
+          "answer": "Có. Phát triển phần mềm là một trong những hướng nghề nghiệp VGU giới thiệu cho ngành CSE."
+        },
+        "en": {
+          "question": "Can CSE lead to a career in software development?",
+          "answer": "Yes. Software development is one of the career directions VGU lists for CSE."
+        },
+        "de": {
+          "question": "Kann man nach CSE in die Softwareentwicklung gehen?",
+          "answer": "Ja. Softwareentwicklung ist einer der von der VGU für CSE vorgestellten Karrierewege."
+        }
+      }
+    },
+    {
+      "id": "cse_080_web_jobs",
+      "category": "career",
+      "scope": "cse",
+      "applies_to": null,
+      "sources": [
+        "https://tuyensinh.vgu.edu.vn/en/chuong-trinh-dai-hoc/khoa-hoc-may-tinh"
+      ],
+      "verification": {
+        "method": null,
+        "date": null
+      },
+      "flags": [],
+      "caveat": null,
+      "ai_drafted": [
+        "de"
+      ],
+      "translations": {
+        "vi": {
+          "question": "CSE có hướng nghề phát triển web không?",
+          "answer": "Có. Phát triển ứng dụng web nằm trong các hướng nghề nghiệp được giới thiệu."
+        },
+        "en": {
+          "question": "Is web development a career direction for CSE?",
+          "answer": "Yes. Web application development is one of the listed career areas."
+        },
+        "de": {
+          "question": "Gibt es bei CSE einen Karriereweg in der Webentwicklung?",
+          "answer": "Ja. Webanwendungsentwicklung gehört zu den vorgestellten Karrierewegen."
+        }
+      }
+    },
+    {
+      "id": "cse_081_data_jobs",
+      "category": "career",
+      "scope": "cse",
+      "applies_to": null,
+      "sources": [
+        "https://tuyensinh.vgu.edu.vn/en/chuong-trinh-dai-hoc/khoa-hoc-may-tinh"
+      ],
+      "verification": {
+        "method": null,
+        "date": null
+      },
+      "flags": [],
+      "caveat": null,
+      "ai_drafted": [
+        "de"
+      ],
+      "translations": {
+        "vi": {
+          "question": "Học CSE có thể theo những nghề nào về dữ liệu?",
+          "answer": "Các hướng nghề dữ liệu được nêu là Data Engineering và Data Science."
+        },
+        "en": {
+          "question": "What data-related careers are listed for CSE?",
+          "answer": "The listed data-related career areas are data engineering and data science."
+        },
+        "de": {
+          "question": "Welche Berufe im Datenbereich sind nach CSE möglich?",
+          "answer": "Genannt werden Data Engineering und Data Science."
+        }
+      }
+    },
+    {
+      "id": "cse_082_network_jobs",
+      "category": "career",
+      "scope": "cse",
+      "applies_to": null,
+      "sources": [
+        "https://tuyensinh.vgu.edu.vn/en/chuong-trinh-dai-hoc/khoa-hoc-may-tinh"
+      ],
+      "verification": {
+        "method": null,
+        "date": null
+      },
+      "flags": [],
+      "caveat": null,
+      "ai_drafted": [
+        "de"
+      ],
+      "translations": {
+        "vi": {
+          "question": "CSE có hướng nghề mạng và IoT không?",
+          "answer": "Có. Trang ngành có đề cập mạng máy tính và Internet of Things (IoT) trong phần nghề nghiệp."
+        },
+        "en": {
+          "question": "Are networking and IoT listed career areas?",
+          "answer": "Yes. The program page lists computer networks and the Internet of Things (IoT) among its career areas."
+        },
+        "de": {
+          "question": "Gibt es bei CSE Karrierewege in Netzwerken und IoT?",
+          "answer": "Ja. Die Studiengangsseite erwähnt Rechnernetze und das Internet der Dinge (IoT) im Karriereteil."
+        }
+      }
+    },
+    {
+      "id": "cse_083_career_support",
+      "category": "career",
+      "scope": "cse",
+      "applies_to": null,
+      "sources": [
+        "https://vgu.edu.vn/vi/career2"
+      ],
+      "verification": {
+        "method": "search_index",
+        "date": null
+      },
+      "flags": [],
+      "caveat": null,
+      "ai_drafted": [
+        "de"
+      ],
+      "translations": {
+        "vi": {
+          "question": "VGU có hỗ trợ tìm việc và thực tập không?",
+          "answer": "Có. Career Services hỗ trợ tư vấn nghề nghiệp, tìm cơ hội thực tập và việc làm, cũng như chuẩn bị CV và thư ứng tuyển."
+        },
+        "en": {
+          "question": "Does VGU offer career support?",
+          "answer": "Yes. Career Services offers career advice, internship and job opportunities, and support with CVs and cover letters."
+        },
+        "de": {
+          "question": "Unterstützt die VGU bei der Job- und Praktikumssuche?",
+          "answer": "Ja. Der Career Service hilft bei Karriereberatung, der Suche nach Praktika und Stellen sowie bei Lebenslauf und Anschreiben."
+        }
+      }
+    },
+    {
+      "id": "cse_084_career_email",
+      "category": "career",
+      "scope": "cse",
+      "applies_to": null,
+      "sources": [
+        "https://vgu.edu.vn/vi/career2"
+      ],
+      "verification": {
+        "method": "search_index",
+        "date": null
+      },
+      "flags": [],
+      "caveat": null,
+      "ai_drafted": [
+        "de"
+      ],
+      "translations": {
+        "vi": {
+          "question": "Email hỗ trợ nghề nghiệp VGU là gì?",
+          "answer": "Bạn có thể liên hệ bộ phận hỗ trợ nghề nghiệp qua careerservices@vgu.edu.vn."
+        },
+        "en": {
+          "question": "What is the Career Services email?",
+          "answer": "You can contact Career Services at careerservices@vgu.edu.vn."
+        },
+        "de": {
+          "question": "Wie lautet die E-Mail-Adresse der Karriereberatung der VGU?",
+          "answer": "Du erreichst die Karriereberatung unter careerservices@vgu.edu.vn."
+        }
+      }
+    },
+    {
+      "id": "cse_085_practice_components",
+      "category": "internship",
+      "scope": "cse",
+      "applies_to": null,
+      "sources": [
+        "https://vgu.edu.vn/eu/study-programs/bachelor/cs/program-structure"
+      ],
+      "verification": {
+        "method": "search_index",
+        "date": null
+      },
+      "flags": [],
+      "caveat": null,
+      "ai_drafted": [
+        "de"
+      ],
+      "translations": {
+        "vi": {
+          "question": "Cuối chương trình CSE có dự án, thực tập hay khóa luận không?",
+          "answer": "Các phần được liệt kê gồm Project, Practical Training Phase và Bachelor Thesis, tương ứng với dự án, thực tập và khóa luận."
+        },
+        "en": {
+          "question": "Does CSE include projects, an internship and a thesis?",
+          "answer": "The listed practical components are Project, Practical Training Phase and Bachelor Thesis."
+        },
+        "de": {
+          "question": "Gibt es am Ende von CSE Projekt, Praktikum oder Abschlussarbeit?",
+          "answer": "Aufgeführt sind Project, Practical Training Phase und Bachelor Thesis, also Projekt, Praktikum und Abschlussarbeit."
+        }
+      }
+    },
+    {
+      "id": "cse_086_duration",
+      "category": "internship",
+      "scope": "cse",
+      "applies_to": null,
+      "sources": [
+        "https://vgu.edu.vn/eu/study-programs/bachelor/cs/program-structure"
+      ],
+      "verification": {
+        "method": "search_index",
+        "date": null
+      },
+      "flags": [],
+      "caveat": null,
+      "ai_drafted": [
+        "de"
+      ],
+      "translations": {
+        "vi": {
+          "question": "Thực tập CSE kéo dài bao lâu?",
+          "answer": "Trang CSE mô tả thời gian thực tập là 14 tuần. Bạn vẫn nên đối chiếu với chương trình học áp dụng cho khóa mình."
+        },
+        "en": {
+          "question": "How long is the CSE practical training phase?",
+          "answer": "The CSE page describes a 14-week practical training phase. Check your cohort's curriculum to confirm the applicable duration."
+        },
+        "de": {
+          "question": "Wie lange dauert das CSE-Praktikum?",
+          "answer": "Die CSE-Seite nennt eine Praktikumsdauer von 14 Wochen. Gleiche das trotzdem mit dem Studienplan deines Jahrgangs ab."
+        }
+      }
+    },
+    {
+      "id": "cse_087_thesis_duration",
+      "category": "internship",
+      "scope": "cse",
+      "applies_to": null,
+      "sources": [
+        "https://vgu.edu.vn/eu/study-programs/bachelor/cs/program-structure"
+      ],
+      "verification": {
+        "method": "search_index",
+        "date": null
+      },
+      "flags": [],
+      "caveat": null,
+      "ai_drafted": [
+        "de"
+      ],
+      "translations": {
+        "vi": {
+          "question": "Sinh viên CSE có bao lâu để làm khóa luận?",
+          "answer": "Trang chương trình nêu thời gian khóa luận là 9 tuần. Bạn nên kiểm tra lại quy định của khóa mình trước khi lên kế hoạch."
+        },
+        "en": {
+          "question": "How long is the CSE thesis period?",
+          "answer": "The program page gives a thesis duration of nine weeks. Check your cohort's regulations before planning around that figure."
+        },
+        "de": {
+          "question": "Wie viel Zeit hat man für die Abschlussarbeit?",
+          "answer": "Die Programmseite nennt 9 Wochen für die Abschlussarbeit. Prüfe vor der Planung die Regelungen deines Jahrgangs."
+        }
+      }
+    },
+    {
+      "id": "cse_088_paid",
+      "category": "internship",
+      "scope": "cse",
+      "applies_to": null,
+      "sources": [
+        "https://vgu.edu.vn/eu/study-programs/bachelor/cs"
+      ],
+      "verification": {
+        "method": "search_index",
+        "date": null
+      },
+      "flags": [
+        "needs_confirmation"
+      ],
+      "caveat": null,
+      "ai_drafted": [
+        "de"
+      ],
+      "translations": {
+        "vi": {
+          "question": "Thực tập CSE có chắc được trả lương không?",
+          "answer": "Chưa có thông tin xác nhận rằng mọi kỳ thực tập đều được trả lương. Việc này phụ thuộc vào nơi thực tập và thỏa thuận của bạn với đơn vị đó."
+        },
+        "en": {
+          "question": "Are CSE internships guaranteed to be paid?",
+          "answer": "There is no confirmed guarantee that every internship is paid. Payment depends on the host organization and your internship agreement."
+        },
+        "de": {
+          "question": "Ist das CSE-Praktikum garantiert bezahlt?",
+          "answer": "Es gibt keine bestätigte Information, dass jedes Praktikum bezahlt wird. Das hängt vom Praktikumsplatz und deiner Vereinbarung mit dem Unternehmen ab."
+        }
+      }
+    },
+    {
+      "id": "cse_089_inventory",
+      "category": "facilities",
+      "scope": "cse",
+      "applies_to": null,
+      "sources": [
+        "https://vgu.edu.vn/eu/study-programs/bachelor/cs/laboratories"
+      ],
+      "verification": {
+        "method": "search_index",
+        "date": null
+      },
+      "flags": [],
+      "caveat": null,
+      "ai_drafted": [
+        "de"
+      ],
+      "translations": {
+        "vi": {
+          "question": "CSE có bao nhiêu phòng lab và máy tính?",
+          "answer": "Trang giới thiệu ghi 150 máy tính trong 5 phòng lab. Đây là số liệu trên website, chưa phải số lượng được kiểm kê lại ở thời điểm hiện tại."
+        },
+        "en": {
+          "question": "How many lab rooms and computers does CSE have?",
+          "answer": "The page lists 150 computers across five lab rooms. This is a published description, not a recently checked equipment inventory."
+        },
+        "de": {
+          "question": "Wie viele Labore und Computer hat CSE?",
+          "answer": "Die Programmseite nennt 150 Computer in 5 Laboren. Das ist die Angabe der Website, keine aktuell nachgeprüfte Bestandszahl."
+        }
+      }
+    },
+    {
+      "id": "cse_090_general_lab",
+      "category": "facilities",
+      "scope": "cse",
+      "applies_to": null,
+      "sources": [
+        "https://vgu.edu.vn/eu/study-programs/bachelor/cs/laboratories"
+      ],
+      "verification": {
+        "method": "search_index",
+        "date": null
+      },
+      "flags": [],
+      "caveat": null,
+      "ai_drafted": [
+        "de"
+      ],
+      "translations": {
+        "vi": {
+          "question": "General lab hỗ trợ những môn gì?",
+          "answer": "General lab phục vụ thực hành các nội dung như C/C++, hệ điều hành và cơ sở dữ liệu."
+        },
+        "en": {
+          "question": "What does the general lab support?",
+          "answer": "The general lab supports practice in areas such as C/C++, operating systems and databases."
+        },
+        "de": {
+          "question": "Wofür ist das General Lab da?",
+          "answer": "Das General Lab dient für praktische Übungen, etwa zu C/C++, Betriebssystemen und Datenbanken."
+        }
+      }
+    },
+    {
+      "id": "cse_091_network_lab",
+      "category": "facilities",
+      "scope": "cse",
+      "applies_to": null,
+      "sources": [
+        "https://vgu.edu.vn/eu/study-programs/bachelor/cs/laboratories"
+      ],
+      "verification": {
+        "method": "search_index",
+        "date": null
+      },
+      "flags": [],
+      "caveat": null,
+      "ai_drafted": [
+        "de"
+      ],
+      "translations": {
+        "vi": {
+          "question": "Networking lab có thiết bị gì?",
+          "answer": "Trang lab liệt kê máy tính, máy chủ, switch và access point, cùng công cụ mô phỏng mạng và bắt gói tin."
+        },
+        "en": {
+          "question": "What is listed in the networking lab?",
+          "answer": "The lab page lists computers, servers, switches and access points, along with network simulation and packet-capture tools."
+        },
+        "de": {
+          "question": "Welche Geräte hat das Networking Lab?",
+          "answer": "Die Laborseite listet Computer, Server, Switches und Access Points auf, dazu Werkzeuge zur Netzwerksimulation und zum Mitschneiden von Datenpaketen."
+        }
+      }
+    },
+    {
+      "id": "cse_092_security_lab",
+      "category": "facilities",
+      "scope": "cse",
+      "applies_to": null,
+      "sources": [
+        "https://vgu.edu.vn/eu/study-programs/bachelor/cs/laboratories"
+      ],
+      "verification": {
+        "method": "search_index",
+        "date": null
+      },
+      "flags": [],
+      "caveat": null,
+      "ai_drafted": [
+        "de"
+      ],
+      "translations": {
+        "vi": {
+          "question": "IT Security lab phục vụ việc gì?",
+          "answer": "Phòng này phục vụ việc dạy, học và làm dự án liên quan đến IT Security."
+        },
+        "en": {
+          "question": "What is the IT Security lab for?",
+          "answer": "The lab is used for IT Security teaching, learning and student projects."
+        },
+        "de": {
+          "question": "Wofür wird das IT Security Lab genutzt?",
+          "answer": "Der Raum dient Lehre, Lernen und Projekten rund um IT-Sicherheit."
+        }
+      }
+    },
+    {
+      "id": "cse_093_open_lab",
+      "category": "facilities",
+      "scope": "cse",
+      "applies_to": null,
+      "sources": [
+        "https://vgu.edu.vn/eu/study-programs/bachelor/cs/laboratories"
+      ],
+      "verification": {
+        "method": "search_index",
+        "date": null
+      },
+      "flags": [],
+      "caveat": null,
+      "ai_drafted": [
+        "de"
+      ],
+      "translations": {
+        "vi": {
+          "question": "Open computer lab dùng để làm gì?",
+          "answer": "Sinh viên có thể dùng open computer lab để làm việc nhóm và chuẩn bị dự án."
+        },
+        "en": {
+          "question": "What is the open computer lab for?",
+          "answer": "Students can use the open computer lab for group work and project planning."
+        },
+        "de": {
+          "question": "Wofür ist das Open Computer Lab da?",
+          "answer": "Studierende nutzen das Open Computer Lab für Gruppenarbeit und zur Projektvorbereitung."
+        }
+      }
+    },
+    {
+      "id": "cse_094_software",
+      "category": "facilities",
+      "scope": "cse",
+      "applies_to": null,
+      "sources": [
+        "https://vgu.edu.vn/eu/study-programs/bachelor/cs/laboratories"
+      ],
+      "verification": {
+        "method": "search_index",
+        "date": null
+      },
+      "flags": [],
+      "caveat": null,
+      "ai_drafted": [
+        "de"
+      ],
+      "translations": {
+        "vi": {
+          "question": "Phòng lab có những phần mềm nào?",
+          "answer": "Trang lab có liệt kê Matlab, Visual Studio, các công cụ C/C++ và VirtualBox."
+        },
+        "en": {
+          "question": "What software is listed for the labs?",
+          "answer": "The lab page lists Matlab, Visual Studio, C/C++ tools and VirtualBox."
+        },
+        "de": {
+          "question": "Welche Software gibt es in den Laboren?",
+          "answer": "Auf der Laborseite sind Matlab, Visual Studio, C/C++-Werkzeuge und VirtualBox aufgeführt."
+        }
+      }
+    },
+    {
+      "id": "cse_095_academic_contact",
+      "category": "faq",
+      "scope": "cse",
+      "applies_to": null,
+      "sources": [
+        "https://vgu.edu.vn/eu/study-programs/bachelor/cs"
+      ],
+      "verification": {
+        "method": "search_index",
+        "date": null
+      },
+      "flags": [],
+      "caveat": null,
+      "ai_drafted": [
+        "de"
+      ],
+      "translations": {
+        "vi": {
+          "question": "Muốn hỏi về chương trình học CSE thì gửi email cho ai?",
+          "answer": "Bạn có thể gửi câu hỏi về chương trình CSE đến cse@vgu.edu.vn."
+        },
+        "en": {
+          "question": "Who should I email about the CSE curriculum?",
+          "answer": "For questions about the CSE program, email cse@vgu.edu.vn."
+        },
+        "de": {
+          "question": "An wen schreibe ich Fragen zum CSE-Studienprogramm?",
+          "answer": "Fragen zum CSE-Programm kannst du an cse@vgu.edu.vn schicken."
+        }
+      }
+    },
+    {
+      "id": "cse_096_admission_contact",
+      "category": "faq",
+      "scope": "university",
+      "applies_to": {
+        "year": 2026,
+        "basis": "intake"
+      },
+      "sources": [
+        "https://tuyensinh.vgu.edu.vn/nhaphoc-1"
+      ],
+      "verification": {
+        "method": null,
+        "date": null
+      },
+      "flags": [],
+      "caveat": null,
+      "ai_drafted": [
+        "de"
+      ],
+      "translations": {
+        "vi": {
+          "question": "Hỏi tuyển sinh qua email nào?",
+          "answer": "Bạn có thể liên hệ phòng tuyển sinh qua study@vgu.edu.vn."
+        },
+        "en": {
+          "question": "Which email handles admissions enquiries?",
+          "answer": "You can contact admissions at study@vgu.edu.vn."
+        },
+        "de": {
+          "question": "An welche E-Mail-Adresse richte ich Zulassungsfragen?",
+          "answer": "Die Zulassungsstelle erreichst du unter study@vgu.edu.vn."
+        }
+      }
+    },
+    {
+      "id": "cse_097_ielts_registration",
+      "category": "faq",
+      "scope": "cse",
+      "applies_to": {
+        "year": 2026,
+        "basis": "intake"
+      },
+      "sources": [
+        "https://vgu.edu.vn/eu/study-programs/bachelor/fy/other-services"
+      ],
+      "verification": {
+        "method": "search_index",
+        "date": null
+      },
+      "flags": [],
+      "caveat": null,
+      "ai_drafted": [
+        "de"
+      ],
+      "translations": {
+        "vi": {
+          "question": "Hỏi đăng ký thi IELTS tại VGU ở đâu?",
+          "answer": "Bạn có thể hỏi qua fy@vgu.edu.vn để được hướng dẫn đăng ký và xác nhận lịch thi, chỗ còn trống."
+        },
+        "en": {
+          "question": "Who handles IELTS registration enquiries at VGU?",
+          "answer": "Email fy@vgu.edu.vn for registration guidance and to confirm test dates and available places."
+        },
+        "de": {
+          "question": "Wo frage ich nach der IELTS-Anmeldung an der VGU?",
+          "answer": "Schreib an fy@vgu.edu.vn, um Hinweise zur Anmeldung zu bekommen und Termine sowie freie Plätze bestätigen zu lassen."
+        }
+      }
+    },
+    {
+      "id": "cse_098_dorm_cost",
+      "category": "faq",
+      "scope": "cse",
+      "applies_to": {
+        "year": 2026,
+        "basis": "intake"
+      },
+      "sources": [
+        "https://tuyensinh.vgu.edu.vn/nhaphoc-1"
+      ],
+      "verification": {
+        "method": null,
+        "date": null
+      },
+      "flags": [
+        "needs_confirmation"
+      ],
+      "caveat": null,
+      "ai_drafted": [
+        "de"
+      ],
+      "translations": {
+        "vi": {
+          "question": "Ở ký túc xá VGU hiện tốn bao nhiêu?",
+          "answer": "Hiện chưa có bảng phí ký túc xá được xác nhận. Bạn nên hỏi VGU theo loại phòng và thời gian dự định ở."
+        },
+        "en": {
+          "question": "How much does it currently cost to stay in VGU's dormitory?",
+          "answer": "Current dormitory fees have not been confirmed. Ask VGU about the room type and length of stay you need."
+        },
+        "de": {
+          "question": "Wie viel kostet ein Platz im VGU-Wohnheim?",
+          "answer": "Eine bestätigte Gebührentabelle für das Wohnheim liegt derzeit nicht vor. Frag die VGU nach Zimmertyp und geplanter Aufenthaltsdauer."
+        }
+      }
+    },
+    {
+      "id": "cse_099_missed_classes",
+      "category": "faq",
+      "scope": "cse",
+      "applies_to": null,
+      "sources": [
+        "https://vgu.edu.vn/eu/study-programs/bachelor/cs"
+      ],
+      "verification": {
+        "method": "search_index",
+        "date": null
+      },
+      "flags": [
+        "needs_confirmation"
+      ],
+      "caveat": null,
+      "ai_drafted": [
+        "de"
+      ],
+      "translations": {
+        "vi": {
+          "question": "Mình nhập học trễ thì xin tài liệu những buổi đã học ở đâu?",
+          "answer": "Bạn nên liên hệ giảng viên và điều phối viên CSE để xin tài liệu, bài cần bổ sung và lịch học. Chatbot không có thông tin riêng của lớp bạn."
+        },
+        "en": {
+          "question": "Where can I get missed class materials if I enrolled late?",
+          "answer": "Ask your lecturer and CSE coordinator for missed materials, catch-up work and your schedule. The chatbot does not have access to your class-specific information."
+        },
+        "de": {
+          "question": "Ich bin spät eingeschrieben. Wo bekomme ich Unterlagen der verpassten Veranstaltungen?",
+          "answer": "Wende dich an die Lehrenden und die CSE-Koordination, um Unterlagen, Nachholaufgaben und den Stundenplan zu erhalten. Der Chatbot hat keine Informationen zu deiner individuellen Gruppe."
+        }
+      }
+    },
+    {
+      "id": "cse_100_salary",
+      "category": "faq",
+      "scope": "cse",
+      "applies_to": null,
+      "sources": [
+        "https://vgu.edu.vn/vi/career2"
+      ],
+      "verification": {
+        "method": "search_index",
+        "date": null
+      },
+      "flags": [
+        "needs_confirmation"
+      ],
+      "caveat": null,
+      "ai_drafted": [
+        "de"
+      ],
+      "translations": {
+        "vi": {
+          "question": "Lương khởi điểm của sinh viên CSE VGU là bao nhiêu?",
+          "answer": "Hiện chưa có khảo sát lương được xác nhận cho từng khóa CSE. Vì vậy, chưa có cơ sở để đưa ra một mức lương khởi điểm cụ thể."
+        },
+        "en": {
+          "question": "What is the starting salary of VGU CSE graduates?",
+          "answer": "A verified salary survey for CSE cohorts is not available, so a reliable starting-salary figure cannot be given."
+        },
+        "de": {
+          "question": "Wie hoch ist das Einstiegsgehalt von CSE-Absolventinnen und -Absolventen der VGU?",
+          "answer": "Eine bestätigte Gehaltsumfrage für CSE-Jahrgänge liegt nicht vor, daher lässt sich kein konkretes Einstiegsgehalt nennen."
+        }
+      }
+    },
+    {
+      "id": "cse_101_cs_reading_guide",
+      "category": "learning_resources",
+      "scope": "cse",
+      "applies_to": null,
+      "sources": [
+        "https://libguide.vgu.edu.vn/subjects/guide.php?subject=cs"
+      ],
+      "verification": {
+        "method": null,
+        "date": null
+      },
+      "flags": [
+        "reference_only"
+      ],
+      "caveat": null,
+      "ai_drafted": [
+        "de"
+      ],
+      "translations": {
+        "vi": {
+          "question": "Muốn tìm tài liệu học CSE của thư viện thì vào đâu?",
+          "answer": "Có. Thư viện VGU có trang Computer Science subject guide tổng hợp tài liệu liên quan đến ngành."
+        },
+        "en": {
+          "question": "Where can I find the library's CSE learning resources?",
+          "answer": "Yes. VGU Library has a Computer Science subject guide with relevant learning resources."
+        },
+        "de": {
+          "question": "Wo finde ich Lernmaterial der Bibliothek für CSE?",
+          "answer": "Die VGU-Bibliothek hat einen Computer Science Subject Guide, der Materialien zum Fach bündelt."
+        }
+      }
+    },
+    {
+      "id": "cse_102_c_book",
+      "category": "learning_resources",
+      "scope": "cse",
+      "applies_to": null,
+      "sources": [
+        "https://libguide.vgu.edu.vn/subjects/guide.php?subject=cs"
+      ],
+      "verification": {
+        "method": null,
+        "date": null
+      },
+      "flags": [
+        "reference_only"
+      ],
+      "caveat": null,
+      "ai_drafted": [
+        "de"
+      ],
+      "translations": {
+        "vi": {
+          "question": "Thư viện giới thiệu sách nào để học C?",
+          "answer": "Trang hướng dẫn có giới thiệu Programming in C của Stephen G. Kochan."
+        },
+        "en": {
+          "question": "Which C book does the library guide list?",
+          "answer": "The guide lists Programming in C by Stephen G. Kochan."
+        },
+        "de": {
+          "question": "Welches Buch empfiehlt die Bibliothek zum Lernen von C?",
+          "answer": "Der Guide nennt Programming in C von Stephen G. Kochan."
+        }
+      }
+    },
+    {
+      "id": "cse_103_discrete_book",
+      "category": "learning_resources",
+      "scope": "cse",
+      "applies_to": null,
+      "sources": [
+        "https://libguide.vgu.edu.vn/subjects/guide.php?subject=cs"
+      ],
+      "verification": {
+        "method": null,
+        "date": null
+      },
+      "flags": [
+        "reference_only"
+      ],
+      "caveat": null,
+      "ai_drafted": [
+        "de"
+      ],
+      "translations": {
+        "vi": {
+          "question": "Có sách toán rời rạc nào trong danh sách tài liệu CSE không?",
+          "answer": "Sách được liệt kê là Discrete Mathematics and Its Applications của Kenneth H. Rosen."
+        },
+        "en": {
+          "question": "Which discrete-mathematics book is in the CSE reading guide?",
+          "answer": "The guide lists Discrete Mathematics and Its Applications by Kenneth H. Rosen."
+        },
+        "de": {
+          "question": "Steht ein Buch zur Diskreten Mathematik in der CSE-Literaturliste?",
+          "answer": "Aufgeführt ist Discrete Mathematics and Its Applications von Kenneth H. Rosen."
+        }
+      }
+    },
+    {
+      "id": "cse_104_algorithm_book",
+      "category": "learning_resources",
+      "scope": "cse",
+      "applies_to": null,
+      "sources": [
+        "https://libguide.vgu.edu.vn/subjects/guide.php?subject=cs"
+      ],
+      "verification": {
+        "method": null,
+        "date": null
+      },
+      "flags": [
+        "reference_only"
+      ],
+      "caveat": null,
+      "ai_drafted": [
+        "de"
+      ],
+      "translations": {
+        "vi": {
+          "question": "Có sách tham khảo giải thuật bằng Java không?",
+          "answer": "Có. Trang hướng dẫn liệt kê Data Structures and Algorithms in Java của Goodrich và Tamassia."
+        },
+        "en": {
+          "question": "Is a Java algorithms reference listed?",
+          "answer": "Yes. The guide lists Data Structures and Algorithms in Java by Goodrich and Tamassia."
+        },
+        "de": {
+          "question": "Gibt es ein Algorithmen-Buch mit Java?",
+          "answer": "Ja. Der Guide nennt Data Structures and Algorithms in Java von Goodrich und Tamassia."
+        }
+      }
+    },
+    {
+      "id": "cse_105_software_book",
+      "category": "learning_resources",
+      "scope": "cse",
+      "applies_to": null,
+      "sources": [
+        "https://libguide.vgu.edu.vn/subjects/guide.php?subject=cs"
+      ],
+      "verification": {
+        "method": null,
+        "date": null
+      },
+      "flags": [
+        "reference_only"
+      ],
+      "caveat": null,
+      "ai_drafted": [
+        "de"
+      ],
+      "translations": {
+        "vi": {
+          "question": "Trang tài liệu CSE giới thiệu sách nào về kỹ thuật phần mềm?",
+          "answer": "Trang tài liệu có giới thiệu Software Engineering của Ian Sommerville."
+        },
+        "en": {
+          "question": "Which software-engineering book does the CSE guide list?",
+          "answer": "The guide lists Software Engineering by Ian Sommerville."
+        },
+        "de": {
+          "question": "Welches Softwaretechnik-Buch nennt der CSE-Guide?",
+          "answer": "Genannt wird Software Engineering von Ian Sommerville."
+        }
+      }
+    },
+    {
+      "id": "cse_106_python_resources",
+      "category": "learning_resources",
+      "scope": "cse",
+      "applies_to": null,
+      "sources": [
+        "https://libguide.vgu.edu.vn/subjects/guide.php?subject=cs"
+      ],
+      "verification": {
+        "method": null,
+        "date": null
+      },
+      "flags": [
+        "reference_only"
+      ],
+      "caveat": null,
+      "ai_drafted": [
+        "de"
+      ],
+      "translations": {
+        "vi": {
+          "question": "Thư viện có gợi ý nguồn tự học Python không?",
+          "answer": "Trong phần Python, trang hướng dẫn có các liên kết như Python.org, LearnPython.org và freeCodeCamp."
+        },
+        "en": {
+          "question": "Does the library guide suggest Python-learning resources?",
+          "answer": "The Python section links to resources including Python.org, LearnPython.org and freeCodeCamp."
+        },
+        "de": {
+          "question": "Empfiehlt die Bibliothek Quellen zum Selbstlernen von Python?",
+          "answer": "Im Python-Abschnitt gibt es Links wie Python.org, LearnPython.org und freeCodeCamp."
+        }
+      }
+    },
+    {
+      "id": "cse_107_library_support",
+      "category": "library_services",
+      "scope": "university",
+      "applies_to": null,
+      "sources": [
+        "https://library.vgu.edu.vn/contact/"
+      ],
+      "verification": {
+        "method": "search_index",
+        "date": null
+      },
+      "flags": [],
+      "caveat": null,
+      "ai_drafted": [
+        "de"
+      ],
+      "translations": {
+        "vi": {
+          "question": "Cần hỗ trợ từ thư viện thì liên hệ thế nào?",
+          "answer": "Bạn có thể gửi câu hỏi hoặc nhờ hỗ trợ qua library@vgu.edu.vn."
+        },
+        "en": {
+          "question": "How do I contact the library for help?",
+          "answer": "You can ask for library help at library@vgu.edu.vn."
+        },
+        "de": {
+          "question": "Wie erreiche ich die Bibliothek, wenn ich Hilfe brauche?",
+          "answer": "Du kannst Fragen oder Hilfeanfragen an library@vgu.edu.vn senden."
+        }
+      }
+    },
+    {
+      "id": "cse_108_room_booking",
+      "category": "library_services",
+      "scope": "university",
+      "applies_to": null,
+      "sources": [
+        "https://library.vgu.edu.vn/"
+      ],
+      "verification": {
+        "method": "search_index",
+        "date": null
+      },
+      "flags": [],
+      "caveat": null,
+      "ai_drafted": [
+        "de"
+      ],
+      "translations": {
+        "vi": {
+          "question": "Thư viện VGU có dịch vụ đặt phòng học không?",
+          "answer": "Có. Bạn có thể tìm mục Library room booking trên website thư viện và kiểm tra phòng còn trống khi đặt."
+        },
+        "en": {
+          "question": "Does VGU Library offer study-room booking?",
+          "answer": "Yes. Look for Library room booking on the library website and check room availability before reserving."
+        },
+        "de": {
+          "question": "Gibt es in der VGU-Bibliothek eine Raumbuchung?",
+          "answer": "Ja. Auf der Bibliothekswebsite findest du Library room booking und kannst bei der Buchung freie Räume prüfen."
+        }
+      }
+    },
+    {
+      "id": "cse_109_renew_guide",
+      "category": "library_services",
+      "scope": "university",
+      "applies_to": null,
+      "sources": [
+        "https://library.vgu.edu.vn/itutorials/"
+      ],
+      "verification": {
+        "method": "search_index",
+        "date": null
+      },
+      "flags": [],
+      "caveat": null,
+      "ai_drafted": [
+        "de"
+      ],
+      "translations": {
+        "vi": {
+          "question": "Muốn gia hạn hoặc giữ chỗ sách thì xem hướng dẫn ở đâu?",
+          "answer": "Bạn vào iTutorials của thư viện, rồi tìm mục Use E-Services on Discovery để xem hướng dẫn gia hạn và giữ chỗ sách."
+        },
+        "en": {
+          "question": "Where can I learn how to renew a book or place a hold?",
+          "answer": "Go to the library's iTutorials page and find Use E-Services on Discovery for renewal and hold instructions."
+        },
+        "de": {
+          "question": "Wo finde ich die Anleitung zum Verlängern oder Vormerken von Büchern?",
+          "answer": "Öffne die iTutorials der Bibliothek und suche den Abschnitt Use E-Services on Discovery. Dort stehen Anleitungen zum Verlängern und Vormerken."
+        }
+      }
+    },
+    {
+      "id": "cse_110_interlibrary_request",
+      "category": "library_services",
+      "scope": "university",
+      "applies_to": null,
+      "sources": [
+        "https://library.vgu.edu.vn/inter-library-services-loan/"
+      ],
+      "verification": {
+        "method": "search_index",
+        "date": null
+      },
+      "flags": [],
+      "caveat": null,
+      "ai_drafted": [
+        "de"
+      ],
+      "translations": {
+        "vi": {
+          "question": "Sách mình cần không có ở VGU thì nhờ mượn thư viện khác được không?",
+          "answer": "Có thể. Bạn gửi yêu cầu qua dịch vụ InterLibrary Loan; việc mượn được tài liệu hay không còn tùy thư viện đối tác."
+        },
+        "en": {
+          "question": "Can I request a book from another library if VGU does not have it?",
+          "answer": "You can request it through InterLibrary Loan. Whether the material can be supplied depends on the partner library."
+        },
+        "de": {
+          "question": "Kann ich ein Buch, das die VGU nicht hat, über eine andere Bibliothek ausleihen?",
+          "answer": "Möglich. Stelle eine Anfrage über den InterLibrary Loan; ob das Material verfügbar ist, hängt von der Partnerbibliothek ab."
+        }
+      }
+    },
+    {
+      "id": "cse_111_interlibrary_duration",
+      "category": "library_services",
+      "scope": "university",
+      "applies_to": null,
+      "sources": [
+        "https://library.vgu.edu.vn/inter-library-services-loan/"
+      ],
+      "verification": {
+        "method": "search_index",
+        "date": null
+      },
+      "flags": [],
+      "caveat": null,
+      "ai_drafted": [
+        "de"
+      ],
+      "translations": {
+        "vi": {
+          "question": "Mượn liên thư viện được giữ sách bao lâu?",
+          "answer": "Theo trang dịch vụ, thời gian mượn là 5–10 ngày và mỗi giao dịch được mượn một sách. Nếu muốn gia hạn, bạn cần được thư viện đối tác đồng ý."
+        },
+        "en": {
+          "question": "How long is an interlibrary book loan?",
+          "answer": "The service page gives a loan period of 5–10 days, with one book per transaction. Renewals need approval from the partner library."
+        },
+        "de": {
+          "question": "Wie lange darf man Bücher per Fernleihe behalten?",
+          "answer": "Laut Serviceseite beträgt die Leihdauer 5–10 Tage, pro Vorgang ein Buch. Eine Verlängerung braucht die Zustimmung der Partnerbibliothek."
+        }
+      }
+    },
+    {
+      "id": "cse_112_research_support",
+      "category": "library_services",
+      "scope": "university",
+      "applies_to": null,
+      "sources": [
+        "https://library.vgu.edu.vn/"
+      ],
+      "verification": {
+        "method": "search_index",
+        "date": null
+      },
+      "flags": [],
+      "caveat": null,
+      "ai_drafted": [
+        "de"
+      ],
+      "translations": {
+        "vi": {
+          "question": "Thư viện có hỗ trợ kỹ năng tìm tài liệu và trích dẫn không?",
+          "answer": "Có. Website thư viện có các mục hỗ trợ tìm thông tin, nghiên cứu và trích dẫn tài liệu."
+        },
+        "en": {
+          "question": "Does the library support research and citation skills?",
+          "answer": "Yes. The library website lists support for information skills, research and citation or referencing."
+        },
+        "de": {
+          "question": "Hilft die Bibliothek bei Recherche und Zitieren?",
+          "answer": "Ja. Die Bibliothekswebsite hat Bereiche zu Informationssuche, Forschung und Zitieren."
+        }
+      }
+    },
+    {
+      "id": "cse_113_robotics_club",
+      "category": "student_life",
+      "scope": "university",
+      "applies_to": null,
+      "sources": [
+        "https://vgu.edu.vn/eu/student-clubs"
+      ],
+      "verification": {
+        "method": "search_index",
+        "date": null
+      },
+      "flags": [],
+      "caveat": null,
+      "ai_drafted": [
+        "de"
+      ],
+      "translations": {
+        "vi": {
+          "question": "VGU có câu lạc bộ robotics và điện tử không?",
+          "answer": "Có. Danh sách câu lạc bộ của trường có REC — VGU Robotics and Electronic Club."
+        },
+        "en": {
+          "question": "Does VGU have a robotics and electronics club?",
+          "answer": "Yes. The university's club directory lists REC — VGU Robotics and Electronic Club."
+        },
+        "de": {
+          "question": "Gibt es an der VGU einen Robotik- und Elektronikclub?",
+          "answer": "Ja. In der Clubliste der Universität steht REC – VGU Robotics and Electronic Club."
+        }
+      }
+    },
+    {
+      "id": "cse_114_german_club",
+      "category": "student_life",
+      "scope": "university",
+      "applies_to": null,
+      "sources": [
+        "https://vgu.edu.vn/eu/student-clubs"
+      ],
+      "verification": {
+        "method": "search_index",
+        "date": null
+      },
+      "flags": [],
+      "caveat": null,
+      "ai_drafted": [
+        "de"
+      ],
+      "translations": {
+        "vi": {
+          "question": "Có câu lạc bộ để giao lưu tiếng Đức không?",
+          "answer": "Có. Bạn có thể tìm VGU Deutsch Club trong danh sách câu lạc bộ của trường."
+        },
+        "en": {
+          "question": "Is a German-language club listed?",
+          "answer": "Yes. VGU Deutsch Club appears in the university's club directory."
+        },
+        "de": {
+          "question": "Gibt es einen Club, um Deutsch zu üben?",
+          "answer": "Ja. Den VGU Deutsch Club findest du in der Clubliste der Universität."
+        }
+      }
+    },
+    {
+      "id": "cse_115_football_club",
+      "category": "student_life",
+      "scope": "university",
+      "applies_to": null,
+      "sources": [
+        "https://vgu.edu.vn/eu/student-clubs"
+      ],
+      "verification": {
+        "method": "search_index",
+        "date": null
+      },
+      "flags": [],
+      "caveat": null,
+      "ai_drafted": [
+        "de"
+      ],
+      "translations": {
+        "vi": {
+          "question": "Thích đá bóng thì có thể tìm câu lạc bộ nào ở VGU?",
+          "answer": "Trường có liệt kê VFC — VGU Football Club dành cho hoạt động bóng đá."
+        },
+        "en": {
+          "question": "Which VGU club is listed for football?",
+          "answer": "The university lists VFC — VGU Football Club for football activities."
+        },
+        "de": {
+          "question": "Welchen Club gibt es für Fußball an der VGU?",
+          "answer": "Die Universität führt den VFC – VGU Football Club für Fußballaktivitäten auf."
+        }
+      }
+    },
+    {
+      "id": "cse_116_multiple_clubs",
+      "category": "student_life",
+      "scope": "university",
+      "applies_to": null,
+      "sources": [
+        "https://vgu.edu.vn/eu/student-clubs"
+      ],
+      "verification": {
+        "method": "search_index",
+        "date": null
+      },
+      "flags": [],
+      "caveat": null,
+      "ai_drafted": [
+        "de"
+      ],
+      "translations": {
+        "vi": {
+          "question": "Sinh viên có thể tham gia nhiều câu lạc bộ không?",
+          "answer": "Có. Trang Student Clubs nêu sinh viên có thể tham gia một hoặc nhiều câu lạc bộ."
+        },
+        "en": {
+          "question": "Can a student join more than one club?",
+          "answer": "Yes. The Student Clubs page says students can join one or several clubs."
+        },
+        "de": {
+          "question": "Kann man in mehreren Clubs mitmachen?",
+          "answer": "Ja. Die Seite Student Clubs nennt, dass Studierende einem oder mehreren Clubs beitreten können."
+        }
+      }
+    },
+    {
+      "id": "cse_117_delay_eligibility",
+      "category": "tuition",
+      "scope": "university",
+      "applies_to": null,
+      "sources": [
+        "https://vgu.edu.vn/gia-han-hoc-phi"
+      ],
+      "verification": {
+        "method": "search_index",
+        "date": null
+      },
+      "flags": [],
+      "caveat": null,
+      "ai_drafted": [
+        "de"
+      ],
+      "translations": {
+        "vi": {
+          "question": "Nếu tạm thời khó khăn tài chính thì xin đóng học phí trễ được không?",
+          "answer": "Có thể nộp đơn nếu bạn đang học tại VGU và có lý do chính đáng. Trường sẽ xem xét từng trường hợp, nên nộp đơn chưa có nghĩa là được duyệt."
+        },
+        "en": {
+          "question": "Can I request more time to pay tuition if I have temporary financial difficulties?",
+          "answer": "Current VGU students can apply if they have a justified reason. Requests are considered individually, so submitting a form does not guarantee approval."
+        },
+        "de": {
+          "question": "Kann ich bei finanziellen Schwierigkeiten einen Aufschub der Studiengebühren beantragen?",
+          "answer": "Du kannst einen Antrag stellen, wenn du an der VGU studierst und einen triftigen Grund hast. Die Universität prüft jeden Fall einzeln; ein Antrag bedeutet also noch keine Genehmigung."
+        }
+      }
+    },
+    {
+      "id": "cse_118_delay_documents",
+      "category": "tuition",
+      "scope": "university",
+      "applies_to": null,
+      "sources": [
+        "https://vgu.edu.vn/gia-han-hoc-phi"
+      ],
+      "verification": {
+        "method": "search_index",
+        "date": null
+      },
+      "flags": [],
+      "caveat": null,
+      "ai_drafted": [
+        "de"
+      ],
+      "translations": {
+        "vi": {
+          "question": "Xin gia hạn học phí thì cần chuẩn bị đơn như thế nào?",
+          "answer": "Bạn cần điền đầy đủ và đúng thông tin, ký đơn rồi xin xác nhận của phụ huynh hoặc người giám hộ."
+        },
+        "en": {
+          "question": "How do I prepare the tuition-extension form?",
+          "answer": "Fill in the form accurately, sign it and obtain confirmation from a parent or guardian."
+        },
+        "de": {
+          "question": "Wie bereite ich den Antrag auf Gebührenaufschub vor?",
+          "answer": "Fülle den Antrag vollständig und korrekt aus, unterschreibe ihn und lasse ihn von Eltern oder Erziehungsberechtigten bestätigen."
+        }
+      }
+    },
+    {
+      "id": "cse_119_delay_submission",
+      "category": "tuition",
+      "scope": "university",
+      "applies_to": null,
+      "sources": [
+        "https://vgu.edu.vn/gia-han-hoc-phi"
+      ],
+      "verification": {
+        "method": "search_index",
+        "date": null
+      },
+      "flags": [],
+      "caveat": null,
+      "ai_drafted": [
+        "de"
+      ],
+      "translations": {
+        "vi": {
+          "question": "Nộp đơn gia hạn học phí ở đâu?",
+          "answer": "Bạn có thể gửi bản PDF đến asa.ticket@vgu.edu.vn hoặc nộp bản giấy tại phòng 218, tầng 2, tòa Hành chính."
+        },
+        "en": {
+          "question": "Where is a tuition-extension request submitted?",
+          "answer": "Email the PDF to asa.ticket@vgu.edu.vn, or submit a paper copy at Room 218 on the second floor of the Administration Building."
+        },
+        "de": {
+          "question": "Wo reiche ich den Antrag auf Gebührenaufschub ein?",
+          "answer": "Sende ein PDF an asa.ticket@vgu.edu.vn oder gib die Papierfassung in Raum 218, 2. Stock, im Verwaltungsgebäude ab."
+        }
+      }
+    },
+    {
+      "id": "cse_120_delay_timeline",
+      "category": "tuition",
+      "scope": "university",
+      "applies_to": null,
+      "sources": [
+        "https://vgu.edu.vn/gia-han-hoc-phi"
+      ],
+      "verification": {
+        "method": "search_index",
+        "date": null
+      },
+      "flags": [],
+      "caveat": null,
+      "ai_drafted": [
+        "de"
+      ],
+      "translations": {
+        "vi": {
+          "question": "Cần nộp đơn gia hạn học phí trước hạn đóng bao lâu?",
+          "answer": "Bạn cần nộp đơn ít nhất 2 tuần trước hạn đóng học phí. Theo hướng dẫn, ASA phản hồi trong 5 ngày làm việc sau khi nhận đủ hồ sơ hợp lệ."
+        },
+        "en": {
+          "question": "How early should I submit a tuition-extension request?",
+          "answer": "Submit the request at least two weeks before the tuition deadline. The guidance says ASA responds within five working days after receiving a complete, valid application."
+        },
+        "de": {
+          "question": "Wie früh vor der Zahlungsfrist muss der Antrag eingehen?",
+          "answer": "Reiche den Antrag mindestens 2 Wochen vor der Zahlungsfrist ein. Laut Anleitung antwortet ASA innerhalb von 5 Werktagen nach Eingang vollständiger Unterlagen."
+        }
+      }
+    },
+    {
+      "id": "cse_121_java_prerequisite",
+      "category": "course_details",
+      "scope": "cse",
+      "applies_to": {
+        "year": 2022,
+        "basis": "document"
+      },
+      "sources": [
+        "https://vgu.edu.vn/documents/10192/2362585/20220222_40_Q%C4%90_%C4%90HV%C4%90_CSE_Module%2BHandbook.pdf/e1b81768-87ee-471a-ba4f-509b8219d2fa"
+      ],
+      "verification": {
+        "method": null,
+        "date": "2026-10-08"
+      },
+      "flags": [],
+      "caveat": "handbook_2022",
+      "ai_drafted": [
+        "de"
+      ],
+      "translations": {
+        "vi": {
+          "question": "Trước môn Java cần học môn nào?",
+          "answer": "Handbook 2022 ghi Programming 2 là môn tiên quyết của OO Programming in Java (61CSE215)."
+        },
+        "en": {
+          "question": "What is the prerequisite for the Java module?",
+          "answer": "The 2022 handbook lists Programming 2 as the prerequisite for OO Programming in Java (61CSE215)."
+        },
+        "de": {
+          "question": "Welches Modul muss ich vor Java belegen?",
+          "answer": "Das Handbuch 2022 nennt Programming 2 als Voraussetzung für OO Programming in Java (61CSE215)."
+        }
+      }
+    },
+    {
+      "id": "cse_122_os_workload",
+      "category": "course_details",
+      "scope": "cse",
+      "applies_to": {
+        "year": 2022,
+        "basis": "document"
+      },
+      "sources": [
+        "https://vgu.edu.vn/documents/10192/2362585/20220222_40_Q%C4%90_%C4%90HV%C4%90_CSE_Module%2BHandbook.pdf/e1b81768-87ee-471a-ba4f-509b8219d2fa"
+      ],
+      "verification": {
+        "method": null,
+        "date": "2026-10-08"
+      },
+      "flags": [],
+      "caveat": "handbook_2022",
+      "ai_drafted": [
+        "de"
+      ],
+      "translations": {
+        "vi": {
+          "question": "Môn Hệ điều hành có tính cả thời gian tự học không?",
+          "answer": "Có. Handbook 2022 phân bổ 60 giờ học trực tiếp và 90 giờ bài tập, tự học cho môn này."
+        },
+        "en": {
+          "question": "Does the Operating System workload include self-study?",
+          "answer": "Yes. The 2022 handbook allocates 60 contact hours and 90 hours for assignments and independent study."
+        },
+        "de": {
+          "question": "Zählt im Fach Betriebssysteme auch die Selbststudienzeit?",
+          "answer": "Ja. Das Handbuch 2022 verteilt für dieses Fach 60 Stunden Präsenz und 90 Stunden Aufgaben und Selbststudium."
+        }
+      }
+    },
+    {
+      "id": "cse_123_database_semester",
+      "category": "course_details",
+      "scope": "cse",
+      "applies_to": {
+        "year": 2022,
+        "basis": "document"
+      },
+      "sources": [
+        "https://vgu.edu.vn/documents/10192/2362585/20220222_40_Q%C4%90_%C4%90HV%C4%90_CSE_Module%2BHandbook.pdf/e1b81768-87ee-471a-ba4f-509b8219d2fa"
+      ],
+      "verification": {
+        "method": null,
+        "date": "2026-10-08"
+      },
+      "flags": [],
+      "caveat": "handbook_2022",
+      "ai_drafted": [
+        "de"
+      ],
+      "translations": {
+        "vi": {
+          "question": "Môn Databases học kỳ mấy, bao nhiêu tín chỉ?",
+          "answer": "Trong handbook 2022, Databases (61CSE216) nằm ở học kỳ chuyên ngành 3, có 5 ECTS."
+        },
+        "en": {
+          "question": "When is Databases scheduled, and how many credits is it?",
+          "answer": "The 2022 handbook places Databases (61CSE216) in specialist semester 3, with 5 ECTS."
+        },
+        "de": {
+          "question": "In welchem Semester liegt Databases und wie viele ECTS hat es?",
+          "answer": "Im Handbuch 2022 liegt Databases (61CSE216) im 3. Fachsemester und hat 5 ECTS."
+        }
+      }
+    },
+    {
+      "id": "cse_124_internship_prerequisite",
+      "category": "internship",
+      "scope": "cse",
+      "applies_to": null,
+      "sources": [
+        "https://vgu.edu.vn/documents/10192/2362585/CSE%2BSpecific%2BExam%2BRegulation-Annexes%2BA-B.pdf/18585d97-0158-435f-957f-90e4ea0325a3"
+      ],
+      "verification": {
+        "method": null,
+        "date": "2026-10-08"
+      },
+      "flags": [],
+      "caveat": "cse_regs_2021",
+      "ai_drafted": [
+        "de"
+      ],
+      "translations": {
+        "vi": {
+          "question": "Cần đủ bao nhiêu tín chỉ để đăng ký thực tập?",
+          "answer": "Quy chế riêng CSE yêu cầu ít nhất 120 CP trước khi đăng ký thực tập."
+        },
+        "en": {
+          "question": "How many credits are required before applying for the internship?",
+          "answer": "The CSE-specific regulations require at least 120 CP before applying for the internship."
+        },
+        "de": {
+          "question": "Wie viele Credits braucht man, um sich für das Praktikum anzumelden?",
+          "answer": "Die CSE-Spezialordnung verlangt mindestens 120 CP vor der Anmeldung zum Praktikum."
+        }
+      }
+    },
+    {
+      "id": "cse_125_thesis_prerequisite",
+      "category": "internship",
+      "scope": "cse",
+      "applies_to": null,
+      "sources": [
+        "https://vgu.edu.vn/documents/10192/2362585/CSE%2BSpecific%2BExam%2BRegulation-Annexes%2BA-B.pdf/18585d97-0158-435f-957f-90e4ea0325a3"
+      ],
+      "verification": {
+        "method": null,
+        "date": "2026-10-08"
+      },
+      "flags": [],
+      "caveat": "cse_regs_2021",
+      "ai_drafted": [
+        "de"
+      ],
+      "translations": {
+        "vi": {
+          "question": "Điều kiện bắt đầu khóa luận CSE là gì?",
+          "answer": "Theo quy chế riêng: hoàn thành 150 CP học phần và có thực tập được điều phối viên chương trình chấp thuận."
+        },
+        "en": {
+          "question": "What are the conditions for starting the CSE thesis?",
+          "answer": "The specific regulations require 150 CP of completed coursework and internship approval from the program coordinator."
+        },
+        "de": {
+          "question": "Welche Voraussetzungen gelten für den Beginn der CSE-Abschlussarbeit?",
+          "answer": "Laut Spezialordnung: 150 CP aus Modulen abgeschlossen und ein vom Programmkoordinator genehmigtes Praktikum."
+        }
+      }
+    },
+    {
+      "id": "cse_126_internship_confirmation",
+      "category": "internship",
+      "scope": "cse",
+      "applies_to": null,
+      "sources": [
+        "https://vgu.edu.vn/documents/10192/2362585/CSE%2BSpecific%2BExam%2BRegulation-Annexes%2BA-B.pdf/18585d97-0158-435f-957f-90e4ea0325a3"
+      ],
+      "verification": {
+        "method": null,
+        "date": "2026-10-08"
+      },
+      "flags": [],
+      "caveat": "cse_regs_2021",
+      "ai_drafted": [
+        "de"
+      ],
+      "translations": {
+        "vi": {
+          "question": "Bắt đầu thực tập có cần nộp xác nhận không?",
+          "answer": "Có. Quy chế riêng yêu cầu nộp xác nhận thực tập đã ký khi bắt đầu thực tập."
+        },
+        "en": {
+          "question": "Do I need to submit an internship confirmation?",
+          "answer": "Yes. The specific regulations require a signed confirmation at the start of the internship."
+        },
+        "de": {
+          "question": "Muss ich zu Beginn des Praktikums eine Bestätigung einreichen?",
+          "answer": "Ja. Die Spezialordnung verlangt zu Beginn des Praktikums die Einreichung einer unterschriebenen Praktikumsbestätigung."
+        }
+      }
+    },
+    {
+      "id": "cse_127_module_retakes",
+      "category": "examinations",
+      "scope": "cse",
+      "applies_to": {
+        "year": 2022,
+        "basis": "document"
+      },
+      "sources": [
+        "https://vgu.edu.vn/documents/14921/7069235/General%2BExamination%2BRegulation%2Bfor%2BBachelor%2Band%2BMaster%2Bprograms_EN.pdf/afa0cf3b-31dd-4a5f-b098-3cb56aeb320e"
+      ],
+      "verification": {
+        "method": null,
+        "date": "2026-10-08"
+      },
+      "flags": [],
+      "caveat": "general_regs_2022",
+      "ai_drafted": [
+        "de"
+      ],
+      "translations": {
+        "vi": {
+          "question": "Trượt môn thì được thi lại như thế nào?",
+          "answer": "Theo Điều 12, trượt lần đầu được thi lại; trượt hai lần thì được học lại môn một lần, với tối đa hai lượt thi tiếp theo. Học lại có thu phí."
+        },
+        "en": {
+          "question": "What happens if I fail a module exam?",
+          "answer": "Article 12 allows a resit; after two failures, one paid module repeat provides up to two further exam attempts."
+        },
+        "de": {
+          "question": "Wie läuft eine Wiederholungsprüfung ab, wenn ich durchfalle?",
+          "answer": "Nach Artikel 12 darf man beim ersten Nichtbestehen wiederholen. Bei zweimaligem Nichtbestehen kann das Modul einmal neu belegt werden, mit höchstens zwei weiteren Prüfungsversuchen. Das erneute Belegen ist gebührenpflichtig."
+        }
+      }
+    },
+    {
+      "id": "cse_128_improve_passed_grade",
+      "category": "examinations",
+      "scope": "cse",
+      "applies_to": {
+        "year": 2022,
+        "basis": "document"
+      },
+      "sources": [
+        "https://vgu.edu.vn/documents/14921/7069235/General%2BExamination%2BRegulation%2Bfor%2BBachelor%2Band%2BMaster%2Bprograms_EN.pdf/afa0cf3b-31dd-4a5f-b098-3cb56aeb320e"
+      ],
+      "verification": {
+        "method": null,
+        "date": "2026-10-08"
+      },
+      "flags": [],
+      "caveat": "general_regs_2022",
+      "ai_drafted": [
+        "de"
+      ],
+      "translations": {
+        "vi": {
+          "question": "Đã đậu rồi có được thi lại để cải thiện điểm không?",
+          "answer": "Theo Điều 12, không được thi lại bài thi đã đạt."
+        },
+        "en": {
+          "question": "Can I retake a passed exam to improve my grade?",
+          "answer": "Article 12 does not allow a passed exam to be retaken."
+        },
+        "de": {
+          "question": "Darf man eine bestandene Prüfung zur Notenverbesserung wiederholen?",
+          "answer": "Nach Artikel 12 darf eine bestandene Prüfung nicht wiederholt werden."
+        }
+      }
+    },
+    {
+      "id": "cse_129_illness_exam",
+      "category": "examinations",
+      "scope": "cse",
+      "applies_to": {
+        "year": 2022,
+        "basis": "document"
+      },
+      "sources": [
+        "https://vgu.edu.vn/documents/14921/7069235/General%2BExamination%2BRegulation%2Bfor%2BBachelor%2Band%2BMaster%2Bprograms_EN.pdf/afa0cf3b-31dd-4a5f-b098-3cb56aeb320e"
+      ],
+      "verification": {
+        "method": null,
+        "date": "2026-10-08"
+      },
+      "flags": [],
+      "caveat": "general_regs_2022",
+      "ai_drafted": [
+        "de"
+      ],
+      "translations": {
+        "vi": {
+          "question": "Bị ốm nên không thi được thì làm gì?",
+          "answer": "Báo ngay bằng văn bản qua trợ lý chương trình; nộp giấy y tế trong ba ngày sau kỳ thi theo Điều 13 và 15."
+        },
+        "en": {
+          "question": "What if illness prevents me from taking an exam?",
+          "answer": "Notify the program assistant promptly in writing; submit medical evidence within three days after the exam under Articles 13 and 15."
+        },
+        "de": {
+          "question": "Was tue ich, wenn ich wegen Krankheit nicht an der Prüfung teilnehmen kann?",
+          "answer": "Melde dich sofort schriftlich über die Programmassistenz und reiche innerhalb von drei Tagen nach der Prüfung ein ärztliches Attest ein (Artikel 13 und 15)."
+        }
+      }
+    },
+    {
+      "id": "cse_130_helpdesk_request",
+      "category": "digital_services",
+      "scope": "university",
+      "applies_to": null,
+      "sources": [
+        "https://helpdesk.vgu.edu.vn/"
+      ],
+      "verification": {
+        "method": null,
+        "date": "2026-10-08"
+      },
+      "flags": [
+        "check_for_updates"
+      ],
+      "caveat": null,
+      "ai_drafted": [
+        "de"
+      ],
+      "translations": {
+        "vi": {
+          "question": "Muốn gửi yêu cầu hỗ trợ kỹ thuật thì vào đâu?",
+          "answer": "Vào VGU Helpdesk, chọn Open a New Ticket và gửi yêu cầu bằng một địa chỉ email hợp lệ."
+        },
+        "en": {
+          "question": "Where can I submit a technical support request?",
+          "answer": "Visit VGU Helpdesk, choose Open a New Ticket, and submit your request with a valid email address."
+        },
+        "de": {
+          "question": "Wo reiche ich eine technische Supportanfrage ein?",
+          "answer": "Öffne den VGU Helpdesk, wähle Open a New Ticket und sende die Anfrage mit einer gültigen E-Mail-Adresse."
+        }
+      }
+    },
+    {
+      "id": "cse_131_helpdesk_tracking",
+      "category": "digital_services",
+      "scope": "university",
+      "applies_to": null,
+      "sources": [
+        "https://helpdesk.vgu.edu.vn/"
+      ],
+      "verification": {
+        "method": null,
+        "date": "2026-10-08"
+      },
+      "flags": [
+        "check_for_updates"
+      ],
+      "caveat": null,
+      "ai_drafted": [
+        "de"
+      ],
+      "translations": {
+        "vi": {
+          "question": "Gửi yêu cầu hỗ trợ rồi thì xem tiến độ ở đâu?",
+          "answer": "Chọn Check Ticket Status trên VGU Helpdesk. Giữ lại mã ticket để theo dõi tiến độ và phản hồi."
+        },
+        "en": {
+          "question": "How can I track a support request?",
+          "answer": "Use Check Ticket Status on VGU Helpdesk. Keep your ticket number to follow progress and responses."
+        },
+        "de": {
+          "question": "Wo sehe ich den Stand meiner Supportanfrage?",
+          "answer": "Wähle im VGU Helpdesk Check Ticket Status. Bewahre die Ticketnummer auf, um Stand und Antworten zu verfolgen."
+        }
+      }
+    },
+    {
+      "id": "cse_132_forgot_password",
+      "category": "digital_services",
+      "scope": "university",
+      "applies_to": null,
+      "sources": [
+        "https://portal.vgu.edu.vn/"
+      ],
+      "verification": {
+        "method": "search_index_partial",
+        "date": "2026-10-08"
+      },
+      "flags": [],
+      "caveat": null,
+      "ai_drafted": [
+        "de"
+      ],
+      "translations": {
+        "vi": {
+          "question": "Quên mật khẩu tài khoản VGU thì liên hệ ai?",
+          "answer": "Gửi yêu cầu đến it.ticket@vgu.edu.vn. Nếu không vào được email sinh viên, dùng email cá nhân đã đăng ký trong hồ sơ nhập học."
+        },
+        "en": {
+          "question": "Who can help if I forget my VGU password?",
+          "answer": "Email it.ticket@vgu.edu.vn. If your student email is inaccessible, use the personal email registered in your admission file."
+        },
+        "de": {
+          "question": "An wen wende ich mich, wenn ich mein VGU-Passwort vergessen habe?",
+          "answer": "Sende eine Anfrage an it.ticket@vgu.edu.vn. Wenn du nicht auf dein Studierenden-E-Mail-Konto zugreifen kannst, nutze die private E-Mail-Adresse aus deinen Einschreibeunterlagen."
+        }
+      }
+    },
+    {
+      "id": "cse_133_microsoft_365",
+      "category": "digital_services",
+      "scope": "university",
+      "applies_to": null,
+      "sources": [
+        "https://portal.vgu.edu.vn/"
+      ],
+      "verification": {
+        "method": "search_index_partial",
+        "date": "2026-10-08"
+      },
+      "flags": [],
+      "caveat": null,
+      "ai_drafted": [
+        "de"
+      ],
+      "translations": {
+        "vi": {
+          "question": "Sinh viên VGU có tài khoản Microsoft 365 không?",
+          "answer": "VGU Portal giới thiệu Microsoft 365 A1 cho sinh viên. Dùng tài khoản sinh viên để truy cập các ứng dụng và dịch vụ trực tuyến được cấp."
+        },
+        "en": {
+          "question": "Do VGU students have Microsoft 365 access?",
+          "answer": "VGU Portal lists Microsoft 365 A1 for students. Use your student account for the provided apps and online services."
+        },
+        "de": {
+          "question": "Haben VGU-Studierende ein Microsoft-365-Konto?",
+          "answer": "Das VGU Portal nennt Microsoft 365 A1 für Studierende. Mit dem Studierendenkonto greifst du auf die bereitgestellten Anwendungen und Online-Dienste zu."
+        }
+      }
+    },
+    {
+      "id": "cse_134_counselling_booking",
+      "category": "student_support",
+      "scope": "university",
+      "applies_to": null,
+      "sources": [
+        "https://vgu.edu.vn/vi/well-being-and-mental-health-care-services"
+      ],
+      "verification": {
+        "method": "search_index_partial",
+        "date": "2026-10-08"
+      },
+      "flags": [],
+      "caveat": null,
+      "ai_drafted": [
+        "de"
+      ],
+      "translations": {
+        "vi": {
+          "question": "Muốn đặt lịch tư vấn tâm lý ở trường thì làm sao?",
+          "answer": "Vào trang Dịch vụ chăm sóc sức khỏe tinh thần của VGU, điền Counselling Register Form. Chuyên viên phụ trách sẽ liên hệ với bạn."
+        },
+        "en": {
+          "question": "How can I book a counselling appointment at VGU?",
+          "answer": "Open the VGU Well-Being and Mental Health Care Services page and complete the Counselling Register Form. The responsible officer will contact you."
+        },
+        "de": {
+          "question": "Wie buche ich einen Termin für psychologische Beratung an der Universität?",
+          "answer": "Gehe auf die VGU-Seite für psychische Gesundheit und Wohlbefinden und fülle das Counselling Register Form aus. Die zuständige Fachkraft meldet sich bei dir."
+        }
+      }
+    },
+    {
+      "id": "cse_135_book_allowance",
+      "category": "library_services",
+      "scope": "university",
+      "applies_to": null,
+      "sources": [
+        "https://library.vgu.edu.vn/regulations/"
+      ],
+      "verification": {
+        "method": null,
+        "date": "2026-10-08"
+      },
+      "flags": [
+        "check_for_updates"
+      ],
+      "caveat": null,
+      "ai_drafted": [
+        "de"
+      ],
+      "translations": {
+        "vi": {
+          "question": "Sinh viên được mượn bao nhiêu sách mỗi lần?",
+          "answer": "Trang quy định thư viện ghi mức mượn dành cho sinh viên là 3 cuốn trong 1 tuần. Kiểm tra hạn trả cụ thể trong tài khoản mượn."
+        },
+        "en": {
+          "question": "How many library books can a student borrow?",
+          "answer": "The library regulations list a student allowance of three books for one week. Check the actual due date in your borrowing account."
+        },
+        "de": {
+          "question": "Wie viele Bücher darf man gleichzeitig ausleihen?",
+          "answer": "Laut Bibliotheksordnung dürfen Studierende 3 Bücher für 1 Woche ausleihen. Prüfe die konkrete Rückgabefrist in deinem Ausleihkonto."
+        }
+      }
+    },
+    {
+      "id": "cse_136_lost_library_card",
+      "category": "library_services",
+      "scope": "university",
+      "applies_to": null,
+      "sources": [
+        "https://library.vgu.edu.vn/privacy/"
+      ],
+      "verification": {
+        "method": null,
+        "date": "2026-10-08"
+      },
+      "flags": [
+        "check_for_updates"
+      ],
+      "caveat": null,
+      "ai_drafted": [
+        "de"
+      ],
+      "translations": {
+        "vi": {
+          "question": "Làm mất thẻ dùng ở thư viện thì cần báo không?",
+          "answer": "Có. Báo ngay cho thư viện để tạm khóa thẻ, tránh bị người khác sử dụng. Email hỗ trợ là library@vgu.edu.vn."
+        },
+        "en": {
+          "question": "Should I report a lost library card?",
+          "answer": "Yes. Notify the library immediately so it can temporarily block the card against misuse. Contact library@vgu.edu.vn."
+        },
+        "de": {
+          "question": "Muss ich den Verlust meiner Bibliothekskarte melden?",
+          "answer": "Ja. Melde ihn sofort der Bibliothek, damit die Karte gesperrt wird und niemand sie missbrauchen kann. Support-E-Mail: library@vgu.edu.vn."
+        }
+      }
+    },
+    {
+      "id": "cse_137_lost_book",
+      "category": "library_services",
+      "scope": "university",
+      "applies_to": null,
+      "sources": [
+        "https://library.vgu.edu.vn/regulations/"
+      ],
+      "verification": {
+        "method": null,
+        "date": "2026-10-08"
+      },
+      "flags": [
+        "check_for_updates"
+      ],
+      "caveat": null,
+      "ai_drafted": [
+        "de"
+      ],
+      "translations": {
+        "vi": {
+          "question": "Làm mất sách thư viện thì xử lý thế nào?",
+          "answer": "Liên hệ thư viện để xác định khoản bồi thường. Cách tính phụ thuộc việc sách còn xuất bản hay không, kèm phí xử lý và vận chuyển; không có một mức chung cho mọi sách."
+        },
+        "en": {
+          "question": "What should I do if I lose a library book?",
+          "answer": "Contact the library to calculate compensation. It depends on whether the book remains in print, plus processing and shipping charges; there is no single flat replacement fee."
+        },
+        "de": {
+          "question": "Was tun, wenn ich ein Bibliotheksbuch verliere?",
+          "answer": "Kontaktiere die Bibliothek, um die Entschädigung festzulegen. Sie hängt davon ab, ob das Buch noch erhältlich ist, zuzüglich Bearbeitungs- und Versandgebühr. Es gibt keinen einheitlichen Betrag für alle Bücher."
+        }
+      }
+    },
+    {
+      "id": "cse_138_academic_portal",
+      "category": "digital_services",
+      "scope": "university",
+      "applies_to": null,
+      "sources": [
+        "https://portal.vgu.edu.vn/"
+      ],
+      "verification": {
+        "method": "search_index_partial",
+        "date": "2026-10-08"
+      },
+      "flags": [],
+      "caveat": null,
+      "ai_drafted": [
+        "de"
+      ],
+      "translations": {
+        "vi": {
+          "question": "Có một trang chung để vào Moodle và SIS không?",
+          "answer": "Có. VGU Portal tập hợp các nền tảng học tập; bạn có thể tìm Moodle và SIS trong phần Academic Services."
+        },
+        "en": {
+          "question": "Is there one gateway to Moodle and SIS?",
+          "answer": "Yes. VGU Portal groups academic platforms under Academic Services, including Moodle and SIS."
+        },
+        "de": {
+          "question": "Gibt es eine gemeinsame Seite für Moodle und SIS?",
+          "answer": "Ja. Das VGU Portal bündelt die Lernplattformen; Moodle und SIS findest du im Bereich Academic Services."
+        }
+      }
+    },
+    {
+      "id": "cse_139_print_copy_scan",
+      "category": "library_services",
+      "scope": "university",
+      "applies_to": null,
+      "sources": [
+        "https://library.vgu.edu.vn/print-copy-scan-services/"
+      ],
+      "verification": {
+        "method": null,
+        "date": "2026-10-08"
+      },
+      "flags": [
+        "check_for_updates"
+      ],
+      "caveat": null,
+      "ai_drafted": [
+        "de"
+      ],
+      "translations": {
+        "vi": {
+          "question": "Thư viện có chỗ in, photocopy và scan không?",
+          "answer": "Có. Xem mục Print-Copy-Scan Services trên website thư viện để biết cách sử dụng. Hỏi thư viện về mức phí hiện hành trước khi in."
+        },
+        "en": {
+          "question": "Does the library offer printing, copying and scanning?",
+          "answer": "Yes. See Print-Copy-Scan Services on the library website for instructions. Check current charges with the library before printing."
+        },
+        "de": {
+          "question": "Gibt es in der Bibliothek Drucken, Kopieren und Scannen?",
+          "answer": "Ja. Sieh dir den Abschnitt Print-Copy-Scan Services auf der Bibliothekswebsite an. Frag vor dem Drucken nach den aktuellen Gebühren."
+        }
+      }
+    },
+    {
+      "id": "cse_140_thesis_examples",
+      "category": "learning_resources",
+      "scope": "university",
+      "applies_to": null,
+      "sources": [
+        "https://library.vgu.edu.vn/faq/"
+      ],
+      "verification": {
+        "method": "search_index_partial",
+        "date": "2026-10-08"
+      },
+      "flags": [],
+      "caveat": null,
+      "ai_drafted": [
+        "de",
+        "en"
+      ],
+      "translations": {
+        "vi": {
+          "question": "Muốn tìm khóa luận để đọc tham khảo thì vào đâu?",
+          "answer": "FAQ của thư viện hướng dẫn tìm ở VGU Research Repository hoặc Open access theses. Khả năng tải tài liệu tùy quyền truy cập của từng tài liệu."
+        },
+        "en": {
+          "question": "Where can I find theses to read as a reference?",
+          "answer": "The library FAQ explains how to search the VGU Research Repository or open access theses. Whether you can download a document depends on its access rights."
+        },
+        "de": {
+          "question": "Wo finde ich Abschlussarbeiten zum Nachlesen?",
+          "answer": "Die FAQ der Bibliothek verweist auf das VGU Research Repository oder auf Open-Access-Abschlussarbeiten. Ob du ein Dokument herunterladen kannst, hängt von den Zugriffsrechten ab."
+        }
+      }
+    },
+    {
+      "id": "vgu_001_what_is_vgu",
+      "category": "university_overview",
+      "scope": "university",
+      "applies_to": null,
+      "sources": [
+        "https://wissenschaft.hessen.de/Studieren/Internationales/VGU",
+        "https://www.daad.de/en/press-releases/vgu-campus-vietnam-eroeffnet/"
+      ],
+      "verification": {
+        "method": "official_page",
+        "date": "2026-10-09"
+      },
+      "flags": [],
+      "caveat": null,
+      "ai_drafted": [
+        "de",
+        "en",
+        "vi"
+      ],
+      "translations": {
+        "vi": {
+          "question": "VGU là trường gì?",
+          "answer": "VGU (Đại học Việt Đức) là trường đại học công lập của Việt Nam, có quy chế tự chủ, được thành lập năm 2008 từ sự hợp tác giữa Việt Nam, Đức và bang Hessen."
+        },
+        "en": {
+          "question": "What is VGU?",
+          "answer": "VGU (the Vietnamese-German University) is a Vietnamese state university with autonomous status, founded in 2008 through a partnership between Vietnam, Germany and the German state of Hesse."
+        },
+        "de": {
+          "question": "Was ist die VGU?",
+          "answer": "Die VGU (Vietnamesisch-Deutsche Universität) ist eine staatliche vietnamesische Universität mit autonomem Status. Sie wurde 2008 aus einer Partnerschaft zwischen Vietnam, Deutschland und dem Land Hessen gegründet."
+        }
+      }
+    },
+    {
+      "id": "vgu_002_founding",
+      "category": "university_overview",
+      "scope": "university",
+      "applies_to": null,
+      "sources": [
+        "https://wissenschaft.hessen.de/Studieren/Internationales/VGU"
+      ],
+      "verification": {
+        "method": "official_page",
+        "date": "2026-10-09"
+      },
+      "flags": [],
+      "caveat": null,
+      "ai_drafted": [
+        "de",
+        "en",
+        "vi"
+      ],
+      "translations": {
+        "vi": {
+          "question": "VGU được thành lập khi nào?",
+          "answer": "Theo Bộ Khoa học và Nghệ thuật bang Hessen, VGU được thành lập ngày 10/9/2008."
+        },
+        "en": {
+          "question": "When was VGU founded?",
+          "answer": "According to the Hessian science ministry, VGU was founded on 10 September 2008."
+        },
+        "de": {
+          "question": "Wann wurde die VGU gegründet?",
+          "answer": "Laut dem hessischen Wissenschaftsministerium wurde die VGU am 10. September 2008 gegründet."
+        }
+      }
+    },
+    {
+      "id": "vgu_003_location",
+      "category": "university_overview",
+      "scope": "university",
+      "applies_to": null,
+      "sources": [
+        "https://vgu.edu.vn/eu/about-vgu",
+        "https://vgu.edu.vn/documents/14921/6788800/VGU+fact+sheet+for+incomings+April+2023.pdf/74ab2b7a-55d6-4d0f-a286-ce0feb4e1c27"
+      ],
+      "verification": {
+        "method": "official_page",
+        "date": "2026-10-09"
+      },
+      "flags": [
+        "check_for_updates"
+      ],
+      "caveat": null,
+      "ai_drafted": [
+        "de",
+        "en",
+        "vi"
+      ],
+      "translations": {
+        "vi": {
+          "question": "VGU nằm ở đâu?",
+          "answer": "Theo website chính thức, khuôn viên VGU nằm trên Đường Vành đai 4, khu phố Thới An, phường Thới Hòa, TP. Hồ Chí Minh. Các tài liệu cũ ghi địa chỉ là Bến Cát, Bình Dương."
+        },
+        "en": {
+          "question": "Where is VGU located?",
+          "answer": "According to VGU's official website, the campus is on Ring Road 4, Thoi An Quarter, Thoi Hoa Ward, Ho Chi Minh City. Older documents list the address as Ben Cat, Binh Duong."
+        },
+        "de": {
+          "question": "Wo liegt die VGU?",
+          "answer": "Laut offizieller VGU-Website liegt der Campus an der Ring Road 4, Thoi An Quarter, Thoi Hoa Ward, Ho Chi Minh City. Ältere Dokumente nennen als Adresse Ben Cat, Binh Duong."
+        }
+      }
+    },
+    {
+      "id": "vgu_004_german_partners",
+      "category": "university_overview",
+      "scope": "university",
+      "applies_to": null,
+      "sources": [
+        "https://wissenschaft.hessen.de/Studieren/Internationales/VGU",
+        "https://www.daad.de/en/press-releases/vgu-campus-vietnam-eroeffnet/"
+      ],
+      "verification": {
+        "method": "official_page",
+        "date": "2026-10-09"
+      },
+      "flags": [],
+      "caveat": null,
+      "ai_drafted": [
+        "de",
+        "en",
+        "vi"
+      ],
+      "translations": {
+        "vi": {
+          "question": "VGU liên kết với Đức như thế nào?",
+          "answer": "VGU được xây dựng qua sự hợp tác giữa Việt Nam, Cộng hòa Liên bang Đức và bang Hessen. Một liên hiệp gồm hơn 30 trường đại học Đức (VGU Consortium), do DAAD điều phối, hỗ trợ trường."
+        },
+        "en": {
+          "question": "How is VGU connected to Germany?",
+          "answer": "VGU was built through cooperation between Vietnam, Germany and the state of Hesse. A consortium of more than 30 German universities (the VGU Consortium), coordinated through DAAD, supports the university."
+        },
+        "de": {
+          "question": "Wie ist die VGU mit Deutschland verbunden?",
+          "answer": "Die VGU entstand durch die Zusammenarbeit zwischen Vietnam, Deutschland und dem Land Hessen. Ein Konsortium aus mehr als 30 deutschen Hochschulen (VGU-Konsortium), koordiniert über den DAAD, unterstützt die Universität."
+        }
+      }
+    },
+    {
+      "id": "vgu_005_language",
+      "category": "university_overview",
+      "scope": "university",
+      "applies_to": {
+        "year": 2023,
+        "basis": "document"
+      },
+      "sources": [
+        "https://vgu.edu.vn/documents/14921/6788800/VGU+fact+sheet+for+incomings+April+2023.pdf/74ab2b7a-55d6-4d0f-a286-ce0feb4e1c27"
+      ],
+      "verification": {
+        "method": "official_page",
+        "date": "2026-10-09"
+      },
+      "flags": [
+        "check_for_updates"
+      ],
+      "caveat": null,
+      "ai_drafted": [
+        "de",
+        "en",
+        "vi"
+      ],
+      "translations": {
+        "vi": {
+          "question": "VGU dạy bằng ngôn ngữ nào?",
+          "answer": "Theo tài liệu giới thiệu của VGU (tháng 4/2023), các môn học được giảng dạy bằng tiếng Anh."
+        },
+        "en": {
+          "question": "What language is taught at VGU?",
+          "answer": "According to VGU's fact sheet (April 2023), courses are taught in English."
+        },
+        "de": {
+          "question": "In welcher Sprache wird an der VGU unterrichtet?",
+          "answer": "Laut dem VGU-Faktenblatt (April 2023) werden die Lehrveranstaltungen auf Englisch unterrichtet."
+        }
+      }
+    },
+    {
+      "id": "vgu_006_faculties",
+      "category": "university_overview",
+      "scope": "university",
+      "applies_to": null,
+      "sources": [
+        "https://vgu.edu.vn/organization"
+      ],
+      "verification": {
+        "method": "official_page",
+        "date": "2026-10-09"
+      },
+      "flags": [],
+      "caveat": null,
+      "ai_drafted": [
+        "de",
+        "en",
+        "vi"
+      ],
+      "translations": {
+        "vi": {
+          "question": "VGU có những khoa nào?",
+          "answer": "Trang tổ chức của VGU liệt kê hai khoa: Khoa Kỹ thuật (Faculty of Engineering) và Khoa Kinh tế và Quản lý (Faculty of Economics and Management)."
+        },
+        "en": {
+          "question": "Which faculties does VGU have?",
+          "answer": "VGU's organization page lists two faculties: the Faculty of Engineering and the Faculty of Economics and Management."
+        },
+        "de": {
+          "question": "Welche Fakultäten hat die VGU?",
+          "answer": "Die Organisationsseite der VGU nennt zwei Fakultäten: die Faculty of Engineering und die Faculty of Economics and Management."
+        }
+      }
+    },
+    {
+      "id": "vgu_007_students",
+      "category": "university_overview",
+      "scope": "university",
+      "applies_to": null,
+      "sources": [
+        "https://wissenschaft.hessen.de/Studieren/Internationales/VGU"
+      ],
+      "verification": {
+        "method": "official_page",
+        "date": "2026-10-09"
+      },
+      "flags": [
+        "check_for_updates"
+      ],
+      "caveat": null,
+      "ai_drafted": [
+        "de",
+        "en",
+        "vi"
+      ],
+      "translations": {
+        "vi": {
+          "question": "VGU có bao nhiêu sinh viên?",
+          "answer": "Theo trang của Bộ Khoa học và Nghệ thuật bang Hessen, VGU có hơn 3.300 sinh viên, gồm 2.605 sinh viên cử nhân và 704 sinh viên thạc sĩ. Trang không ghi rõ thời điểm thống kê."
+        },
+        "en": {
+          "question": "How many students does VGU have?",
+          "answer": "According to the Hessian science ministry's page, VGU has more than 3,300 students: 2,605 bachelor's and 704 master's students. The page does not state the date of these figures."
+        },
+        "de": {
+          "question": "Wie viele Studierende hat die VGU?",
+          "answer": "Laut der Seite des hessischen Wissenschaftsministeriums hat die VGU mehr als 3.300 Studierende: 2.605 im Bachelor und 704 im Master. Die Seite nennt keinen Stichtag für diese Zahlen."
+        }
+      }
+    },
+    {
+      "id": "vgu_008_president",
+      "category": "university_overview",
+      "scope": "university",
+      "applies_to": null,
+      "sources": [
+        "https://wissenschaft.hessen.de/Studieren/Internationales/VGU"
+      ],
+      "verification": {
+        "method": "official_page",
+        "date": "2026-10-09"
+      },
+      "flags": [
+        "check_for_updates"
+      ],
+      "caveat": null,
+      "ai_drafted": [
+        "de",
+        "en",
+        "vi"
+      ],
+      "translations": {
+        "vi": {
+          "question": "Ai đứng đầu VGU?",
+          "answer": "Theo trang của Bộ Khoa học và Nghệ thuật bang Hessen, GS. TS. René Thiele là Chủ tịch (President) của VGU từ ngày 1/4/2024."
+        },
+        "en": {
+          "question": "Who leads VGU?",
+          "answer": "According to the Hessian science ministry's page, Prof. Dr. René Thiele has been the president of VGU since 1 April 2024."
+        },
+        "de": {
+          "question": "Wer leitet die VGU?",
+          "answer": "Laut der Seite des hessischen Wissenschaftsministeriums ist Prof. Dr. René Thiele seit dem 1. April 2024 Präsident der VGU."
+        }
+      }
+    },
+    {
+      "id": "vgu_009_dormitory",
+      "category": "student_life",
+      "scope": "university",
+      "applies_to": {
+        "year": 2023,
+        "basis": "document"
+      },
+      "sources": [
+        "https://vgu.edu.vn/documents/14921/6788800/VGU+fact+sheet+for+incomings+April+2023.pdf/74ab2b7a-55d6-4d0f-a286-ce0feb4e1c27",
+        "https://vgu.edu.vn/organization"
+      ],
+      "verification": {
+        "method": "official_page",
+        "date": "2026-10-09"
+      },
+      "flags": [
+        "check_for_updates"
+      ],
+      "caveat": null,
+      "ai_drafted": [
+        "de",
+        "en",
+        "vi"
+      ],
+      "translations": {
+        "vi": {
+          "question": "VGU có ký túc xá không?",
+          "answer": "Có. Tài liệu giới thiệu của VGU (tháng 4/2023) nêu có hai ký túc xá trong khuôn viên, một cho nam và một cho nữ. Bạn nên hỏi VGU về chi phí và thủ tục đăng ký."
+        },
+        "en": {
+          "question": "Does VGU have dormitories?",
+          "answer": "Yes. VGU's fact sheet (April 2023) mentions two on-campus dormitories, one for men and one for women. Ask VGU about current costs and how to apply."
+        },
+        "de": {
+          "question": "Hat die VGU Wohnheime?",
+          "answer": "Ja. Das VGU-Faktenblatt (April 2023) nennt zwei Wohnheime auf dem Campus, eines für Männer und eines für Frauen. Frag die VGU nach den aktuellen Kosten und dem Bewerbungsverfahren."
+        }
+      }
+    }
+  ]
+}
