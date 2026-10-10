@@ -8,7 +8,7 @@ from fastapi.responses import FileResponse
 from pydantic import BaseModel, Field
 
 from backend.config import load_settings
-from backend.crawler import Page, crawl_site, deserialize_pages, serialize_pages
+from backend.pages import Page, deserialize_pages, serialize_pages
 from backend.llm import answer_question
 from backend.search import search_pages
 from dotenv import load_dotenv
@@ -20,6 +20,9 @@ settings = load_settings()
 app = FastAPI(title="School Website Information Chatbot")
 pages: list[Page] = []
 data_path = Path(settings.data_file)
+backup_path = Path("data/backup_pages.json")
+backup_pages: list[Page] = []
+MIN_PRIMARY_SCORE = 2.0
 web_root = Path(__file__).parent / "static"
 
 
@@ -53,11 +56,17 @@ def save_pages(new_pages: list[Page]) -> None:
         logger.exception("Could not save the page index.")
         raise RuntimeError(f"Could not save page index: {exc}") from exc
 
+def load_backup_pages() -> list[Page]:
+   if not backup_path.exists():
+       return []
+   raw = json.loads(backup_path.read_text(encoding="utf-8"))
+   return deserialize_pages(raw)
 
 @app.on_event("startup")
 def load_index() -> None:
-    global pages
-    pages = load_saved_pages()
+   global pages, backup_pages
+   pages = load_saved_pages()
+   backup_pages = load_backup_pages()
 
 
 @app.get("/")
@@ -75,38 +84,16 @@ def status() -> dict[str, str | int]:
     }
 
 
-@app.post("/api/crawl")
-def refresh_site_index() -> dict[str, int | list[str]]:
-    global pages
-    try:
-        new_pages, failures = crawl_site(settings.site_url, settings.max_pages)
-        if not new_pages:
-            raise HTTPException(
-                status_code=502,
-                detail="The crawl found no readable pages. Check the site URL and robots.txt.",
-            )
-        save_pages(new_pages)
-        pages = new_pages
-    except HTTPException:
-        raise
-    except (httpx.HTTPError, OSError, ValueError, RuntimeError) as exc:
-        logger.exception("Could not refresh the school website index.")
-        raise HTTPException(status_code=502, detail=str(exc)) from exc
-    return {
-        "indexed_pages": len(pages),
-        "failed_pages": len(failures),
-        "failures": failures[:10],
-    }
-
-
 @app.post("/api/chat")
 def chat(request: ChatRequest) -> dict[str, object]:
-    if not pages:
+    if not pages and not backup_pages:
         raise HTTPException(
             status_code=409,
             detail="No website pages are indexed yet. Click “Refresh website index” first.",
         )
     sources = search_pages(request.question, pages)
+    if not sources or sources[0].score < MIN_PRIMARY_SCORE:
+       sources = search_pages(request.question, backup_pages) or sources
     try:
         answer = answer_question(request.question, sources, settings)
     except (httpx.HTTPError, RuntimeError, ValueError) as exc:

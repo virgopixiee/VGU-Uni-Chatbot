@@ -1,3 +1,5 @@
 .venv/
 .env
 __pycache__/
+data/backup_pages.json
+data/pages.json

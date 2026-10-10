@@ -3,8 +3,8 @@ from collections import Counter
 from dataclasses import dataclass
 from textwrap import wrap
 
-from backend.crawler import Page
-
+from backend.pages import Page
+from functools import lru_cache
 
 TOKEN_RE = re.compile(r"[^\W_]+", re.UNICODE)
 STOP_WORDS = {
@@ -93,6 +93,14 @@ def _excerpt(
     return "\n".join(chunk for _index, chunk in selected)
 
 
+@lru_cache(maxsize=None)
+def _page_index(page: Page):
+    page_tokens = Counter(_tokens(f"{page.title} {page.url} {page.text}"))
+    url_tokens = frozenset(_tokens(page.url))
+    title_tokens = frozenset(_tokens(page.title))
+    return page_tokens, url_tokens, title_tokens
+
+
 def search_pages(question: str, pages: list[Page], limit: int = 8) -> list[SearchResult]:
     query_tokens = _tokens(question)
     if not query_tokens:
@@ -105,16 +113,14 @@ def search_pages(question: str, pages: list[Page], limit: int = 8) -> list[Searc
         for related in QUERY_SYNONYMS.get(token, set())
         if related not in query_counts
     }
-    results: list[SearchResult] = []
+    scored = []
     for page in pages:
-        url_tokens = set(_tokens(page.url))
-        page_tokens = Counter(_tokens(f"{page.title} {page.url} {page.text}"))
+        page_tokens, url_tokens, title_tokens = _page_index(page)
         overlap = sum(min(count, page_tokens[token]) for token, count in query_counts.items())
         related_matches = len(related_terms.intersection(page_tokens))
         url_matches = len(set(query_counts).intersection(url_tokens))
         if overlap == 0 and related_matches == 0:
             continue
-        title_tokens = set(_tokens(page.title))
         title_matches = sum(1 for token in query_counts if token in title_tokens)
         score = (
             overlap / (sum(query_counts.values()) ** 0.5)
@@ -122,12 +128,15 @@ def search_pages(question: str, pages: list[Page], limit: int = 8) -> list[Searc
             + title_matches * 1.5
             + url_matches * 2
         )
+        scored.append((score, title_matches, page))
+
+    scored.sort(key=lambda item: item[0], reverse=True)
+    results = []
+    for score, title_matches, page in scored[:limit]:
         excerpt = _excerpt(
             page,
             set(query_counts).union(related_terms),
             has_title_match=bool(title_matches),
         )
         results.append(SearchResult(page=page, score=score, excerpt=excerpt))
-
-    results.sort(key=lambda result: result.score, reverse=True)
-    return results[:limit]
+    return results
