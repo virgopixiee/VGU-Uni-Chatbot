@@ -4,6 +4,7 @@ from pathlib import Path
 
 BACKUP_SRC = Path("data/raw/EVERYTHING DATA/EVERYTHING_DATA.jsonl")
 BACKUP_OUT = Path("data/backup_pages.json")
+KB_FILE = Path("data/processed/vgu_chatbot_data.json")
 CURATED_DIR = Path("data/curated")
 PRIMARY_OUT = Path("data/pages.json")
 MIN_WORDS = 30
@@ -47,6 +48,34 @@ def build_backup() -> None:
     print(f"Backup: kept {len(pages)} of {total} records ({skipped} skipped)")
 
 
+def kb_pages() -> list[dict]:
+    if not KB_FILE.exists():
+        print(f"Knowledge base not found: {KB_FILE}")
+        return []
+    kb = json.loads(KB_FILE.read_text(encoding="utf-8"))
+    pages = []
+    entries = kb.get("entries", [])
+    for entry in entries:
+        sources = entry.get("sources") or []
+        url = sources[0] if sources else entry.get("id", "knowledge-base")
+        category = (entry.get("category") or "").replace("_", " ")
+        more = f"\nMore sources: {', '.join(sources[1:])}" if len(sources) > 1 else ""
+        for lang, t in (entry.get("translations") or {}).items():
+            question = (t.get("question") or "").strip()
+            answer = (t.get("answer") or "").strip()
+            if not question or not answer:
+                continue
+            pages.append(
+                {
+                    "url": url,
+                    "title": question,
+                    "text": f"{question}\n{answer}\nTopic: {category}{more}",
+                }
+            )
+    print(f"Knowledge base: {len(entries)} entries -> {len(pages)} pages")
+    return pages
+
+
 def split_sections(file_title: str, text: str) -> list[tuple[str, str]]:
     """Split Markdown text at headings; otherwise keep it as one section."""
     parts = re.split(r"^(#{1,3} .+)$", text, flags=re.MULTILINE)
@@ -61,7 +90,7 @@ def split_sections(file_title: str, text: str) -> list[tuple[str, str]]:
     return sections
 
 
-def build_primary() -> None:
+def curated_pages() -> list[dict]:
     CURATED_DIR.mkdir(parents=True, exist_ok=True)
     pages = []
     for path in sorted(CURATED_DIR.rglob("*")):
@@ -73,8 +102,14 @@ def build_primary() -> None:
             pages.append(
                 {"url": path.as_posix(), "title": section_title, "text": body}
             )
+    print(f"Curated files: {len(pages)} sections")
+    return pages
+
+
+def build_primary() -> None:
+    pages = kb_pages() + curated_pages()
     PRIMARY_OUT.write_text(json.dumps(pages, ensure_ascii=False, indent=2), encoding="utf-8")
-    print(f"Primary: wrote {len(pages)} sections from {CURATED_DIR}")
+    print(f"Primary: wrote {len(pages)} pages to {PRIMARY_OUT}")
 
 
 if __name__ == "__main__":

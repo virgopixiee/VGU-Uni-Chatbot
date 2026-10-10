@@ -89,11 +89,9 @@ def chat(request: ChatRequest) -> dict[str, object]:
     if not pages and not backup_pages:
         raise HTTPException(
             status_code=409,
-            detail="No website pages are indexed yet. Click “Refresh website index” first.",
+            detail="No website pages are indexed yet. Run scripts/build_pages.py first.",
         )
-    sources = search_pages(request.question, pages)
-    if not sources or sources[0].score < MIN_PRIMARY_SCORE:
-       sources = search_pages(request.question, backup_pages) or sources
+    sources = search_pages(request.question, pages, limit=6)
     try:
         answer = answer_question(request.question, sources, settings)
     except (httpx.HTTPError, RuntimeError, ValueError) as exc:

@@ -41,6 +41,9 @@ QUERY_SYNONYMS = {
     },
     "tuition": {"tuition", "fee", "fees", "financing", "scholarship", "scholarships"},
     "fees": {"tuition", "fee", "fees", "financing", "scholarship", "scholarships"},
+    "computer": {"cse", "cs"},
+    "science": {"cse", "cs"},
+    "cse": {"computer", "science"},
 }
 
 
@@ -126,7 +129,7 @@ def search_pages(question: str, pages: list[Page], limit: int = 8) -> list[Searc
             overlap / (sum(query_counts.values()) ** 0.5)
             + related_matches * 0.25
             + title_matches * 1.5
-            + url_matches * 2
+            + url_matches * 0.5
         )
         scored.append((score, title_matches, page))
 
