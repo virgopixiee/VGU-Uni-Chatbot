@@ -1,7 +1,7 @@
 import httpx
 
-from app.config import Settings
-from app.search import SearchResult
+from backend.config import Settings
+from backend.search import SearchResult
 
 
 def _gemini_api_error_message(status: int, message: str) -> str:

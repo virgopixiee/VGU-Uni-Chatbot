@@ -7,11 +7,12 @@ from fastapi import FastAPI, HTTPException
 from fastapi.responses import FileResponse
 from pydantic import BaseModel, Field
 
-from app.config import load_settings
-from app.crawler import Page, crawl_site, deserialize_pages, serialize_pages
-from app.llm import answer_question
-from app.search import search_pages
-
+from backend.config import load_settings
+from backend.crawler import Page, crawl_site, deserialize_pages, serialize_pages
+from backend.llm import answer_question
+from backend.search import search_pages
+from dotenv import load_dotenv
+load_dotenv()
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)

@@ -3,7 +3,7 @@ from collections import Counter
 from dataclasses import dataclass
 from textwrap import wrap
 
-from app.crawler import Page
+from backend.crawler import Page
 
 
 TOKEN_RE = re.compile(r"[^\W_]+", re.UNICODE)

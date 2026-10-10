@@ -2,8 +2,8 @@ import json
 import logging
 from pathlib import Path
 
-from app.config import load_settings
-from app.crawler import Page, deserialize_pages, serialize_pages
+from backend.config import load_settings
+from backend.crawler import Page, deserialize_pages, serialize_pages
 
 logger = logging.getLogger(__name__)
 settings = load_settings()
