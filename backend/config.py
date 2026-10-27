@@ -21,7 +21,7 @@ def load_settings() -> Settings:
         provider=provider,
         ollama_url=os.getenv("OLLAMA_URL", "http://localhost:11434").rstrip("/"),
         ollama_model=os.getenv("OLLAMA_MODEL", "gemma3:4b"),
-        gemini_model=os.getenv("GEMINI_MODEL", "gemini-3.8-flash"),
+        gemini_model=os.getenv("GEMINI_MODEL", "gemini-3.5-flash"),
         gemini_api_key=os.getenv("GEMINI_API_KEY"),
         data_file=os.getenv("PAGES_DATA_FILE", "data/pages.json"),
     )
