@@ -59,7 +59,7 @@ def get_demo_answer(question):
 
 def ask_backend(question):
     """Send Q to backend and get the ans"""
-    response = requests.post(API_URL, json={"message": question}, timeout=30)
+    response = requests.post(API_URL, json={"message": question}, timeout=130)
     response.raise_for_status()
     data = response.json()
     # Backend field name
