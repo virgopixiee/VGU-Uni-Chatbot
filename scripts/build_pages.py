@@ -6,9 +6,9 @@ from pathlib import Path
 CURATED_DIR = Path("data/curated")
 PRIMARY_OUT = Path("data/pages.json")
 
-# Languages to load from the knowledge base. The search matches English words,
-# so only English is used for now. Add "vi" later if needed.
-LANGS = ("en",)
+# Languages to load from the spreadsheet. The bot answers in the language of the
+# question, so every language listed here is searched.
+LANGS = ("en", "vi")
 REQUIRED_COLUMNS = ["id", "category", "language", "question", "answer", "source"]
 
 
@@ -91,7 +91,12 @@ def sheet_pages() -> list[dict] | None:
             if status == "needs_confirmation" or "confirm" in note.lower():
                 lines.append(f"Note: {note or 'Not confirmed. Check with VGU.'}")
             pages.append(
-                {"url": row["source"], "title": row["question"], "text": "\n".join(lines)}
+                {
+                    "url": row["source"],
+                    "title": row["question"],
+                    "text": "\n".join(lines),
+                    "lang": lang,
+                }
             )
             kept += 1
         print(f"Spreadsheet {path.name}: {kept} pages ({', '.join(LANGS)})")

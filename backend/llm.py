@@ -4,6 +4,9 @@ from backend.config import Settings
 from backend.search import SearchResult
 
 
+GEMINI_TIMEOUT_SECONDS = 25
+
+
 def _gemini_api_error_message(status: int, message: str) -> str:
     if status == 503:
         return (
@@ -18,20 +21,29 @@ def _gemini_api_error_message(status: int, message: str) -> str:
     return f"Gemini API request failed ({status}): {message}"
 
 
+NO_INFO_MESSAGES = {
+    "en": "I don't have information on that yet. Try rephrasing your question, or check vgu.edu.vn.",
+    "vi": "Mình chưa có thông tin về nội dung này. Bạn thử hỏi lại theo cách khác hoặc xem thêm trên vgu.edu.vn nhé.",
+}
+
+
 def answer_question(
-    question: str, sources: list[SearchResult], settings: Settings
+    question: str,
+    sources: list[SearchResult],
+    settings: Settings,
+    language: str | None = None,
 ) -> str:
     if not sources:
-        return (
-            "I don't have information on that yet. Try rephrasing your question, "
-            "or check vgu.edu.vn."
-        )
+        return NO_INFO_MESSAGES.get(language or "en", NO_INFO_MESSAGES["en"])
 
     evidence = "\n\n".join(
         f"[{index}] {source.page.title}\n"
         f"URL: {source.page.url}\n"
         f"Page text: {source.excerpt}"
         for index, source in enumerate(sources, start=1)
+    )
+    language_rule = {"vi": "Answer in Vietnamese.", "en": "Answer in English."}.get(
+        language or "", ""
     )
     prompt = (
         "You are the VGU Computer Science (CSE) student assistant. Reply in a "
@@ -46,7 +58,8 @@ def answer_question(
         "Reply in the same language the student wrote in. For requests to list "
         "items, include every item present in the information. Use bullet points "
         "only when they help. After each factual claim, add the matching source "
-        "number, like [1].\n\n"
+        "number, like [1]. "
+        f"{language_rule}\n\n"
         f"School information:\n{evidence}\n\n"
         f"Question: {question}"
     )
@@ -58,6 +71,7 @@ def answer_question(
                 "model": settings.ollama_model,
                 "messages": [{"role": "user", "content": prompt}],
                 "stream": False,
+                "keep_alive": "30m",
             },
             timeout=120.0,
         )
@@ -80,7 +94,12 @@ def answer_question(
             "'python -m pip install -r requirements-gemini.txt'."
         ) from exc
 
-    client = genai.Client(api_key=settings.gemini_api_key)
+    from google.genai import types
+
+    client = genai.Client(
+        api_key=settings.gemini_api_key,
+        http_options=types.HttpOptions(timeout=GEMINI_TIMEOUT_SECONDS * 1000),
+    )
     try:
         response = client.models.generate_content(
             model=settings.gemini_model,
@@ -89,6 +108,11 @@ def answer_question(
     except genai.errors.APIError as exc:
         message = _gemini_api_error_message(exc.code, exc.message)
         raise RuntimeError(message) from exc
+    except httpx.TimeoutException as exc:
+        raise RuntimeError(
+            f"Gemini did not answer within {GEMINI_TIMEOUT_SECONDS} seconds. "
+            "Check your network or try a different GEMINI_MODEL, then ask again."
+        ) from exc
     if not response.text:
         raise RuntimeError("Gemini returned an empty answer.")
     return response.text.strip()

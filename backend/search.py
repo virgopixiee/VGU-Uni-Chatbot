@@ -1,4 +1,5 @@
 import re
+import unicodedata
 from collections import Counter
 from dataclasses import dataclass
 from textwrap import wrap
@@ -54,11 +55,18 @@ class SearchResult:
     excerpt: str
 
 
+def _fold(text: str) -> str:
+    """Casefold and strip accents so 'Điều kiện' also matches 'dieu kien'."""
+    text = text.casefold().replace("đ", "d")
+    decomposed = unicodedata.normalize("NFD", text)
+    return "".join(ch for ch in decomposed if not unicodedata.combining(ch))
+
+
 def _tokens(text: str) -> list[str]:
     return [
-        token.casefold()
-        for token in TOKEN_RE.findall(text)
-        if token.casefold() not in STOP_WORDS
+        token
+        for token in TOKEN_RE.findall(_fold(text))
+        if token not in STOP_WORDS
     ]
 
 
