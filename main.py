@@ -123,6 +123,27 @@ def find_sources(question: str) -> tuple[str, list[SearchResult]]:
     return best_lang, best
 
 
+def attach_sources(answer: str, sources: list[SearchResult], language: str) -> str:
+    # Remove [1]-style markers and add a short list of the sources that were cited.
+    marker = r"\[\d+(?:\s*,\s*\d+)*\]"
+    cited = {
+        int(number)
+        for group in re.findall(marker, answer)
+        for number in re.findall(r"\d+", group)
+    }
+    clean = re.sub(r"\s*" + marker, "", answer).strip()
+    urls = []
+    for number in sorted(cited):
+        if 1 <= number <= len(sources):
+            url = sources[number - 1].page.url
+            if url and url not in urls:
+                urls.append(url)
+    if not urls:
+        return clean
+    label = "Nguồn" if language == "vi" else "Sources"
+    return clean + f"\n\n**{label}:**\n" + "\n".join(f"- {url}" for url in urls)
+
+
 @app.post("/chat")
 def chat(request: ChatRequest) -> dict[str, object]:
     text = request.message or request.question
@@ -140,7 +161,7 @@ def chat(request: ChatRequest) -> dict[str, object]:
         logger.exception("The configured language model could not answer.")
         raise HTTPException(status_code=502, detail=str(exc)) from exc
     return {
-        "answer": answer,
+        "answer": attach_sources(answer, sources, language),
         "language": language,
         "sources": [
             {
